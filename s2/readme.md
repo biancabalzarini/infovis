@@ -12,6 +12,7 @@ Visualizaciones hechas:
 2. [Flourish 1](https://biancabalzarini.github.io/infovis/s2/beeswarm_flourish.html)
 3. [Flourish 2](https://biancabalzarini.github.io/infovis/s2/bubblechart_flourish.html)
 4. [Vega-Lite](https://biancabalzarini.github.io/infovis/s2/vega_lite.html)
+4. [Vega-lite](https://biancabalzarini.github.io/infovis/s2/vega-lite.html)
 
 Zoologico de visualizaciones:
 [Zoo](https://biancabalzarini.github.io/infovis/s2/zoo.txt)
