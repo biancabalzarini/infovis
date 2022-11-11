@@ -1,6 +1,6 @@
 # Semana 3
 
-### Who do we spend time with across our lifetime?
+### Who do US americans spend time with across our lifetime?
 
 Visualizaciones hechas:
 
