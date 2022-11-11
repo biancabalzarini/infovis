@@ -4,4 +4,4 @@
 
 Visualizaciones hechas:
 
-1. [Tableau](https://biancabalzarini.github.io/infovis/s2/tableau.html)
+1. [Tableau](https://biancabalzarini.github.io/infovis/s3/tableau.html)
