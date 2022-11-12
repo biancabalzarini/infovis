@@ -5,3 +5,9 @@
 Visualizaciones hechas:
 
 1. [Tableau](https://biancabalzarini.github.io/infovis/s3/tableau.html)
+
+### COVID 19
+
+Visualizaciones hechas:
+
+1. [Tableau](https://biancabalzarini.github.io/infovis/s3/tableau_covid.html)
