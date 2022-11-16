@@ -1,3 +1,3 @@
 # VAST Challenge
 
-[Prueba](https://biancabalzarini.github.io/infovis/VAST_Challenge/prueba.html)
+[Distribución de la edad de los participantes](https://biancabalzarini.github.io/infovis/VAST_Challenge/Hist_Age.html)
