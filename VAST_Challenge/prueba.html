@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vega-Lite: Spent vs Raised</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.6.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
+  </head>
+  <body>
+    <div id="vis"></div>
+
+    <script type="text/javascript">
+      vlSpec = {
+  "config": {"view": {"continuousWidth": 400, "continuousHeight": 300}},
+  "data": {"name": "data-fa12349cc8e0129ae885bf040a8c19fc"},
+  "mark": {"type": "circle", "color": "#ff7f0e", "size": 70},
+  "encoding": {
+    "tooltip": [
+      {"field": "yearMonth", "title": "Year-Month", "type": "nominal"},
+      {
+        "field": "balance",
+        "format": ".2f",
+        "title": "Mean Balance ($)",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "axis": {"labelAngle": 0},
+      "field": "yearMonth",
+      "title": "Time",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "balance",
+      "title": "Mean Available Balance ($)",
+      "type": "quantitative"
+    }
+  },
+  "height": 200,
+  "width": 750,
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
+  "datasets": {
+    "data-fa12349cc8e0129ae885bf040a8c19fc": [
+      {
+        "yearMonth": "2022-07",
+        "balance": 13475.350405916743,
+        "extra": 4048.572112008773,
+        "food": 15.590909090909092
+      },
+      {
+        "yearMonth": "2022-08",
+        "balance": 16247.682456741211,
+        "extra": 4839.570988153761,
+        "food": 15.590909090909092
+      },
+      {
+        "yearMonth": "2023-04",
+        "balance": 37937.540592028614,
+        "extra": 10892.384153926036,
+        "food": 15.590909090909092
+      },
+      {
+        "yearMonth": "2022-05",
+        "balance": 8044.968699972155,
+        "extra": 2590.850358623686,
+        "food": 15.590909090909092
+      },
+      {
+        "yearMonth": "2022-04",
+        "balance": 5382.469874587053,
+        "extra": 1911.3342425632752,
+        "food": 15.590909090909092
+      },
+      {
+        "yearMonth": "2022-03",
+        "balance": 2847.14888041077,
+        "extra": 1225.611688690034,
+        "food": 15.644178979620634
+      },
+      {
+        "yearMonth": "2022-06",
+        "balance": 10757.997664433426,
+        "extra": 3398.4192127344054,
+        "food": 15.590909090909092
+      },
+      {
+        "yearMonth": "2022-09",
+        "balance": 18979.848097038805,
+        "extra": 5730.391020816094,
+        "food": 15.590909090909092
+      },
+      {
+        "yearMonth": "2022-10",
+        "balance": 21697.115895343377,
+        "extra": 6320.280753279928,
+        "food": 15.590909090909092
+      },
+      {
+        "yearMonth": "2023-05",
+        "balance": 40236.7136224332,
+        "extra": 8500.11126838908,
+        "food": 15.590910684043234
+      },
+      {
+        "yearMonth": "2022-11",
+        "balance": 24431.101823157584,
+        "extra": 7223.520465386647,
+        "food": 15.590909090909092
+      },
+      {
+        "yearMonth": "2022-12",
+        "balance": 27169.715867987863,
+        "extra": 7847.496593304875,
+        "food": 15.590909090909092
+      },
+      {
+        "yearMonth": "2023-01",
+        "balance": 29941.236867901174,
+        "extra": 8531.96384515884,
+        "food": 15.590909090909092
+      },
+      {
+        "yearMonth": "2023-02",
+        "balance": 32573.080497598225,
+        "extra": 9821.645078560852,
+        "food": 15.590909596933283
+      },
+      {
+        "yearMonth": "2023-03",
+        "balance": 35206.00528434466,
+        "extra": 10013.782429487295,
+        "food": 15.590909090909092
+      }
+    ]
+  }
+};
+      vegaEmbed('#vis', vlSpec);
+    </script>
+  </body>
+</html>
+Footer
+© 2022 GitHub, Inc.
