@@ -1,0 +1,5346 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Embedding Vega-Lite</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.6.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
+  </head>
+  <body>
+    <div id="vis"></div>
+    
+<script>
+var VLspec1 = {
+  "config": {
+    "view": {"continuousWidth": 400, "continuousHeight": 300, "stroke": null},
+    "facet": {"spacing": 0}
+  },
+  "data": {"name": "data-b387c41f45af1e775a07eff3f0e86ace"},
+  "mark": {"type": "area", "orient": "horizontal"},
+  "encoding": {
+    "color": {
+      "field": "educationLevel",
+      "scale": {"scheme": "category20"},
+      "sort": ["Low", "HighSchoolOrCollege", "Bachelors", "Graduate"],
+      "title": "Education Level",
+      "type": "nominal"
+    },
+    "column": {
+      "field": "educationLevel",
+      "header": {
+        "labelOrient": "top",
+        "labelPadding": 0,
+        "titleOrient": "bottom"
+      },
+      "sort": ["Low", "HighSchoolOrCollege", "Bachelors", "Graduate"],
+      "title": "Education Level",
+      "type": "nominal"
+    },
+    "x": {
+      "axis": {"grid": false, "labels": false, "ticks": true, "values": [0]},
+      "field": "density",
+      "impute": null,
+      "stack": "center",
+      "title": null,
+      "type": "quantitative"
+    },
+    "y": {"field": "rentalCost", "title": "Rental Cost", "type": "quantitative"}
+  },
+  "transform": [
+    {
+      "density": "rentalCost",
+      "groupby": ["educationLevel"],
+      "as": ["rentalCost", "density"]
+    }
+  ],
+  "width": 100,
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
+  "datasets": {
+    "data-b387c41f45af1e775a07eff3f0e86ace": [
+      {
+        "participantId": 435,
+        "apartmentId": 519,
+        "rentalCost": 499.52,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 441,
+        "apartmentId": 622,
+        "rentalCost": 582.63,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 476,
+        "apartmentId": 1179,
+        "rentalCost": 362.11,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 495,
+        "apartmentId": 718,
+        "rentalCost": 418.17,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 496,
+        "apartmentId": 813,
+        "rentalCost": 1373.28,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 525,
+        "apartmentId": 1581,
+        "rentalCost": 724.4,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 535,
+        "apartmentId": 1133,
+        "rentalCost": 748.12,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 548,
+        "apartmentId": 1426,
+        "rentalCost": 749.47,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 618,
+        "apartmentId": 1361,
+        "rentalCost": 768.11,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 688,
+        "apartmentId": 1024,
+        "rentalCost": 393.18,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 699,
+        "apartmentId": 1170,
+        "rentalCost": 926.81,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 728,
+        "apartmentId": 1459,
+        "rentalCost": 389.9,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 813,
+        "apartmentId": 627,
+        "rentalCost": 803.79,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 851,
+        "apartmentId": 1400,
+        "rentalCost": 1277.77,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 852,
+        "apartmentId": 1127,
+        "rentalCost": 818.59,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 928,
+        "apartmentId": 1352,
+        "rentalCost": 409.39,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 960,
+        "apartmentId": 1257,
+        "rentalCost": 494.76,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 971,
+        "apartmentId": 49,
+        "rentalCost": 428.87,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 50,
+        "apartmentId": 279,
+        "rentalCost": 665.25,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 83,
+        "apartmentId": 910,
+        "rentalCost": 589.08,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 87,
+        "apartmentId": 905,
+        "rentalCost": 628.86,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 109,
+        "apartmentId": 649,
+        "rentalCost": 603.46,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 120,
+        "apartmentId": 307,
+        "rentalCost": 850.82,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 125,
+        "apartmentId": 1231,
+        "rentalCost": 608.03,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 187,
+        "apartmentId": 135,
+        "rentalCost": 1458.69,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 354,
+        "apartmentId": 1725,
+        "rentalCost": 676.33,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 739,
+        "apartmentId": 984,
+        "rentalCost": 417.08,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 775,
+        "apartmentId": 1714,
+        "rentalCost": 802.77,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 939,
+        "apartmentId": 1561,
+        "rentalCost": 584.84,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 131,
+        "apartmentId": 323,
+        "rentalCost": 888.46,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 445,
+        "apartmentId": 660,
+        "rentalCost": 380.74,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 66,
+        "apartmentId": 190,
+        "rentalCost": 1174.17,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 646,
+        "apartmentId": 1046,
+        "rentalCost": 1018.39,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 835,
+        "apartmentId": 1456,
+        "rentalCost": 926.95,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 6,
+        "apartmentId": 183,
+        "rentalCost": 581.19,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 659,
+        "apartmentId": 1199,
+        "rentalCost": 1015.82,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 115,
+        "apartmentId": 191,
+        "rentalCost": 742.53,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 305,
+        "apartmentId": 579,
+        "rentalCost": 1001.18,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 570,
+        "apartmentId": 1100,
+        "rentalCost": 784.18,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 715,
+        "apartmentId": 941,
+        "rentalCost": 415.89,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 922,
+        "apartmentId": 779,
+        "rentalCost": 825.25,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 75,
+        "apartmentId": 325,
+        "rentalCost": 914.44,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 178,
+        "apartmentId": 30,
+        "rentalCost": 1135.74,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 317,
+        "apartmentId": 677,
+        "rentalCost": 667.94,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 466,
+        "apartmentId": 1120,
+        "rentalCost": 362.11,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 949,
+        "apartmentId": 1454,
+        "rentalCost": 426.72,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 226,
+        "apartmentId": 107,
+        "rentalCost": 955.13,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 362,
+        "apartmentId": 695,
+        "rentalCost": 999.04,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 387,
+        "apartmentId": 788,
+        "rentalCost": 737.57,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 472,
+        "apartmentId": 590,
+        "rentalCost": 515.62,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 606,
+        "apartmentId": 1178,
+        "rentalCost": 788.75,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 673,
+        "apartmentId": 1404,
+        "rentalCost": 374.73,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 778,
+        "apartmentId": 1560,
+        "rentalCost": 803.09,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 8,
+        "apartmentId": 321,
+        "rentalCost": 1179.63,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 36,
+        "apartmentId": 111,
+        "rentalCost": 642.06,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 54,
+        "apartmentId": 196,
+        "rentalCost": 1556.36,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 153,
+        "apartmentId": 152,
+        "rentalCost": 885.67,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 184,
+        "apartmentId": 186,
+        "rentalCost": 567.87,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 266,
+        "apartmentId": 463,
+        "rentalCost": 887.14,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 393,
+        "apartmentId": 511,
+        "rentalCost": 959.99,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 396,
+        "apartmentId": 454,
+        "rentalCost": 742.72,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 430,
+        "apartmentId": 561,
+        "rentalCost": 499.52,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 447,
+        "apartmentId": 1083,
+        "rentalCost": 645.69,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 482,
+        "apartmentId": 1272,
+        "rentalCost": 362.11,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 940,
+        "apartmentId": 1513,
+        "rentalCost": 933.82,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 1003,
+        "apartmentId": 1538,
+        "rentalCost": 472.21,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 65,
+        "apartmentId": 365,
+        "rentalCost": 698.59,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 128,
+        "apartmentId": 281,
+        "rentalCost": 900.05,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 338,
+        "apartmentId": 491,
+        "rentalCost": 719.51,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 686,
+        "apartmentId": 1134,
+        "rentalCost": 400.35,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 929,
+        "apartmentId": 1450,
+        "rentalCost": 589.18,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 21,
+        "apartmentId": 169,
+        "rentalCost": 688.44,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 56,
+        "apartmentId": 44,
+        "rentalCost": 1068.07,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 186,
+        "apartmentId": 135,
+        "rentalCost": 1458.69,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 343,
+        "apartmentId": 1657,
+        "rentalCost": 676.33,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 417,
+        "apartmentId": 640,
+        "rentalCost": 830.41,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 503,
+        "apartmentId": 515,
+        "rentalCost": 519.05,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 559,
+        "apartmentId": 793,
+        "rentalCost": 836.33,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 679,
+        "apartmentId": 1079,
+        "rentalCost": 415.89,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 994,
+        "apartmentId": 1579,
+        "rentalCost": 574.01,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 1007,
+        "apartmentId": 1620,
+        "rentalCost": 506.49,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 147,
+        "apartmentId": 289,
+        "rentalCost": 751.67,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 179,
+        "apartmentId": 280,
+        "rentalCost": 573.36,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 210,
+        "apartmentId": 233,
+        "rentalCost": 501.11,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 358,
+        "apartmentId": 806,
+        "rentalCost": 822.67,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 473,
+        "apartmentId": 827,
+        "rentalCost": 395.39,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 579,
+        "apartmentId": 974,
+        "rentalCost": 1023.4,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 710,
+        "apartmentId": 1600,
+        "rentalCost": 383.6,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 742,
+        "apartmentId": 1485,
+        "rentalCost": 398.69,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 751,
+        "apartmentId": 1019,
+        "rentalCost": 689.56,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 921,
+        "apartmentId": 1576,
+        "rentalCost": 872.21,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 951,
+        "apartmentId": 1711,
+        "rentalCost": 686.65,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 138,
+        "apartmentId": 209,
+        "rentalCost": 1001.51,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 229,
+        "apartmentId": 75,
+        "rentalCost": 1562.73,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 270,
+        "apartmentId": 1618,
+        "rentalCost": 621.5,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 370,
+        "apartmentId": 556,
+        "rentalCost": 1088.3,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 374,
+        "apartmentId": 595,
+        "rentalCost": 776.25,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 394,
+        "apartmentId": 710,
+        "rentalCost": 741.96,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 434,
+        "apartmentId": 747,
+        "rentalCost": 370.98,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 464,
+        "apartmentId": 1209,
+        "rentalCost": 1029.79,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 467,
+        "apartmentId": 494,
+        "rentalCost": 388.88,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 608,
+        "apartmentId": 1041,
+        "rentalCost": 798.31,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 700,
+        "apartmentId": 1144,
+        "rentalCost": 487.59,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 783,
+        "apartmentId": 1727,
+        "rentalCost": 809.2,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 917,
+        "apartmentId": 1688,
+        "rentalCost": 872.02,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 979,
+        "apartmentId": 1472,
+        "rentalCost": 440.99,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 97,
+        "apartmentId": 2,
+        "rentalCost": 1014.55,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 306,
+        "apartmentId": 1621,
+        "rentalCost": 657.54,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 330,
+        "apartmentId": 464,
+        "rentalCost": 830.41,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 389,
+        "apartmentId": 512,
+        "rentalCost": 741.96,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 398,
+        "apartmentId": 551,
+        "rentalCost": 1103.18,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 517,
+        "apartmentId": 1104,
+        "rentalCost": 729,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 594,
+        "apartmentId": 1703,
+        "rentalCost": 759.4,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 631,
+        "apartmentId": 1528,
+        "rentalCost": 772.46,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 654,
+        "apartmentId": 1224,
+        "rentalCost": 1047.47,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 677,
+        "apartmentId": 1534,
+        "rentalCost": 374.73,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 687,
+        "apartmentId": 1027,
+        "rentalCost": 487.59,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 850,
+        "apartmentId": 1469,
+        "rentalCost": 841.13,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 861,
+        "apartmentId": 1501,
+        "rentalCost": 841.13,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 910,
+        "apartmentId": 1687,
+        "rentalCost": 872.02,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 912,
+        "apartmentId": 1379,
+        "rentalCost": 1135.03,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 926,
+        "apartmentId": 1052,
+        "rentalCost": 1151.58,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 967,
+        "apartmentId": 1661,
+        "rentalCost": 567.51,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 998,
+        "apartmentId": 1374,
+        "rentalCost": 472.21,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 160,
+        "apartmentId": 991,
+        "rentalCost": 617.5,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 243,
+        "apartmentId": 327,
+        "rentalCost": 406.93,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 246,
+        "apartmentId": 55,
+        "rentalCost": 502.03,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 250,
+        "apartmentId": 331,
+        "rentalCost": 406.93,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 274,
+        "apartmentId": 741,
+        "rentalCost": 776.25,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 275,
+        "apartmentId": 1153,
+        "rentalCost": 625.07,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 286,
+        "apartmentId": 496,
+        "rentalCost": 644.97,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 300,
+        "apartmentId": 1643,
+        "rentalCost": 641.28,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 401,
+        "apartmentId": 1132,
+        "rentalCost": 700.32,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 427,
+        "apartmentId": 616,
+        "rentalCost": 431.18,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 545,
+        "apartmentId": 1260,
+        "rentalCost": 760.07,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 637,
+        "apartmentId": 1055,
+        "rentalCost": 813.04,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 722,
+        "apartmentId": 969,
+        "rentalCost": 415.89,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 737,
+        "apartmentId": 1183,
+        "rentalCost": 973.6,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 841,
+        "apartmentId": 1666,
+        "rentalCost": 839.93,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 866,
+        "apartmentId": 1686,
+        "rentalCost": 1129.74,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 870,
+        "apartmentId": 1540,
+        "rentalCost": 895.3,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 918,
+        "apartmentId": 598,
+        "rentalCost": 825.25,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 935,
+        "apartmentId": 1593,
+        "rentalCost": 411.56,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 955,
+        "apartmentId": 314,
+        "rentalCost": 419.73,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 2,
+        "apartmentId": 291,
+        "rentalCost": 556.55,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 4,
+        "apartmentId": 136,
+        "rentalCost": 1002.23,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 81,
+        "apartmentId": 257,
+        "rentalCost": 1121.11,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 106,
+        "apartmentId": 306,
+        "rentalCost": 898.14,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 212,
+        "apartmentId": 9,
+        "rentalCost": 433.45,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 237,
+        "apartmentId": 159,
+        "rentalCost": 1375.32,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 282,
+        "apartmentId": 1244,
+        "rentalCost": 632.65,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 287,
+        "apartmentId": 713,
+        "rentalCost": 649.7,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 373,
+        "apartmentId": 963,
+        "rentalCost": 1029.79,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 390,
+        "apartmentId": 487,
+        "rentalCost": 1047.86,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 424,
+        "apartmentId": 527,
+        "rentalCost": 530.44,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 449,
+        "apartmentId": 748,
+        "rentalCost": 380.74,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 456,
+        "apartmentId": 465,
+        "rentalCost": 465.35,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 477,
+        "apartmentId": 538,
+        "rentalCost": 398.64,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 508,
+        "apartmentId": 557,
+        "rentalCost": 804.37,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 538,
+        "apartmentId": 1218,
+        "rentalCost": 748.12,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 591,
+        "apartmentId": 1549,
+        "rentalCost": 759.4,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 738,
+        "apartmentId": 1111,
+        "rentalCost": 415.89,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 763,
+        "apartmentId": 1645,
+        "rentalCost": 787.9,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 857,
+        "apartmentId": 1393,
+        "rentalCost": 872.21,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 915,
+        "apartmentId": 1394,
+        "rentalCost": 933.82,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 969,
+        "apartmentId": 156,
+        "rentalCost": 422.08,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 70,
+        "apartmentId": 74,
+        "rentalCost": 846.42,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 108,
+        "apartmentId": 1195,
+        "rentalCost": 602.34,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 113,
+        "apartmentId": 64,
+        "rentalCost": 1104.33,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 172,
+        "apartmentId": 213,
+        "rentalCost": 360.29,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 220,
+        "apartmentId": 181,
+        "rentalCost": 673.03,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 223,
+        "apartmentId": 346,
+        "rentalCost": 567.87,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 272,
+        "apartmentId": 1031,
+        "rentalCost": 1023.4,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 310,
+        "apartmentId": 950,
+        "rentalCost": 659.17,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 357,
+        "apartmentId": 543,
+        "rentalCost": 719.18,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 429,
+        "apartmentId": 1182,
+        "rentalCost": 351.35,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 488,
+        "apartmentId": 700,
+        "rentalCost": 530.44,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 660,
+        "apartmentId": 908,
+        "rentalCost": 815.82,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 704,
+        "apartmentId": 1273,
+        "rentalCost": 521.06,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 711,
+        "apartmentId": 1246,
+        "rentalCost": 1209.85,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 749,
+        "apartmentId": 1093,
+        "rentalCost": 1132.16,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 759,
+        "apartmentId": 1431,
+        "rentalCost": 802.77,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 795,
+        "apartmentId": 1574,
+        "rentalCost": 823.11,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 833,
+        "apartmentId": 552,
+        "rentalCost": 813.86,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 873,
+        "apartmentId": 751,
+        "rentalCost": 819.83,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 906,
+        "apartmentId": 1230,
+        "rentalCost": 831.78,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 914,
+        "apartmentId": 19,
+        "rentalCost": 829.03,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 1006,
+        "apartmentId": 1633,
+        "rentalCost": 472.21,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 15,
+        "apartmentId": 930,
+        "rentalCost": 558.78,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 41,
+        "apartmentId": 245,
+        "rentalCost": 665.25,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 69,
+        "apartmentId": 192,
+        "rentalCost": 1075.42,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 173,
+        "apartmentId": 180,
+        "rentalCost": 1014.55,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 180,
+        "apartmentId": 180,
+        "rentalCost": 1014.55,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 190,
+        "apartmentId": 161,
+        "rentalCost": 366.69,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 217,
+        "apartmentId": 80,
+        "rentalCost": 550.49,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 351,
+        "apartmentId": 1712,
+        "rentalCost": 676.33,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 359,
+        "apartmentId": 594,
+        "rentalCost": 737.57,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 365,
+        "apartmentId": 652,
+        "rentalCost": 719.51,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 498,
+        "apartmentId": 812,
+        "rentalCost": 423.05,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 501,
+        "apartmentId": 715,
+        "rentalCost": 509.27,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 597,
+        "apartmentId": 997,
+        "rentalCost": 788.75,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 706,
+        "apartmentId": 918,
+        "rentalCost": 415.89,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 713,
+        "apartmentId": 1246,
+        "rentalCost": 1209.85,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 724,
+        "apartmentId": 1675,
+        "rentalCost": 383.6,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 848,
+        "apartmentId": 1432,
+        "rentalCost": 841.13,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 868,
+        "apartmentId": 372,
+        "rentalCost": 829.03,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 871,
+        "apartmentId": 726,
+        "rentalCost": 819.83,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 930,
+        "apartmentId": 1052,
+        "rentalCost": 1151.58,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 974,
+        "apartmentId": 1609,
+        "rentalCost": 435.38,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 984,
+        "apartmentId": 791,
+        "rentalCost": 519.05,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 991,
+        "apartmentId": 688,
+        "rentalCost": 453.96,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 1000,
+        "apartmentId": 345,
+        "rentalCost": 516.66,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 51,
+        "apartmentId": 90,
+        "rentalCost": 668.15,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 119,
+        "apartmentId": 368,
+        "rentalCost": 744.36,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 162,
+        "apartmentId": 193,
+        "rentalCost": 775.45,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 163,
+        "apartmentId": 992,
+        "rentalCost": 617.5,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 247,
+        "apartmentId": 195,
+        "rentalCost": 523.06,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 331,
+        "apartmentId": 823,
+        "rentalCost": 706.16,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 425,
+        "apartmentId": 562,
+        "rentalCost": 356.34,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 470,
+        "apartmentId": 471,
+        "rentalCost": 872.13,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 532,
+        "apartmentId": 1667,
+        "rentalCost": 732.14,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 562,
+        "apartmentId": 1440,
+        "rentalCost": 753.8,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 584,
+        "apartmentId": 1659,
+        "rentalCost": 758.13,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 685,
+        "apartmentId": 1187,
+        "rentalCost": 388.4,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 705,
+        "apartmentId": 628,
+        "rentalCost": 475.11,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 726,
+        "apartmentId": 1037,
+        "rentalCost": 415.89,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 732,
+        "apartmentId": 1629,
+        "rentalCost": 392.06,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 776,
+        "apartmentId": 478,
+        "rentalCost": 790.77,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 786,
+        "apartmentId": 42,
+        "rentalCost": 794.25,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 819,
+        "apartmentId": 576,
+        "rentalCost": 807.18,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 822,
+        "apartmentId": 166,
+        "rentalCost": 810.2,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 844,
+        "apartmentId": 1670,
+        "rentalCost": 839.93,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 888,
+        "apartmentId": 1523,
+        "rentalCost": 854.76,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 938,
+        "apartmentId": 1186,
+        "rentalCost": 463.69,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 957,
+        "apartmentId": 1443,
+        "rentalCost": 427.38,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 995,
+        "apartmentId": 1612,
+        "rentalCost": 465.71,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 39,
+        "apartmentId": 188,
+        "rentalCost": 749.32,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 79,
+        "apartmentId": 764,
+        "rentalCost": 587.99,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 88,
+        "apartmentId": 1163,
+        "rentalCost": 602.34,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 96,
+        "apartmentId": 122,
+        "rentalCost": 724.24,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 99,
+        "apartmentId": 93,
+        "rentalCost": 726.13,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 135,
+        "apartmentId": 62,
+        "rentalCost": 794.25,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 176,
+        "apartmentId": 12,
+        "rentalCost": 509.34,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 182,
+        "apartmentId": 151,
+        "rentalCost": 554.01,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 199,
+        "apartmentId": 296,
+        "rentalCost": 375.84,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 206,
+        "apartmentId": 84,
+        "rentalCost": 376.75,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 213,
+        "apartmentId": 356,
+        "rentalCost": 945.53,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 336,
+        "apartmentId": 468,
+        "rentalCost": 709.42,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 344,
+        "apartmentId": 1691,
+        "rentalCost": 676.33,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 395,
+        "apartmentId": 505,
+        "rentalCost": 990.3,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 409,
+        "apartmentId": 547,
+        "rentalCost": 761.49,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 442,
+        "apartmentId": 592,
+        "rentalCost": 380.74,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 528,
+        "apartmentId": 1376,
+        "rentalCost": 727.8,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 587,
+        "apartmentId": 1149,
+        "rentalCost": 786.36,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 622,
+        "apartmentId": 1000,
+        "rentalCost": 1216.94,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 690,
+        "apartmentId": 1145,
+        "rentalCost": 393.18,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 725,
+        "apartmentId": 1014,
+        "rentalCost": 415.89,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 754,
+        "apartmentId": 1093,
+        "rentalCost": 1132.16,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 804,
+        "apartmentId": 1587,
+        "rentalCost": 827.44,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 934,
+        "apartmentId": 18,
+        "rentalCost": 419.73,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 1,
+        "apartmentId": 928,
+        "rentalCost": 554.99,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 52,
+        "apartmentId": 336,
+        "rentalCost": 900.05,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 53,
+        "apartmentId": 1599,
+        "rentalCost": 580.2,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 71,
+        "apartmentId": 322,
+        "rentalCost": 846.42,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 92,
+        "apartmentId": 106,
+        "rentalCost": 720.58,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 166,
+        "apartmentId": 171,
+        "rentalCost": 768.16,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 175,
+        "apartmentId": 272,
+        "rentalCost": 360.29,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 188,
+        "apartmentId": 378,
+        "rentalCost": 1097.73,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 261,
+        "apartmentId": 711,
+        "rentalCost": 631.83,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 293,
+        "apartmentId": 1251,
+        "rentalCost": 634.54,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 307,
+        "apartmentId": 457,
+        "rentalCost": 760.78,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 313,
+        "apartmentId": 1011,
+        "rentalCost": 659.17,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 613,
+        "apartmentId": 1201,
+        "rentalCost": 798.31,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 324,
+        "apartmentId": 1188,
+        "rentalCost": 659.17,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 342,
+        "apartmentId": 737,
+        "rentalCost": 709.42,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 349,
+        "apartmentId": 675,
+        "rentalCost": 715.93,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 388,
+        "apartmentId": 596,
+        "rentalCost": 999.04,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 400,
+        "apartmentId": 752,
+        "rentalCost": 760.78,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 416,
+        "apartmentId": 720,
+        "rentalCost": 761.49,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 444,
+        "apartmentId": 1215,
+        "rentalCost": 354.94,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 452,
+        "apartmentId": 807,
+        "rentalCost": 427.93,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 518,
+        "apartmentId": 1227,
+        "rentalCost": 729,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 520,
+        "apartmentId": 1723,
+        "rentalCost": 720.96,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 561,
+        "apartmentId": 1631,
+        "rentalCost": 749.5,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 569,
+        "apartmentId": 999,
+        "rentalCost": 779.19,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 576,
+        "apartmentId": 38,
+        "rentalCost": 839.46,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 592,
+        "apartmentId": 1627,
+        "rentalCost": 759.4,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 616,
+        "apartmentId": 1700,
+        "rentalCost": 767.2,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 730,
+        "apartmentId": 506,
+        "rentalCost": 507.5,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 753,
+        "apartmentId": 1223,
+        "rentalCost": 451.74,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 788,
+        "apartmentId": 1606,
+        "rentalCost": 820.35,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 814,
+        "apartmentId": 1685,
+        "rentalCost": 829.72,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 843,
+        "apartmentId": 1135,
+        "rentalCost": 831.78,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 869,
+        "apartmentId": 1672,
+        "rentalCost": 841.13,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 877,
+        "apartmentId": 1358,
+        "rentalCost": 853.44,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 964,
+        "apartmentId": 1478,
+        "rentalCost": 432.88,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 7,
+        "apartmentId": 97,
+        "rentalCost": 1013.2,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 11,
+        "apartmentId": 1582,
+        "rentalCost": 556.17,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 49,
+        "apartmentId": 1247,
+        "rentalCost": 579.61,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 68,
+        "apartmentId": 109,
+        "rentalCost": 701.49,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 151,
+        "apartmentId": 1157,
+        "rentalCost": 615.6,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 174,
+        "apartmentId": 203,
+        "rentalCost": 421.56,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 181,
+        "apartmentId": 126,
+        "rentalCost": 452.65,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 218,
+        "apartmentId": 953,
+        "rentalCost": 523.45,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 225,
+        "apartmentId": 174,
+        "rentalCost": 773.62,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 235,
+        "apartmentId": 159,
+        "rentalCost": 1375.32,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 259,
+        "apartmentId": 1141,
+        "rentalCost": 617.5,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 329,
+        "apartmentId": 994,
+        "rentalCost": 661.06,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 332,
+        "apartmentId": 1006,
+        "rentalCost": 661.06,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 334,
+        "apartmentId": 1489,
+        "rentalCost": 661.87,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 353,
+        "apartmentId": 776,
+        "rentalCost": 715.93,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 386,
+        "apartmentId": 489,
+        "rentalCost": 737.57,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 446,
+        "apartmentId": 959,
+        "rentalCost": 358.52,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 453,
+        "apartmentId": 970,
+        "rentalCost": 396.77,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 486,
+        "apartmentId": 945,
+        "rentalCost": 368.09,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 499,
+        "apartmentId": 1388,
+        "rentalCost": 374.73,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 596,
+        "apartmentId": 1242,
+        "rentalCost": 1076.66,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 674,
+        "apartmentId": 1092,
+        "rentalCost": 380.04,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 681,
+        "apartmentId": 964,
+        "rentalCost": 388.4,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 714,
+        "apartmentId": 1159,
+        "rentalCost": 933.82,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 717,
+        "apartmentId": 1246,
+        "rentalCost": 1209.85,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 741,
+        "apartmentId": 1183,
+        "rentalCost": 973.6,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 779,
+        "apartmentId": 370,
+        "rentalCost": 793.74,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 941,
+        "apartmentId": 1545,
+        "rentalCost": 589.18,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 968,
+        "apartmentId": 1419,
+        "rentalCost": 479.13,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 985,
+        "apartmentId": 531,
+        "rentalCost": 436.06,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 9,
+        "apartmentId": 355,
+        "rentalCost": 558,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 58,
+        "apartmentId": 682,
+        "rentalCost": 580.25,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 132,
+        "apartmentId": 168,
+        "rentalCost": 749.32,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 140,
+        "apartmentId": 1036,
+        "rentalCost": 615.6,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 168,
+        "apartmentId": 308,
+        "rentalCost": 348.4,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 251,
+        "apartmentId": 5,
+        "rentalCost": 411.5,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 284,
+        "apartmentId": 1110,
+        "rentalCost": 634.54,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 289,
+        "apartmentId": 510,
+        "rentalCost": 993.62,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 296,
+        "apartmentId": 488,
+        "rentalCost": 654.76,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 303,
+        "apartmentId": 694,
+        "rentalCost": 660.2,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 327,
+        "apartmentId": 1278,
+        "rentalCost": 659.17,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 378,
+        "apartmentId": 755,
+        "rentalCost": 993.62,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 399,
+        "apartmentId": 1105,
+        "rentalCost": 700.32,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 415,
+        "apartmentId": 1732,
+        "rentalCost": 703.8,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 490,
+        "apartmentId": 1009,
+        "rentalCost": 370.48,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 533,
+        "apartmentId": 949,
+        "rentalCost": 748.12,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 536,
+        "apartmentId": 1623,
+        "rentalCost": 738.13,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 554,
+        "apartmentId": 1233,
+        "rentalCost": 767.24,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 601,
+        "apartmentId": 1150,
+        "rentalCost": 788.75,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 635,
+        "apartmentId": 962,
+        "rentalCost": 813.04,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 652,
+        "apartmentId": 792,
+        "rentalCost": 1018.54,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 696,
+        "apartmentId": 1202,
+        "rentalCost": 399.16,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 721,
+        "apartmentId": 1176,
+        "rentalCost": 989.53,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 740,
+        "apartmentId": 1160,
+        "rentalCost": 415.89,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 766,
+        "apartmentId": 1682,
+        "rentalCost": 787.9,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 777,
+        "apartmentId": 476,
+        "rentalCost": 791.98,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 878,
+        "apartmentId": 1365,
+        "rentalCost": 853.44,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 944,
+        "apartmentId": 47,
+        "rentalCost": 628.22,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 970,
+        "apartmentId": 377,
+        "rentalCost": 422.08,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 1005,
+        "apartmentId": 1558,
+        "rentalCost": 472.21,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 1010,
+        "apartmentId": 597,
+        "rentalCost": 465.35,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 16,
+        "apartmentId": 101,
+        "rentalCost": 562.35,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 149,
+        "apartmentId": 924,
+        "rentalCost": 623.18,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 193,
+        "apartmentId": 299,
+        "rentalCost": 1318.55,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 224,
+        "apartmentId": 174,
+        "rentalCost": 773.62,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 236,
+        "apartmentId": 159,
+        "rentalCost": 1375.32,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 239,
+        "apartmentId": 83,
+        "rentalCost": 480.08,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 411,
+        "apartmentId": 705,
+        "rentalCost": 761.49,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 413,
+        "apartmentId": 1608,
+        "rentalCost": 703.8,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 436,
+        "apartmentId": 570,
+        "rentalCost": 530.44,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 450,
+        "apartmentId": 456,
+        "rentalCost": 381.91,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 455,
+        "apartmentId": 1250,
+        "rentalCost": 358.52,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 497,
+        "apartmentId": 582,
+        "rentalCost": 475.11,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 547,
+        "apartmentId": 1692,
+        "rentalCost": 748.43,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 555,
+        "apartmentId": 1109,
+        "rentalCost": 776.8,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 586,
+        "apartmentId": 1519,
+        "rentalCost": 759.4,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 588,
+        "apartmentId": 1154,
+        "rentalCost": 786.36,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 593,
+        "apartmentId": 1638,
+        "rentalCost": 759.4,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 648,
+        "apartmentId": 1173,
+        "rentalCost": 813.04,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 649,
+        "apartmentId": 1499,
+        "rentalCost": 779.79,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 671,
+        "apartmentId": 1564,
+        "rentalCost": 786.19,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 770,
+        "apartmentId": 1502,
+        "rentalCost": 802.77,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 796,
+        "apartmentId": 1412,
+        "rentalCost": 824.84,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 830,
+        "apartmentId": 326,
+        "rentalCost": 813.85,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 874,
+        "apartmentId": 1702,
+        "rentalCost": 1277.99,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 881,
+        "apartmentId": 1731,
+        "rentalCost": 890.69,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 932,
+        "apartmentId": 1444,
+        "rentalCost": 409.39,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 943,
+        "apartmentId": 1366,
+        "rentalCost": 426.72,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 962,
+        "apartmentId": 1464,
+        "rentalCost": 444.61,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 976,
+        "apartmentId": 825,
+        "rentalCost": 431.18,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 1001,
+        "apartmentId": 275,
+        "rentalCost": 455.39,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 3,
+        "apartmentId": 1243,
+        "rentalCost": 554.99,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 5,
+        "apartmentId": 243,
+        "rentalCost": 600.03,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 22,
+        "apartmentId": 88,
+        "rentalCost": 1014.55,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 35,
+        "apartmentId": 215,
+        "rentalCost": 626.12,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 42,
+        "apartmentId": 1471,
+        "rentalCost": 576.77,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 73,
+        "apartmentId": 73,
+        "rentalCost": 702.29,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 155,
+        "apartmentId": 1180,
+        "rentalCost": 615.6,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 194,
+        "apartmentId": 378,
+        "rentalCost": 1097.73,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 221,
+        "apartmentId": 376,
+        "rentalCost": 872.51,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 268,
+        "apartmentId": 1664,
+        "rentalCost": 621.4,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 302,
+        "apartmentId": 1389,
+        "rentalCost": 652.3,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 304,
+        "apartmentId": 1557,
+        "rentalCost": 657.54,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 325,
+        "apartmentId": 729,
+        "rentalCost": 706.16,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 326,
+        "apartmentId": 775,
+        "rentalCost": 706.16,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 333,
+        "apartmentId": 1205,
+        "rentalCost": 661.06,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 348,
+        "apartmentId": 480,
+        "rentalCost": 712.67,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 379,
+        "apartmentId": 1268,
+        "rentalCost": 695.16,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 443,
+        "apartmentId": 952,
+        "rentalCost": 598.74,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 471,
+        "apartmentId": 471,
+        "rentalCost": 872.13,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 474,
+        "apartmentId": 471,
+        "rentalCost": 872.13,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 480,
+        "apartmentId": 1194,
+        "rentalCost": 362.11,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 600,
+        "apartmentId": 1012,
+        "rentalCost": 861.84,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 665,
+        "apartmentId": 1573,
+        "rentalCost": 784.25,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 672,
+        "apartmentId": 1177,
+        "rentalCost": 374.06,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 718,
+        "apartmentId": 1176,
+        "rentalCost": 989.53,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 723,
+        "apartmentId": 1176,
+        "rentalCost": 989.53,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 755,
+        "apartmentId": 1164,
+        "rentalCost": 463.69,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 879,
+        "apartmentId": 1674,
+        "rentalCost": 853.44,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 895,
+        "apartmentId": 1547,
+        "rentalCost": 865.76,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 945,
+        "apartmentId": 1221,
+        "rentalCost": 614.27,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 963,
+        "apartmentId": 265,
+        "rentalCost": 1061.63,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 972,
+        "apartmentId": 1409,
+        "rentalCost": 435.38,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 977,
+        "apartmentId": 1407,
+        "rentalCost": 437.92,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 978,
+        "apartmentId": 1416,
+        "rentalCost": 440.99,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 529,
+        "apartmentId": 923,
+        "rentalCost": 738.56,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 34,
+        "apartmentId": 29,
+        "rentalCost": 1097.73,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 76,
+        "apartmentId": 76,
+        "rentalCost": 702.29,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 107,
+        "apartmentId": 206,
+        "rentalCost": 726.13,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 197,
+        "apartmentId": 286,
+        "rentalCost": 635.54,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 202,
+        "apartmentId": 362,
+        "rentalCost": 631.88,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 269,
+        "apartmentId": 719,
+        "rentalCost": 631.83,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 337,
+        "apartmentId": 1486,
+        "rentalCost": 676.33,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 371,
+        "apartmentId": 664,
+        "rentalCost": 719.51,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 381,
+        "apartmentId": 818,
+        "rentalCost": 719.51,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 448,
+        "apartmentId": 575,
+        "rentalCost": 1059.93,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 475,
+        "apartmentId": 1156,
+        "rentalCost": 362.11,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 556,
+        "apartmentId": 1238,
+        "rentalCost": 776.8,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 566,
+        "apartmentId": 993,
+        "rentalCost": 779.19,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 590,
+        "apartmentId": 907,
+        "rentalCost": 788.75,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 619,
+        "apartmentId": 1414,
+        "rentalCost": 768.11,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 682,
+        "apartmentId": 1108,
+        "rentalCost": 388.4,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 765,
+        "apartmentId": 1384,
+        "rentalCost": 1357.96,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 769,
+        "apartmentId": 277,
+        "rentalCost": 790.08,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 787,
+        "apartmentId": 124,
+        "rentalCost": 794.25,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 1009,
+        "apartmentId": 663,
+        "rentalCost": 465.35,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 13,
+        "apartmentId": 141,
+        "rentalCost": 1301.56,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 55,
+        "apartmentId": 92,
+        "rentalCost": 668.99,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 82,
+        "apartmentId": 202,
+        "rentalCost": 1066.73,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 86,
+        "apartmentId": 288,
+        "rentalCost": 715.98,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 103,
+        "apartmentId": 938,
+        "rentalCost": 602.34,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 104,
+        "apartmentId": 1053,
+        "rentalCost": 628.86,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 121,
+        "apartmentId": 31,
+        "rentalCost": 749.32,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 124,
+        "apartmentId": 1733,
+        "rentalCost": 607.99,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 141,
+        "apartmentId": 373,
+        "rentalCost": 829.03,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 150,
+        "apartmentId": 1129,
+        "rentalCost": 615.6,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 165,
+        "apartmentId": 147,
+        "rentalCost": 1121.11,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 205,
+        "apartmentId": 1191,
+        "rentalCost": 350.16,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 214,
+        "apartmentId": 356,
+        "rentalCost": 945.53,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 231,
+        "apartmentId": 100,
+        "rentalCost": 472.77,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 345,
+        "apartmentId": 814,
+        "rentalCost": 709.42,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 361,
+        "apartmentId": 1411,
+        "rentalCost": 677.38,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 366,
+        "apartmentId": 1637,
+        "rentalCost": 677.38,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 369,
+        "apartmentId": 1617,
+        "rentalCost": 686.1,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 414,
+        "apartmentId": 1729,
+        "rentalCost": 703.8,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 419,
+        "apartmentId": 1025,
+        "rentalCost": 709.88,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 439,
+        "apartmentId": 601,
+        "rentalCost": 691.52,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 557,
+        "apartmentId": 936,
+        "rentalCost": 779.19,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 578,
+        "apartmentId": 1473,
+        "rentalCost": 759.4,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 676,
+        "apartmentId": 1484,
+        "rentalCost": 374.73,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 747,
+        "apartmentId": 1537,
+        "rentalCost": 404.6,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 750,
+        "apartmentId": 1093,
+        "rentalCost": 1132.16,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 836,
+        "apartmentId": 678,
+        "rentalCost": 813.86,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 894,
+        "apartmentId": 1718,
+        "rentalCost": 861.72,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 947,
+        "apartmentId": 155,
+        "rentalCost": 419.73,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 953,
+        "apartmentId": 1256,
+        "rentalCost": 660.88,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 961,
+        "apartmentId": 265,
+        "rentalCost": 1061.63,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 980,
+        "apartmentId": 1395,
+        "rentalCost": 450.03,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 989,
+        "apartmentId": 1435,
+        "rentalCost": 465.71,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 993,
+        "apartmentId": 13,
+        "rentalCost": 601.7,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 996,
+        "apartmentId": 1713,
+        "rentalCost": 465.71,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 67,
+        "apartmentId": 33,
+        "rentalCost": 698.63,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 90,
+        "apartmentId": 771,
+        "rentalCost": 590.57,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 114,
+        "apartmentId": 148,
+        "rentalCost": 742.53,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 171,
+        "apartmentId": 1069,
+        "rentalCost": 350.16,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 177,
+        "apartmentId": 189,
+        "rentalCost": 363.03,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 203,
+        "apartmentId": 230,
+        "rentalCost": 486.97,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 320,
+        "apartmentId": 826,
+        "rentalCost": 678.25,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 437,
+        "apartmentId": 608,
+        "rentalCost": 372.61,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 457,
+        "apartmentId": 913,
+        "rentalCost": 359.72,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 487,
+        "apartmentId": 687,
+        "rentalCost": 413.11,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 491,
+        "apartmentId": 813,
+        "rentalCost": 1373.28,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 550,
+        "apartmentId": 942,
+        "rentalCost": 767.24,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 612,
+        "apartmentId": 801,
+        "rentalCost": 761.49,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 624,
+        "apartmentId": 1101,
+        "rentalCost": 1000.12,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 675,
+        "apartmentId": 1249,
+        "rentalCost": 380.04,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 689,
+        "apartmentId": 1082,
+        "rentalCost": 393.18,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 692,
+        "apartmentId": 1142,
+        "rentalCost": 396.77,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 752,
+        "apartmentId": 1052,
+        "rentalCost": 1151.58,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 863,
+        "apartmentId": 1427,
+        "rentalCost": 1277.77,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 927,
+        "apartmentId": 1052,
+        "rentalCost": 1151.58,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 956,
+        "apartmentId": 94,
+        "rentalCost": 420.64,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 966,
+        "apartmentId": 265,
+        "rentalCost": 1061.63,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 14,
+        "apartmentId": 66,
+        "rentalCost": 1135.74,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 23,
+        "apartmentId": 532,
+        "rentalCost": 559.62,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 29,
+        "apartmentId": 344,
+        "rentalCost": 615.98,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 164,
+        "apartmentId": 263,
+        "rentalCost": 1223.52,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 244,
+        "apartmentId": 69,
+        "rentalCost": 514.83,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 254,
+        "apartmentId": 1026,
+        "rentalCost": 617.5,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 273,
+        "apartmentId": 816,
+        "rentalCost": 719.51,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 276,
+        "apartmentId": 1438,
+        "rentalCost": 631.9,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 290,
+        "apartmentId": 1056,
+        "rentalCost": 634.54,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 294,
+        "apartmentId": 485,
+        "rentalCost": 691.15,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 314,
+        "apartmentId": 655,
+        "rentalCost": 665.36,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 318,
+        "apartmentId": 733,
+        "rentalCost": 678.25,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 347,
+        "apartmentId": 1696,
+        "rentalCost": 676.33,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 500,
+        "apartmentId": 988,
+        "rentalCost": 372.87,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 530,
+        "apartmentId": 1114,
+        "rentalCost": 740.95,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 542,
+        "apartmentId": 1677,
+        "rentalCost": 738.13,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 583,
+        "apartmentId": 958,
+        "rentalCost": 786.36,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 614,
+        "apartmentId": 777,
+        "rentalCost": 763.83,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 661,
+        "apartmentId": 614,
+        "rentalCost": 781.41,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 736,
+        "apartmentId": 1481,
+        "rentalCost": 398.69,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 797,
+        "apartmentId": 584,
+        "rentalCost": 797.28,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 809,
+        "apartmentId": 1428,
+        "rentalCost": 829.72,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 942,
+        "apartmentId": 1487,
+        "rentalCost": 604.34,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 954,
+        "apartmentId": 1515,
+        "rentalCost": 426.72,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 12,
+        "apartmentId": 1198,
+        "rentalCost": 556.88,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 59,
+        "apartmentId": 1165,
+        "rentalCost": 583.4,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 123,
+        "apartmentId": 1690,
+        "rentalCost": 607.99,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 134,
+        "apartmentId": 965,
+        "rentalCost": 615.6,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 283,
+        "apartmentId": 757,
+        "rentalCost": 1247.35,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 323,
+        "apartmentId": 1102,
+        "rentalCost": 1499.25,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 328,
+        "apartmentId": 815,
+        "rentalCost": 706.16,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 341,
+        "apartmentId": 1588,
+        "rentalCost": 676.33,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 375,
+        "apartmentId": 1415,
+        "rentalCost": 694.08,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 408,
+        "apartmentId": 903,
+        "rentalCost": 793.53,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 468,
+        "apartmentId": 638,
+        "rentalCost": 390.51,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 483,
+        "apartmentId": 989,
+        "rentalCost": 364.5,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 563,
+        "apartmentId": 943,
+        "rentalCost": 991.92,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 607,
+        "apartmentId": 990,
+        "rentalCost": 798.31,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 899,
+        "apartmentId": 1660,
+        "rentalCost": 870.77,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 627,
+        "apartmentId": 1524,
+        "rentalCost": 772.46,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 678,
+        "apartmentId": 1020,
+        "rentalCost": 415.89,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 743,
+        "apartmentId": 1578,
+        "rentalCost": 398.69,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 801,
+        "apartmentId": 1656,
+        "rentalCost": 824.84,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 890,
+        "apartmentId": 1378,
+        "rentalCost": 1311.59,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 981,
+        "apartmentId": 1724,
+        "rentalCost": 457.04,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 997,
+        "apartmentId": 607,
+        "rentalCost": 453.96,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 26,
+        "apartmentId": 371,
+        "rentalCost": 586.99,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 94,
+        "apartmentId": 367,
+        "rentalCost": 720.58,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 167,
+        "apartmentId": 137,
+        "rentalCost": 1106.22,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 198,
+        "apartmentId": 299,
+        "rentalCost": 1318.55,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 234,
+        "apartmentId": 214,
+        "rentalCost": 396.87,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 245,
+        "apartmentId": 261,
+        "rentalCost": 1475.67,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 249,
+        "apartmentId": 231,
+        "rentalCost": 801.49,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 264,
+        "apartmentId": 1563,
+        "rentalCost": 617.97,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 277,
+        "apartmentId": 517,
+        "rentalCost": 851.45,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 291,
+        "apartmentId": 717,
+        "rentalCost": 649.7,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 428,
+        "apartmentId": 261,
+        "rentalCost": 1475.67,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 479,
+        "apartmentId": 680,
+        "rentalCost": 509.27,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 492,
+        "apartmentId": 470,
+        "rentalCost": 416.54,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 581,
+        "apartmentId": 1184,
+        "rentalCost": 784.18,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 746,
+        "apartmentId": 957,
+        "rentalCost": 451.74,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 772,
+        "apartmentId": 1634,
+        "rentalCost": 844.95,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 849,
+        "apartmentId": 1044,
+        "rentalCost": 825.85,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 889,
+        "apartmentId": 334,
+        "rentalCost": 823,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 931,
+        "apartmentId": 1038,
+        "rentalCost": 639.37,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 946,
+        "apartmentId": 1513,
+        "rentalCost": 933.82,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 999,
+        "apartmentId": 51,
+        "rentalCost": 455.39,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 24,
+        "apartmentId": 309,
+        "rentalCost": 573.95,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 62,
+        "apartmentId": 352,
+        "rentalCost": 696.8,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 64,
+        "apartmentId": 320,
+        "rentalCost": 698.59,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 117,
+        "apartmentId": 210,
+        "rentalCost": 1340.57,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 118,
+        "apartmentId": 794,
+        "rentalCost": 603.46,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 133,
+        "apartmentId": 297,
+        "rentalCost": 749.32,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 208,
+        "apartmentId": 59,
+        "rentalCost": 379.49,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 219,
+        "apartmentId": 174,
+        "rentalCost": 773.62,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 260,
+        "apartmentId": 645,
+        "rentalCost": 626.67,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 265,
+        "apartmentId": 1644,
+        "rentalCost": 621.4,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 281,
+        "apartmentId": 754,
+        "rentalCost": 636.99,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 377,
+        "apartmentId": 1465,
+        "rentalCost": 694.08,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 432,
+        "apartmentId": 809,
+        "rentalCost": 421.42,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 537,
+        "apartmentId": 697,
+        "rentalCost": 791.72,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 625,
+        "apartmentId": 1490,
+        "rentalCost": 772.46,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 666,
+        "apartmentId": 461,
+        "rentalCost": 784.27,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 708,
+        "apartmentId": 935,
+        "rentalCost": 415.89,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 734,
+        "apartmentId": 1098,
+        "rentalCost": 415.89,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 803,
+        "apartmentId": 691,
+        "rentalCost": 800.54,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 821,
+        "apartmentId": 56,
+        "rentalCost": 808.97,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 891,
+        "apartmentId": 1544,
+        "rentalCost": 854.76,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 948,
+        "apartmentId": 1074,
+        "rentalCost": 660.88,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 952,
+        "apartmentId": 256,
+        "rentalCost": 419.73,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 469,
+        "apartmentId": 795,
+        "rentalCost": 392.13,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 19,
+        "apartmentId": 276,
+        "rentalCost": 571.05,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 25,
+        "apartmentId": 273,
+        "rentalCost": 586.99,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 47,
+        "apartmentId": 58,
+        "rentalCost": 665.25,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 57,
+        "apartmentId": 16,
+        "rentalCost": 681.2,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 78,
+        "apartmentId": 641,
+        "rentalCost": 587.99,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 105,
+        "apartmentId": 154,
+        "rentalCost": 839.46,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 144,
+        "apartmentId": 52,
+        "rentalCost": 751.67,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 319,
+        "apartmentId": 1185,
+        "rentalCost": 659.17,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 412,
+        "apartmentId": 1047,
+        "rentalCost": 705.1,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 426,
+        "apartmentId": 452,
+        "rentalCost": 370.98,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 465,
+        "apartmentId": 1209,
+        "rentalCost": 1029.79,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 515,
+        "apartmentId": 1265,
+        "rentalCost": 724.22,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 527,
+        "apartmentId": 980,
+        "rentalCost": 734.93,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 552,
+        "apartmentId": 1632,
+        "rentalCost": 749.47,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 565,
+        "apartmentId": 1095,
+        "rentalCost": 973.6,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 585,
+        "apartmentId": 1462,
+        "rentalCost": 759.4,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 626,
+        "apartmentId": 1131,
+        "rentalCost": 988.75,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 630,
+        "apartmentId": 1245,
+        "rentalCost": 798.31,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 691,
+        "apartmentId": 1275,
+        "rentalCost": 393.18,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 698,
+        "apartmentId": 1170,
+        "rentalCost": 926.81,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 719,
+        "apartmentId": 972,
+        "rentalCost": 438.59,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 748,
+        "apartmentId": 1093,
+        "rentalCost": 1132.16,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 798,
+        "apartmentId": 981,
+        "rentalCost": 831.78,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 987,
+        "apartmentId": 621,
+        "rentalCost": 439.32,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 10,
+        "apartmentId": 91,
+        "rentalCost": 560.9,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 61,
+        "apartmentId": 22,
+        "rentalCost": 696.8,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 74,
+        "apartmentId": 1085,
+        "rentalCost": 602.34,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 91,
+        "apartmentId": 1050,
+        "rentalCost": 608.03,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 111,
+        "apartmentId": 1057,
+        "rentalCost": 608.03,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 130,
+        "apartmentId": 54,
+        "rentalCost": 749.32,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 145,
+        "apartmentId": 906,
+        "rentalCost": 623.18,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 156,
+        "apartmentId": 184,
+        "rentalCost": 760.91,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 257,
+        "apartmentId": 600,
+        "rentalCost": 621.52,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 297,
+        "apartmentId": 1517,
+        "rentalCost": 641.28,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 309,
+        "apartmentId": 946,
+        "rentalCost": 659.17,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 368,
+        "apartmentId": 1607,
+        "rentalCost": 686.1,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 402,
+        "apartmentId": 1200,
+        "rentalCost": 700.32,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 410,
+        "apartmentId": 1405,
+        "rentalCost": 701.81,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 431,
+        "apartmentId": 523,
+        "rentalCost": 370.98,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 440,
+        "apartmentId": 1051,
+        "rentalCost": 354.94,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 543,
+        "apartmentId": 983,
+        "rentalCost": 760.07,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 564,
+        "apartmentId": 782,
+        "rentalCost": 807.18,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 573,
+        "apartmentId": 459,
+        "rentalCost": 773.67,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 640,
+        "apartmentId": 784,
+        "rentalCost": 855.86,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 644,
+        "apartmentId": 139,
+        "rentalCost": 778.3,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 826,
+        "apartmentId": 1470,
+        "rentalCost": 839.93,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 965,
+        "apartmentId": 265,
+        "rentalCost": 1061.63,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 1004,
+        "apartmentId": 460,
+        "rentalCost": 465.35,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 32,
+        "apartmentId": 1146,
+        "rentalCost": 570.14,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 45,
+        "apartmentId": 955,
+        "rentalCost": 577.72,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 129,
+        "apartmentId": 39,
+        "rentalCost": 749.32,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 157,
+        "apartmentId": 704,
+        "rentalCost": 616.36,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 183,
+        "apartmentId": 30,
+        "rentalCost": 1135.74,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 192,
+        "apartmentId": 378,
+        "rentalCost": 1097.73,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 253,
+        "apartmentId": 550,
+        "rentalCost": 621.52,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 823,
+        "apartmentId": 176,
+        "rentalCost": 811.09,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 838,
+        "apartmentId": 351,
+        "rentalCost": 815.99,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 385,
+        "apartmentId": 740,
+        "rentalCost": 722.44,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 404,
+        "apartmentId": 1206,
+        "rentalCost": 700.32,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 645,
+        "apartmentId": 219,
+        "rentalCost": 778.3,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 680,
+        "apartmentId": 1541,
+        "rentalCost": 376.9,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 703,
+        "apartmentId": 901,
+        "rentalCost": 415.89,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 720,
+        "apartmentId": 615,
+        "rentalCost": 493.01,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 898,
+        "apartmentId": 1583,
+        "rentalCost": 870.77,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 937,
+        "apartmentId": 1436,
+        "rentalCost": 413.72,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 95,
+        "apartmentId": 121,
+        "rentalCost": 724.24,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 98,
+        "apartmentId": 229,
+        "rentalCost": 724.24,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 143,
+        "apartmentId": 1073,
+        "rentalCost": 615.6,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 255,
+        "apartmentId": 824,
+        "rentalCost": 634.41,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 271,
+        "apartmentId": 736,
+        "rentalCost": 636.99,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 544,
+        "apartmentId": 1214,
+        "rentalCost": 760.07,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 632,
+        "apartmentId": 1602,
+        "rentalCost": 772.46,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 807,
+        "apartmentId": 198,
+        "rentalCost": 801.49,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 854,
+        "apartmentId": 46,
+        "rentalCost": 818.89,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 905,
+        "apartmentId": 1380,
+        "rentalCost": 872.02,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 975,
+        "apartmentId": 618,
+        "rentalCost": 431.18,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 17,
+        "apartmentId": 1003,
+        "rentalCost": 558.78,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 112,
+        "apartmentId": 26,
+        "rentalCost": 740.7,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 170,
+        "apartmentId": 967,
+        "rentalCost": 350.16,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 295,
+        "apartmentId": 774,
+        "rentalCost": 649.7,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 360,
+        "apartmentId": 768,
+        "rentalCost": 719.18,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 420,
+        "apartmentId": 231,
+        "rentalCost": 801.49,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 433,
+        "apartmentId": 1189,
+        "rentalCost": 352.55,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 459,
+        "apartmentId": 520,
+        "rentalCost": 381.91,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 506,
+        "apartmentId": 979,
+        "rentalCost": 717.05,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 513,
+        "apartmentId": 1497,
+        "rentalCost": 720.96,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 524,
+        "apartmentId": 1386,
+        "rentalCost": 724.4,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 315,
+        "apartmentId": 1078,
+        "rentalCost": 659.17,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 694,
+        "apartmentId": 904,
+        "rentalCost": 399.16,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 729,
+        "apartmentId": 1086,
+        "rentalCost": 415.89,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 1002,
+        "apartmentId": 528,
+        "rentalCost": 456.39,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 27,
+        "apartmentId": 1239,
+        "rentalCost": 562.57,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 60,
+        "apartmentId": 266,
+        "rentalCost": 687,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 148,
+        "apartmentId": 1076,
+        "rentalCost": 615.6,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 169,
+        "apartmentId": 153,
+        "rentalCost": 351.15,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 191,
+        "apartmentId": 177,
+        "rentalCost": 366.69,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 200,
+        "apartmentId": 299,
+        "rentalCost": 1318.55,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 335,
+        "apartmentId": 1554,
+        "rentalCost": 661.87,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 350,
+        "apartmentId": 703,
+        "rentalCost": 715.93,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 376,
+        "apartmentId": 1449,
+        "rentalCost": 694.08,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 507,
+        "apartmentId": 1597,
+        "rentalCost": 713.29,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 521,
+        "apartmentId": 920,
+        "rentalCost": 731.39,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 522,
+        "apartmentId": 1475,
+        "rentalCost": 723.47,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 651,
+        "apartmentId": 241,
+        "rentalCost": 781.2,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 712,
+        "apartmentId": 1246,
+        "rentalCost": 1209.85,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 845,
+        "apartmentId": 53,
+        "rentalCost": 817.46,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 913,
+        "apartmentId": 922,
+        "rentalCost": 824.14,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 916,
+        "apartmentId": 709,
+        "rentalCost": 827.39,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 983,
+        "apartmentId": 341,
+        "rentalCost": 433.45,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 992,
+        "apartmentId": 175,
+        "rentalCost": 441.68,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 84,
+        "apartmentId": 298,
+        "rentalCost": 715.09,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 248,
+        "apartmentId": 261,
+        "rentalCost": 1475.67,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 695,
+        "apartmentId": 1064,
+        "rentalCost": 399.16,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 31,
+        "apartmentId": 810,
+        "rentalCost": 567.36,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 240,
+        "apartmentId": 125,
+        "rentalCost": 405.1,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 478,
+        "apartmentId": 800,
+        "rentalCost": 398.64,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 782,
+        "apartmentId": 1087,
+        "rentalCost": 832.47,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 80,
+        "apartmentId": 28,
+        "rentalCost": 709.61,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 195,
+        "apartmentId": 299,
+        "rentalCost": 1318.55,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 201,
+        "apartmentId": 135,
+        "rentalCost": 1458.69,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 278,
+        "apartmentId": 1589,
+        "rentalCost": 631.9,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 364,
+        "apartmentId": 1586,
+        "rentalCost": 677.38,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 701,
+        "apartmentId": 1013,
+        "rentalCost": 400.35,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 815,
+        "apartmentId": 500,
+        "rentalCost": 803.92,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 865,
+        "apartmentId": 605,
+        "rentalCost": 819.83,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 986,
+        "apartmentId": 821,
+        "rentalCost": 436.06,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 122,
+        "apartmentId": 569,
+        "rentalCost": 605.32,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 204,
+        "apartmentId": 135,
+        "rentalCost": 1458.69,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 215,
+        "apartmentId": 356,
+        "rentalCost": 945.53,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 227,
+        "apartmentId": 72,
+        "rentalCost": 395.04,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 233,
+        "apartmentId": 75,
+        "rentalCost": 1562.73,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 438,
+        "apartmentId": 497,
+        "rentalCost": 380.74,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 504,
+        "apartmentId": 1448,
+        "rentalCost": 710.48,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 745,
+        "apartmentId": 1510,
+        "rentalCost": 404.6,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 800,
+        "apartmentId": 132,
+        "rentalCost": 794.25,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 820,
+        "apartmentId": 672,
+        "rentalCost": 808.5,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 30,
+        "apartmentId": 38,
+        "rentalCost": 839.46,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 43,
+        "apartmentId": 934,
+        "rentalCost": 577.72,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 101,
+        "apartmentId": 1591,
+        "rentalCost": 600.8,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 312,
+        "apartmentId": 971,
+        "rentalCost": 659.17,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 403,
+        "apartmentId": 603,
+        "rentalCost": 826.22,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 829,
+        "apartmentId": 178,
+        "rentalCost": 811.09,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 185,
+        "apartmentId": 30,
+        "rentalCost": 1135.74,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 189,
+        "apartmentId": 378,
+        "rentalCost": 1097.73,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 280,
+        "apartmentId": 1090,
+        "rentalCost": 632.65,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 485,
+        "apartmentId": 1023,
+        "rentalCost": 364.5,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 534,
+        "apartmentId": 1531,
+        "rentalCost": 738.13,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 936,
+        "apartmentId": 1363,
+        "rentalCost": 413.72,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 0,
+        "apartmentId": 926,
+        "rentalCost": 554.99,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 546,
+        "apartmentId": 1434,
+        "rentalCost": 748.43,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 598,
+        "apartmentId": 756,
+        "rentalCost": 761.49,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 882,
+        "apartmentId": 142,
+        "rentalCost": 821.71,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 48,
+        "apartmentId": 115,
+        "rentalCost": 665.25,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 77,
+        "apartmentId": 134,
+        "rentalCost": 707.78,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 152,
+        "apartmentId": 14,
+        "rentalCost": 758.99,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 241,
+        "apartmentId": 75,
+        "rentalCost": 1562.73,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 18,
+        "apartmentId": 482,
+        "rentalCost": 559.62,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 667,
+        "apartmentId": 763,
+        "rentalCost": 784.27,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 709,
+        "apartmentId": 1585,
+        "rentalCost": 383.6,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 100,
+        "apartmentId": 1503,
+        "rentalCost": 597.37,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 116,
+        "apartmentId": 723,
+        "rentalCost": 603.46,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 707,
+        "apartmentId": 1170,
+        "rentalCost": 926.81,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 950,
+        "apartmentId": 250,
+        "rentalCost": 419.73,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 230,
+        "apartmentId": 107,
+        "rentalCost": 955.13,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 656,
+        "apartmentId": 282,
+        "rentalCost": 781.2,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 669,
+        "apartmentId": 781,
+        "rentalCost": 784.27,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 664,
+        "apartmentId": 1679,
+        "rentalCost": 784.12,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 767,
+        "apartmentId": 41,
+        "rentalCost": 790.08,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 63,
+        "apartmentId": 17,
+        "rentalCost": 698.59,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 642,
+        "apartmentId": 105,
+        "rentalCost": 778.3,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 733,
+        "apartmentId": 1640,
+        "rentalCost": 392.06,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 758,
+        "apartmentId": 1569,
+        "rentalCost": 786.19,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 139,
+        "apartmentId": 20,
+        "rentalCost": 1263.76,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 321,
+        "apartmentId": 609,
+        "rentalCost": 1088.3,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 418,
+        "apartmentId": 542,
+        "rentalCost": 795.67,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 421,
+        "apartmentId": 802,
+        "rentalCost": 353.08,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 560,
+        "apartmentId": 1429,
+        "rentalCost": 749.5,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 308,
+        "apartmentId": 921,
+        "rentalCost": 659.17,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 355,
+        "apartmentId": 819,
+        "rentalCost": 1088.3,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 463,
+        "apartmentId": 453,
+        "rentalCost": 388.88,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 650,
+        "apartmentId": 1371,
+        "rentalCost": 1347.85,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 610,
+        "apartmentId": 1103,
+        "rentalCost": 798.31,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 340,
+        "apartmentId": 1566,
+        "rentalCost": 676.33,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 784,
+        "apartmentId": 1596,
+        "rentalCost": 820.35,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 812,
+        "apartmentId": 1530,
+        "rentalCost": 829.72,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 292,
+        "apartmentId": 514,
+        "rentalCost": 855.86,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 840,
+        "apartmentId": 1616,
+        "rentalCost": 839.93,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 684,
+        "apartmentId": 1126,
+        "rentalCost": 388.4,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 339,
+        "apartmentId": 1505,
+        "rentalCost": 676.33,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 462,
+        "apartmentId": 651,
+        "rentalCost": 523.93,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 551,
+        "apartmentId": 1091,
+        "rentalCost": 767.24,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 38,
+        "apartmentId": 1216,
+        "rentalCost": 573.93,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 697,
+        "apartmentId": 1210,
+        "rentalCost": 463.69,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 93,
+        "apartmentId": 187,
+        "rentalCost": 720.58,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 549,
+        "apartmentId": 1555,
+        "rentalCost": 749.47,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 716,
+        "apartmentId": 1159,
+        "rentalCost": 933.82,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 159,
+        "apartmentId": 712,
+        "rentalCost": 616.36,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 422,
+        "apartmentId": 524,
+        "rentalCost": 356.34,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 516,
+        "apartmentId": 1276,
+        "rentalCost": 724.22,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 702,
+        "apartmentId": 1170,
+        "rentalCost": 926.81,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 959,
+        "apartmentId": 1706,
+        "rentalCost": 427.38,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 990,
+        "apartmentId": 1514,
+        "rentalCost": 587.01,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 810,
+        "apartmentId": 236,
+        "rentalCost": 802.94,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 904,
+        "apartmentId": 916,
+        "rentalCost": 824.14,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 908,
+        "apartmentId": 1520,
+        "rentalCost": 872.02,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 222,
+        "apartmentId": 127,
+        "rentalCost": 386.81,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 258,
+        "apartmentId": 797,
+        "rentalCost": 840.72,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 299,
+        "apartmentId": 544,
+        "rentalCost": 660.2,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 893,
+        "apartmentId": 1710,
+        "rentalCost": 861.72,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 232,
+        "apartmentId": 235,
+        "rentalCost": 452.65,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 263,
+        "apartmentId": 1390,
+        "rentalCost": 617.97,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 531,
+        "apartmentId": 1546,
+        "rentalCost": 727.8,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 28,
+        "apartmentId": 1254,
+        "rentalCost": 562.57,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 372,
+        "apartmentId": 732,
+        "rentalCost": 834.94,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 781,
+        "apartmentId": 23,
+        "rentalCost": 794.25,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 489,
+        "apartmentId": 1235,
+        "rentalCost": 369.28,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 511,
+        "apartmentId": 1652,
+        "rentalCost": 713.29,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 903,
+        "apartmentId": 564,
+        "rentalCost": 823.61,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 72,
+        "apartmentId": 1269,
+        "rentalCost": 587.19,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 102,
+        "apartmentId": 909,
+        "rentalCost": 602.34,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 494,
+        "apartmentId": 813,
+        "rentalCost": 1373.28,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 571,
+        "apartmentId": 1137,
+        "rentalCost": 784.18,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 609,
+        "apartmentId": 769,
+        "rentalCost": 761.49,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 958,
+        "apartmentId": 70,
+        "rentalCost": 422.08,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 636,
+        "apartmentId": 735,
+        "rentalCost": 776.25,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 110,
+        "apartmentId": 679,
+        "rentalCost": 603.46,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 633,
+        "apartmentId": 479,
+        "rentalCost": 773.67,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 126,
+        "apartmentId": 1158,
+        "rentalCost": 632.65,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 423,
+        "apartmentId": 261,
+        "rentalCost": 1475.67,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 662,
+        "apartmentId": 1625,
+        "rentalCost": 784.12,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 811,
+        "apartmentId": 486,
+        "rentalCost": 803.79,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 735,
+        "apartmentId": 1420,
+        "rentalCost": 392.12,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 196,
+        "apartmentId": 216,
+        "rentalCost": 372.18,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 136,
+        "apartmentId": 312,
+        "rentalCost": 749.32,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 311,
+        "apartmentId": 671,
+        "rentalCost": 691.15,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 33,
+        "apartmentId": 1397,
+        "rentalCost": 573.34,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 37,
+        "apartmentId": 1080,
+        "rentalCost": 573.93,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 623,
+        "apartmentId": 1458,
+        "rentalCost": 772.46,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 137,
+        "apartmentId": 914,
+        "rentalCost": 659.17,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 228,
+        "apartmentId": 376,
+        "rentalCost": 872.51,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 40,
+        "apartmentId": 977,
+        "rentalCost": 602.34,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 242,
+        "apartmentId": 1264,
+        "rentalCost": 350.16,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 367,
+        "apartmentId": 1641,
+        "rentalCost": 677.38,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 973,
+        "apartmentId": 95,
+        "rentalCost": 429.79,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 454,
+        "apartmentId": 1181,
+        "rentalCost": 358.52,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 683,
+        "apartmentId": 1722,
+        "rentalCost": 376.9,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 484,
+        "apartmentId": 509,
+        "rentalCost": 515.62,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 982,
+        "apartmentId": 144,
+        "rentalCost": 433.45,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 933,
+        "apartmentId": 1553,
+        "rentalCost": 411.56,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 988,
+        "apartmentId": 722,
+        "rentalCost": 439.32,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 405,
+        "apartmentId": 541,
+        "rentalCost": 761.49,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 693,
+        "apartmentId": 1152,
+        "rentalCost": 396.77,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 837,
+        "apartmentId": 221,
+        "rentalCost": 815.34,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 744,
+        "apartmentId": 1045,
+        "rentalCost": 417.08,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 146,
+        "apartmentId": 185,
+        "rentalCost": 751.67,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 620,
+        "apartmentId": 995,
+        "rentalCost": 890.74,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 322,
+        "apartmentId": 685,
+        "rentalCost": 691.15,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 158,
+        "apartmentId": 1,
+        "rentalCost": 768.16,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 89,
+        "apartmentId": 577,
+        "rentalCost": 590.57,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 458,
+        "apartmentId": 1496,
+        "rentalCost": 361.74,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 252,
+        "apartmentId": 702,
+        "rentalCost": 618.94,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 451,
+        "apartmentId": 575,
+        "rentalCost": 1059.93,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 397,
+        "apartmentId": 780,
+        "rentalCost": 745.21,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 805,
+        "apartmentId": 725,
+        "rentalCost": 800.54,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 46,
+        "apartmentId": 985,
+        "rentalCost": 577.72,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 316,
+        "apartmentId": 1143,
+        "rentalCost": 659.17,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 238,
+        "apartmentId": 75,
+        "rentalCost": 1562.73,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 731,
+        "apartmentId": 1096,
+        "rentalCost": 415.89,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 880,
+        "apartmentId": 240,
+        "rentalCost": 821.17,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 391,
+        "apartmentId": 947,
+        "rentalCost": 700.32,
+        "educationLevel": "Low"
+      },
+      {
+        "participantId": 540,
+        "apartmentId": 948,
+        "rentalCost": 786.08,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 582,
+        "apartmentId": 951,
+        "rentalCost": 786.08,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 207,
+        "apartmentId": 252,
+        "rentalCost": 1130.71,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 363,
+        "apartmentId": 481,
+        "rentalCost": 719.51,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 505,
+        "apartmentId": 1040,
+        "rentalCost": 715.99,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 1008,
+        "apartmentId": 525,
+        "rentalCost": 465.35,
+        "educationLevel": "Graduate"
+      },
+      {
+        "participantId": 461,
+        "apartmentId": 620,
+        "rentalCost": 807.18,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 502,
+        "apartmentId": 451,
+        "rentalCost": 427.93,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 209,
+        "apartmentId": 252,
+        "rentalCost": 1130.71,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 216,
+        "apartmentId": 252,
+        "rentalCost": 1130.71,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 85,
+        "apartmentId": 349,
+        "rentalCost": 715.09,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 460,
+        "apartmentId": 620,
+        "rentalCost": 807.18,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 519,
+        "apartmentId": 1112,
+        "rentalCost": 734.93,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 727,
+        "apartmentId": 1203,
+        "rentalCost": 415.89,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 638,
+        "apartmentId": 104,
+        "rentalCost": 778.3,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 211,
+        "apartmentId": 252,
+        "rentalCost": 1130.71,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 764,
+        "apartmentId": 366,
+        "rentalCost": 787,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 493,
+        "apartmentId": 574,
+        "rentalCost": 416.54,
+        "educationLevel": "Bachelors"
+      },
+      {
+        "participantId": 20,
+        "apartmentId": 301,
+        "rentalCost": 573.95,
+        "educationLevel": "HighSchoolOrCollege"
+      },
+      {
+        "participantId": 481,
+        "apartmentId": 458,
+        "rentalCost": 409.92,
+        "educationLevel": "Low"
+      }
+    ]
+  }
+};
+vegaEmbed('div#vis', VLspec1);  
+</script>  
+  </body>
+</html>
