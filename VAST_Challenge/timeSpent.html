@@ -1,0 +1,1679 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Embedding Vega-Lite</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.6.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
+  </head>
+  <body>
+    <div id="vis"></div>
+    
+<script>
+var VLspec1 = {
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "background": "white",
+  "padding": 5,
+  "width": 400,
+  "height": 300,
+  "style": "cell",
+  "data": [
+    {
+      "name": "data-1cf714451bd89d38940ee86f8e6526ea",
+      "values": [
+        {
+          "currentMode": "AtWork",
+          "age": 18,
+          "cantidad": 682243,
+          "cantidad_per_age": 2846581,
+          "percentage": 23.97
+        },
+        {
+          "currentMode": "Transport",
+          "age": 18,
+          "cantidad": 252381,
+          "cantidad_per_age": 2846581,
+          "percentage": 8.87
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 18,
+          "cantidad": 1709798,
+          "cantidad_per_age": 2846581,
+          "percentage": 60.06
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 18,
+          "cantidad": 148230,
+          "cantidad_per_age": 2846581,
+          "percentage": 5.21
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 18,
+          "cantidad": 53929,
+          "cantidad_per_age": 2846581,
+          "percentage": 1.89
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 19,
+          "cantidad": 680954,
+          "cantidad_per_age": 2846512,
+          "percentage": 23.92
+        },
+        {
+          "currentMode": "Transport",
+          "age": 19,
+          "cantidad": 231686,
+          "cantidad_per_age": 2846512,
+          "percentage": 8.14
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 19,
+          "cantidad": 46419,
+          "cantidad_per_age": 2846512,
+          "percentage": 1.63
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 19,
+          "cantidad": 1776198,
+          "cantidad_per_age": 2846512,
+          "percentage": 62.4
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 19,
+          "cantidad": 111255,
+          "cantidad_per_age": 2846512,
+          "percentage": 3.91
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 20,
+          "cantidad": 680565,
+          "cantidad_per_age": 2846579,
+          "percentage": 23.91
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 20,
+          "cantidad": 1732909,
+          "cantidad_per_age": 2846579,
+          "percentage": 60.88
+        },
+        {
+          "currentMode": "Transport",
+          "age": 20,
+          "cantidad": 266162,
+          "cantidad_per_age": 2846579,
+          "percentage": 9.35
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 20,
+          "cantidad": 123008,
+          "cantidad_per_age": 2846579,
+          "percentage": 4.32
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 20,
+          "cantidad": 43935,
+          "cantidad_per_age": 2846579,
+          "percentage": 1.54
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 21,
+          "cantidad": 432710,
+          "cantidad_per_age": 1809891,
+          "percentage": 23.91
+        },
+        {
+          "currentMode": "Transport",
+          "age": 21,
+          "cantidad": 158302,
+          "cantidad_per_age": 1809891,
+          "percentage": 8.75
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 21,
+          "cantidad": 32325,
+          "cantidad_per_age": 1809891,
+          "percentage": 1.79
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 21,
+          "cantidad": 1101834,
+          "cantidad_per_age": 1809891,
+          "percentage": 60.88
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 21,
+          "cantidad": 84720,
+          "cantidad_per_age": 1809891,
+          "percentage": 4.68
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 22,
+          "cantidad": 465699,
+          "cantidad_per_age": 1945188,
+          "percentage": 23.94
+        },
+        {
+          "currentMode": "Transport",
+          "age": 22,
+          "cantidad": 168226,
+          "cantidad_per_age": 1945188,
+          "percentage": 8.65
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 22,
+          "cantidad": 27308,
+          "cantidad_per_age": 1945188,
+          "percentage": 1.4
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 22,
+          "cantidad": 1188424,
+          "cantidad_per_age": 1945188,
+          "percentage": 61.1
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 22,
+          "cantidad": 95531,
+          "cantidad_per_age": 1945188,
+          "percentage": 4.91
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 23,
+          "cantidad": 743374,
+          "cantidad_per_age": 3110125,
+          "percentage": 23.9
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 23,
+          "cantidad": 1861248,
+          "cantidad_per_age": 3110125,
+          "percentage": 59.84
+        },
+        {
+          "currentMode": "Transport",
+          "age": 23,
+          "cantidad": 311502,
+          "cantidad_per_age": 3110125,
+          "percentage": 10.02
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 23,
+          "cantidad": 49397,
+          "cantidad_per_age": 3110125,
+          "percentage": 1.59
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 23,
+          "cantidad": 144604,
+          "cantidad_per_age": 3110125,
+          "percentage": 4.65
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 24,
+          "cantidad": 804267,
+          "cantidad_per_age": 3364936,
+          "percentage": 23.9
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 24,
+          "cantidad": 52388,
+          "cantidad_per_age": 3364936,
+          "percentage": 1.56
+        },
+        {
+          "currentMode": "Transport",
+          "age": 24,
+          "cantidad": 321873,
+          "cantidad_per_age": 3364936,
+          "percentage": 9.57
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 24,
+          "cantidad": 2031384,
+          "cantidad_per_age": 3364936,
+          "percentage": 60.37
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 24,
+          "cantidad": 155024,
+          "cantidad_per_age": 3364936,
+          "percentage": 4.61
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 25,
+          "cantidad": 464812,
+          "cantidad_per_age": 1944060,
+          "percentage": 23.91
+        },
+        {
+          "currentMode": "Transport",
+          "age": 25,
+          "cantidad": 137646,
+          "cantidad_per_age": 1944060,
+          "percentage": 7.08
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 25,
+          "cantidad": 28554,
+          "cantidad_per_age": 1944060,
+          "percentage": 1.47
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 25,
+          "cantidad": 1210373,
+          "cantidad_per_age": 1944060,
+          "percentage": 62.26
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 25,
+          "cantidad": 102675,
+          "cantidad_per_age": 1944060,
+          "percentage": 5.28
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 26,
+          "cantidad": 136554,
+          "cantidad_per_age": 2458662,
+          "percentage": 5.55
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 26,
+          "cantidad": 587906,
+          "cantidad_per_age": 2458662,
+          "percentage": 23.91
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 26,
+          "cantidad": 1495951,
+          "cantidad_per_age": 2458662,
+          "percentage": 60.84
+        },
+        {
+          "currentMode": "Transport",
+          "age": 26,
+          "cantidad": 201886,
+          "cantidad_per_age": 2458662,
+          "percentage": 8.21
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 26,
+          "cantidad": 36365,
+          "cantidad_per_age": 2458662,
+          "percentage": 1.48
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 27,
+          "cantidad": 618703,
+          "cantidad_per_age": 2589188,
+          "percentage": 23.9
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 27,
+          "cantidad": 1550230,
+          "cantidad_per_age": 2589188,
+          "percentage": 59.87
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 27,
+          "cantidad": 121872,
+          "cantidad_per_age": 2589188,
+          "percentage": 4.71
+        },
+        {
+          "currentMode": "Transport",
+          "age": 27,
+          "cantidad": 254825,
+          "cantidad_per_age": 2589188,
+          "percentage": 9.84
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 27,
+          "cantidad": 43558,
+          "cantidad_per_age": 2589188,
+          "percentage": 1.68
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 28,
+          "cantidad": 527458,
+          "cantidad_per_age": 2204986,
+          "percentage": 23.92
+        },
+        {
+          "currentMode": "Transport",
+          "age": 28,
+          "cantidad": 209595,
+          "cantidad_per_age": 2204986,
+          "percentage": 9.51
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 28,
+          "cantidad": 32960,
+          "cantidad_per_age": 2204986,
+          "percentage": 1.49
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 28,
+          "cantidad": 1310667,
+          "cantidad_per_age": 2204986,
+          "percentage": 59.44
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 28,
+          "cantidad": 124306,
+          "cantidad_per_age": 2204986,
+          "percentage": 5.64
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 29,
+          "cantidad": 1301100,
+          "cantidad_per_age": 2075773,
+          "percentage": 62.68
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 29,
+          "cantidad": 495255,
+          "cantidad_per_age": 2075773,
+          "percentage": 23.86
+        },
+        {
+          "currentMode": "Transport",
+          "age": 29,
+          "cantidad": 169464,
+          "cantidad_per_age": 2075773,
+          "percentage": 8.16
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 29,
+          "cantidad": 28323,
+          "cantidad_per_age": 2075773,
+          "percentage": 1.36
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 29,
+          "cantidad": 81631,
+          "cantidad_per_age": 2075773,
+          "percentage": 3.93
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 30,
+          "cantidad": 866719,
+          "cantidad_per_age": 3621012,
+          "percentage": 23.94
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 30,
+          "cantidad": 178692,
+          "cantidad_per_age": 3621012,
+          "percentage": 4.93
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 30,
+          "cantidad": 2244706,
+          "cantidad_per_age": 3621012,
+          "percentage": 61.99
+        },
+        {
+          "currentMode": "Transport",
+          "age": 30,
+          "cantidad": 277038,
+          "cantidad_per_age": 3621012,
+          "percentage": 7.65
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 30,
+          "cantidad": 53857,
+          "cantidad_per_age": 3621012,
+          "percentage": 1.49
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 31,
+          "cantidad": 868982,
+          "cantidad_per_age": 3626940,
+          "percentage": 23.96
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 31,
+          "cantidad": 2219182,
+          "cantidad_per_age": 3626940,
+          "percentage": 61.19
+        },
+        {
+          "currentMode": "Transport",
+          "age": 31,
+          "cantidad": 300726,
+          "cantidad_per_age": 3626940,
+          "percentage": 8.29
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 31,
+          "cantidad": 54655,
+          "cantidad_per_age": 3626940,
+          "percentage": 1.51
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 31,
+          "cantidad": 183395,
+          "cantidad_per_age": 3626940,
+          "percentage": 5.06
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 32,
+          "cantidad": 712097,
+          "cantidad_per_age": 2975880,
+          "percentage": 23.93
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 32,
+          "cantidad": 42546,
+          "cantidad_per_age": 2975880,
+          "percentage": 1.43
+        },
+        {
+          "currentMode": "Transport",
+          "age": 32,
+          "cantidad": 263130,
+          "cantidad_per_age": 2975880,
+          "percentage": 8.84
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 32,
+          "cantidad": 1803243,
+          "cantidad_per_age": 2975880,
+          "percentage": 60.6
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 32,
+          "cantidad": 154864,
+          "cantidad_per_age": 2975880,
+          "percentage": 5.2
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 33,
+          "cantidad": 586597,
+          "cantidad_per_age": 2457436,
+          "percentage": 23.87
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 33,
+          "cantidad": 1491002,
+          "cantidad_per_age": 2457436,
+          "percentage": 60.67
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 33,
+          "cantidad": 35760,
+          "cantidad_per_age": 2457436,
+          "percentage": 1.46
+        },
+        {
+          "currentMode": "Transport",
+          "age": 33,
+          "cantidad": 241884,
+          "cantidad_per_age": 2457436,
+          "percentage": 9.84
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 33,
+          "cantidad": 102193,
+          "cantidad_per_age": 2457436,
+          "percentage": 4.16
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 34,
+          "cantidad": 1593961,
+          "cantidad_per_age": 2588036,
+          "percentage": 61.59
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 34,
+          "cantidad": 617939,
+          "cantidad_per_age": 2588036,
+          "percentage": 23.88
+        },
+        {
+          "currentMode": "Transport",
+          "age": 34,
+          "cantidad": 221732,
+          "cantidad_per_age": 2588036,
+          "percentage": 8.57
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 34,
+          "cantidad": 40749,
+          "cantidad_per_age": 2588036,
+          "percentage": 1.57
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 34,
+          "cantidad": 113655,
+          "cantidad_per_age": 2588036,
+          "percentage": 4.39
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 35,
+          "cantidad": 588104,
+          "cantidad_per_age": 2462216,
+          "percentage": 23.89
+        },
+        {
+          "currentMode": "Transport",
+          "age": 35,
+          "cantidad": 244992,
+          "cantidad_per_age": 2462216,
+          "percentage": 9.95
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 35,
+          "cantidad": 147724,
+          "cantidad_per_age": 2462216,
+          "percentage": 6
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 35,
+          "cantidad": 36488,
+          "cantidad_per_age": 2462216,
+          "percentage": 1.48
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 35,
+          "cantidad": 1444908,
+          "cantidad_per_age": 2462216,
+          "percentage": 58.68
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 36,
+          "cantidad": 555821,
+          "cantidad_per_age": 2330545,
+          "percentage": 23.85
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 36,
+          "cantidad": 1404046,
+          "cantidad_per_age": 2330545,
+          "percentage": 60.25
+        },
+        {
+          "currentMode": "Transport",
+          "age": 36,
+          "cantidad": 216612,
+          "cantidad_per_age": 2330545,
+          "percentage": 9.29
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 36,
+          "cantidad": 37516,
+          "cantidad_per_age": 2330545,
+          "percentage": 1.61
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 36,
+          "cantidad": 116550,
+          "cantidad_per_age": 2330545,
+          "percentage": 5
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 37,
+          "cantidad": 495232,
+          "cantidad_per_age": 2070837,
+          "percentage": 23.91
+        },
+        {
+          "currentMode": "Transport",
+          "age": 37,
+          "cantidad": 193466,
+          "cantidad_per_age": 2070837,
+          "percentage": 9.34
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 37,
+          "cantidad": 32285,
+          "cantidad_per_age": 2070837,
+          "percentage": 1.56
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 37,
+          "cantidad": 1254758,
+          "cantidad_per_age": 2070837,
+          "percentage": 60.59
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 37,
+          "cantidad": 95096,
+          "cantidad_per_age": 2070837,
+          "percentage": 4.59
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 38,
+          "cantidad": 898273,
+          "cantidad_per_age": 3756314,
+          "percentage": 23.91
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 38,
+          "cantidad": 63864,
+          "cantidad_per_age": 3756314,
+          "percentage": 1.7
+        },
+        {
+          "currentMode": "Transport",
+          "age": 38,
+          "cantidad": 338306,
+          "cantidad_per_age": 3756314,
+          "percentage": 9.01
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 38,
+          "cantidad": 2280600,
+          "cantidad_per_age": 3756314,
+          "percentage": 60.71
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 38,
+          "cantidad": 175271,
+          "cantidad_per_age": 3756314,
+          "percentage": 4.67
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 39,
+          "cantidad": 402937,
+          "cantidad_per_age": 1684246,
+          "percentage": 23.92
+        },
+        {
+          "currentMode": "Transport",
+          "age": 39,
+          "cantidad": 160251,
+          "cantidad_per_age": 1684246,
+          "percentage": 9.51
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 39,
+          "cantidad": 26940,
+          "cantidad_per_age": 1684246,
+          "percentage": 1.6
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 39,
+          "cantidad": 1023646,
+          "cantidad_per_age": 1684246,
+          "percentage": 60.78
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 39,
+          "cantidad": 70472,
+          "cantidad_per_age": 1684246,
+          "percentage": 4.18
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 40,
+          "cantidad": 433335,
+          "cantidad_per_age": 1813618,
+          "percentage": 23.89
+        },
+        {
+          "currentMode": "Transport",
+          "age": 40,
+          "cantidad": 157124,
+          "cantidad_per_age": 1813618,
+          "percentage": 8.66
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 40,
+          "cantidad": 28516,
+          "cantidad_per_age": 1813618,
+          "percentage": 1.57
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 40,
+          "cantidad": 1111599,
+          "cantidad_per_age": 1813618,
+          "percentage": 61.29
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 40,
+          "cantidad": 83044,
+          "cantidad_per_age": 1813618,
+          "percentage": 4.58
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 41,
+          "cantidad": 773603,
+          "cantidad_per_age": 3234254,
+          "percentage": 23.92
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 41,
+          "cantidad": 1972318,
+          "cantidad_per_age": 3234254,
+          "percentage": 60.98
+        },
+        {
+          "currentMode": "Transport",
+          "age": 41,
+          "cantidad": 310637,
+          "cantidad_per_age": 3234254,
+          "percentage": 9.6
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 41,
+          "cantidad": 44392,
+          "cantidad_per_age": 3234254,
+          "percentage": 1.37
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 41,
+          "cantidad": 133304,
+          "cantidad_per_age": 3234254,
+          "percentage": 4.12
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 42,
+          "cantidad": 1403855,
+          "cantidad_per_age": 2328236,
+          "percentage": 60.3
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 42,
+          "cantidad": 557383,
+          "cantidad_per_age": 2328236,
+          "percentage": 23.94
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 42,
+          "cantidad": 119672,
+          "cantidad_per_age": 2328236,
+          "percentage": 5.14
+        },
+        {
+          "currentMode": "Transport",
+          "age": 42,
+          "cantidad": 210763,
+          "cantidad_per_age": 2328236,
+          "percentage": 9.05
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 42,
+          "cantidad": 36563,
+          "cantidad_per_age": 2328236,
+          "percentage": 1.57
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 43,
+          "cantidad": 679980,
+          "cantidad_per_age": 2847656,
+          "percentage": 23.88
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 43,
+          "cantidad": 1710801,
+          "cantidad_per_age": 2847656,
+          "percentage": 60.08
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 43,
+          "cantidad": 142346,
+          "cantidad_per_age": 2847656,
+          "percentage": 5
+        },
+        {
+          "currentMode": "Transport",
+          "age": 43,
+          "cantidad": 266330,
+          "cantidad_per_age": 2847656,
+          "percentage": 9.35
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 43,
+          "cantidad": 48199,
+          "cantidad_per_age": 2847656,
+          "percentage": 1.69
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 44,
+          "cantidad": 929458,
+          "cantidad_per_age": 3883270,
+          "percentage": 23.93
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 44,
+          "cantidad": 2362131,
+          "cantidad_per_age": 3883270,
+          "percentage": 60.83
+        },
+        {
+          "currentMode": "Transport",
+          "age": 44,
+          "cantidad": 374607,
+          "cantidad_per_age": 3883270,
+          "percentage": 9.65
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 44,
+          "cantidad": 60691,
+          "cantidad_per_age": 3883270,
+          "percentage": 1.56
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 44,
+          "cantidad": 156383,
+          "cantidad_per_age": 3883270,
+          "percentage": 4.03
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 45,
+          "cantidad": 371683,
+          "cantidad_per_age": 1553739,
+          "percentage": 23.92
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 45,
+          "cantidad": 871350,
+          "cantidad_per_age": 1553739,
+          "percentage": 56.08
+        },
+        {
+          "currentMode": "Transport",
+          "age": 45,
+          "cantidad": 188103,
+          "cantidad_per_age": 1553739,
+          "percentage": 12.11
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 45,
+          "cantidad": 25462,
+          "cantidad_per_age": 1553739,
+          "percentage": 1.64
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 45,
+          "cantidad": 97141,
+          "cantidad_per_age": 1553739,
+          "percentage": 6.25
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 46,
+          "cantidad": 496575,
+          "cantidad_per_age": 2072138,
+          "percentage": 23.96
+        },
+        {
+          "currentMode": "Transport",
+          "age": 46,
+          "cantidad": 184824,
+          "cantidad_per_age": 2072138,
+          "percentage": 8.92
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 46,
+          "cantidad": 32298,
+          "cantidad_per_age": 2072138,
+          "percentage": 1.56
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 46,
+          "cantidad": 1260333,
+          "cantidad_per_age": 2072138,
+          "percentage": 60.82
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 46,
+          "cantidad": 98108,
+          "cantidad_per_age": 2072138,
+          "percentage": 4.73
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 47,
+          "cantidad": 464326,
+          "cantidad_per_age": 1944135,
+          "percentage": 23.88
+        },
+        {
+          "currentMode": "Transport",
+          "age": 47,
+          "cantidad": 173313,
+          "cantidad_per_age": 1944135,
+          "percentage": 8.91
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 47,
+          "cantidad": 33935,
+          "cantidad_per_age": 1944135,
+          "percentage": 1.75
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 47,
+          "cantidad": 1181016,
+          "cantidad_per_age": 1944135,
+          "percentage": 60.75
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 47,
+          "cantidad": 91545,
+          "cantidad_per_age": 1944135,
+          "percentage": 4.71
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 48,
+          "cantidad": 741467,
+          "cantidad_per_age": 3103921,
+          "percentage": 23.89
+        },
+        {
+          "currentMode": "Transport",
+          "age": 48,
+          "cantidad": 285277,
+          "cantidad_per_age": 3103921,
+          "percentage": 9.19
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 48,
+          "cantidad": 44762,
+          "cantidad_per_age": 3103921,
+          "percentage": 1.44
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 48,
+          "cantidad": 1876314,
+          "cantidad_per_age": 3103921,
+          "percentage": 60.45
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 48,
+          "cantidad": 156101,
+          "cantidad_per_age": 3103921,
+          "percentage": 5.03
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 49,
+          "cantidad": 989523,
+          "cantidad_per_age": 4141793,
+          "percentage": 23.89
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 49,
+          "cantidad": 61092,
+          "cantidad_per_age": 4141793,
+          "percentage": 1.48
+        },
+        {
+          "currentMode": "Transport",
+          "age": 49,
+          "cantidad": 321861,
+          "cantidad_per_age": 4141793,
+          "percentage": 7.77
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 49,
+          "cantidad": 2568707,
+          "cantidad_per_age": 4141793,
+          "percentage": 62.02
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 49,
+          "cantidad": 200610,
+          "cantidad_per_age": 4141793,
+          "percentage": 4.84
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 50,
+          "cantidad": 743133,
+          "cantidad_per_age": 3106293,
+          "percentage": 23.92
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 50,
+          "cantidad": 160374,
+          "cantidad_per_age": 3106293,
+          "percentage": 5.16
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 50,
+          "cantidad": 1842088,
+          "cantidad_per_age": 3106293,
+          "percentage": 59.3
+        },
+        {
+          "currentMode": "Transport",
+          "age": 50,
+          "cantidad": 312064,
+          "cantidad_per_age": 3106293,
+          "percentage": 10.05
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 50,
+          "cantidad": 48634,
+          "cantidad_per_age": 3106293,
+          "percentage": 1.57
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 51,
+          "cantidad": 557144,
+          "cantidad_per_age": 2329479,
+          "percentage": 23.92
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 51,
+          "cantidad": 1407420,
+          "cantidad_per_age": 2329479,
+          "percentage": 60.42
+        },
+        {
+          "currentMode": "Transport",
+          "age": 51,
+          "cantidad": 224835,
+          "cantidad_per_age": 2329479,
+          "percentage": 9.65
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 51,
+          "cantidad": 36510,
+          "cantidad_per_age": 2329479,
+          "percentage": 1.57
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 51,
+          "cantidad": 103570,
+          "cantidad_per_age": 2329479,
+          "percentage": 4.45
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 52,
+          "cantidad": 619569,
+          "cantidad_per_age": 2590353,
+          "percentage": 23.92
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 52,
+          "cantidad": 128715,
+          "cantidad_per_age": 2590353,
+          "percentage": 4.97
+        },
+        {
+          "currentMode": "Transport",
+          "age": 52,
+          "cantidad": 267605,
+          "cantidad_per_age": 2590353,
+          "percentage": 10.33
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 52,
+          "cantidad": 1534828,
+          "cantidad_per_age": 2590353,
+          "percentage": 59.25
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 52,
+          "cantidad": 39636,
+          "cantidad_per_age": 2590353,
+          "percentage": 1.53
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 53,
+          "cantidad": 742269,
+          "cantidad_per_age": 3105078,
+          "percentage": 23.91
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 53,
+          "cantidad": 1905812,
+          "cantidad_per_age": 3105078,
+          "percentage": 61.38
+        },
+        {
+          "currentMode": "Transport",
+          "age": 53,
+          "cantidad": 292265,
+          "cantidad_per_age": 3105078,
+          "percentage": 9.41
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 53,
+          "cantidad": 44500,
+          "cantidad_per_age": 3105078,
+          "percentage": 1.43
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 53,
+          "cantidad": 120232,
+          "cantidad_per_age": 3105078,
+          "percentage": 3.87
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 54,
+          "cantidad": 680561,
+          "cantidad_per_age": 2845363,
+          "percentage": 23.92
+        },
+        {
+          "currentMode": "Transport",
+          "age": 54,
+          "cantidad": 225334,
+          "cantidad_per_age": 2845363,
+          "percentage": 7.92
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 54,
+          "cantidad": 150713,
+          "cantidad_per_age": 2845363,
+          "percentage": 5.3
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 54,
+          "cantidad": 45746,
+          "cantidad_per_age": 2845363,
+          "percentage": 1.61
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 54,
+          "cantidad": 1743009,
+          "cantidad_per_age": 2845363,
+          "percentage": 61.26
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 55,
+          "cantidad": 588670,
+          "cantidad_per_age": 2463729,
+          "percentage": 23.89
+        },
+        {
+          "currentMode": "Transport",
+          "age": 55,
+          "cantidad": 201058,
+          "cantidad_per_age": 2463729,
+          "percentage": 8.16
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 55,
+          "cantidad": 36540,
+          "cantidad_per_age": 2463729,
+          "percentage": 1.48
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 55,
+          "cantidad": 1554312,
+          "cantidad_per_age": 2463729,
+          "percentage": 63.09
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 55,
+          "cantidad": 83149,
+          "cantidad_per_age": 2463729,
+          "percentage": 3.37
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 56,
+          "cantidad": 556907,
+          "cantidad_per_age": 2330612,
+          "percentage": 23.9
+        },
+        {
+          "currentMode": "Transport",
+          "age": 56,
+          "cantidad": 207961,
+          "cantidad_per_age": 2330612,
+          "percentage": 8.92
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 56,
+          "cantidad": 36359,
+          "cantidad_per_age": 2330612,
+          "percentage": 1.56
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 56,
+          "cantidad": 1404697,
+          "cantidad_per_age": 2330612,
+          "percentage": 60.27
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 56,
+          "cantidad": 124688,
+          "cantidad_per_age": 2330612,
+          "percentage": 5.35
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 57,
+          "cantidad": 710882,
+          "cantidad_per_age": 2974545,
+          "percentage": 23.9
+        },
+        {
+          "currentMode": "Transport",
+          "age": 57,
+          "cantidad": 277932,
+          "cantidad_per_age": 2974545,
+          "percentage": 9.34
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 57,
+          "cantidad": 44289,
+          "cantidad_per_age": 2974545,
+          "percentage": 1.49
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 57,
+          "cantidad": 1795190,
+          "cantidad_per_age": 2974545,
+          "percentage": 60.35
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 57,
+          "cantidad": 146252,
+          "cantidad_per_age": 2974545,
+          "percentage": 4.92
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 58,
+          "cantidad": 679507,
+          "cantidad_per_age": 2846579,
+          "percentage": 23.87
+        },
+        {
+          "currentMode": "Transport",
+          "age": 58,
+          "cantidad": 244461,
+          "cantidad_per_age": 2846579,
+          "percentage": 8.59
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 58,
+          "cantidad": 42770,
+          "cantidad_per_age": 2846579,
+          "percentage": 1.5
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 58,
+          "cantidad": 1742578,
+          "cantidad_per_age": 2846579,
+          "percentage": 61.22
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 58,
+          "cantidad": 137263,
+          "cantidad_per_age": 2846579,
+          "percentage": 4.82
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 59,
+          "cantidad": 588252,
+          "cantidad_per_age": 2459928,
+          "percentage": 23.91
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 59,
+          "cantidad": 1497838,
+          "cantidad_per_age": 2459928,
+          "percentage": 60.89
+        },
+        {
+          "currentMode": "Transport",
+          "age": 59,
+          "cantidad": 209381,
+          "cantidad_per_age": 2459928,
+          "percentage": 8.51
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 59,
+          "cantidad": 39141,
+          "cantidad_per_age": 2459928,
+          "percentage": 1.59
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 59,
+          "cantidad": 125316,
+          "cantidad_per_age": 2459928,
+          "percentage": 5.09
+        },
+        {
+          "currentMode": "AtWork",
+          "age": 60,
+          "cantidad": 558728,
+          "cantidad_per_age": 2333072,
+          "percentage": 23.95
+        },
+        {
+          "currentMode": "AtHome",
+          "age": 60,
+          "cantidad": 1459925,
+          "cantidad_per_age": 2333072,
+          "percentage": 62.58
+        },
+        {
+          "currentMode": "AtRestaurant",
+          "age": 60,
+          "cantidad": 35274,
+          "cantidad_per_age": 2333072,
+          "percentage": 1.51
+        },
+        {
+          "currentMode": "Transport",
+          "age": 60,
+          "cantidad": 168646,
+          "cantidad_per_age": 2333072,
+          "percentage": 7.23
+        },
+        {
+          "currentMode": "AtRecreation",
+          "age": 60,
+          "cantidad": 110499,
+          "cantidad_per_age": 2333072,
+          "percentage": 4.74
+        }
+      ]
+    },
+    {
+      "name": "data_0",
+      "source": "data-1cf714451bd89d38940ee86f8e6526ea",
+      "transform": [
+        {"type": "formula", "expr": "toNumber(datum[\"age\"])", "as": "age"},
+        {
+          "type": "impute",
+          "field": "cantidad",
+          "groupby": ["currentMode"],
+          "key": "age",
+          "method": "value",
+          "value": 0
+        },
+        {
+          "type": "stack",
+          "groupby": ["age"],
+          "field": "cantidad",
+          "sort": {"field": ["currentMode"], "order": ["descending"]},
+          "as": ["cantidad_start", "cantidad_end"],
+          "offset": "normalize"
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "name": "pathgroup",
+      "type": "group",
+      "from": {
+        "facet": {
+          "name": "faceted_path_main",
+          "data": "data_0",
+          "groupby": ["currentMode"]
+        }
+      },
+      "encode": {
+        "update": {
+          "width": {"field": {"group": "width"}},
+          "height": {"field": {"group": "height"}}
+        }
+      },
+      "marks": [
+        {
+          "name": "marks",
+          "type": "area",
+          "style": ["area"],
+          "sort": {"field": "datum[\"age\"]"},
+          "from": {"data": "faceted_path_main"},
+          "encode": {
+            "update": {
+              "orient": {"value": "vertical"},
+              "fill": {"scale": "color", "field": "currentMode"},
+              "tooltip": {
+                "signal": "{\"Location\": isValid(datum[\"currentMode\"]) ? datum[\"currentMode\"] : \"\"+datum[\"currentMode\"], \"Age\": format(datum[\"age\"], \"\"), \"Percentage per age\": format(datum[\"percentage\"], \"\")}"
+              },
+              "description": {
+                "signal": "\"currentMode: \" + (isValid(datum[\"currentMode\"]) ? datum[\"currentMode\"] : \"\"+datum[\"currentMode\"]) + \"; Location: \" + (isValid(datum[\"currentMode\"]) ? datum[\"currentMode\"] : \"\"+datum[\"currentMode\"]) + \"; Age: \" + (format(datum[\"age\"], \"\")) + \"; Percentage per age: \" + (format(datum[\"percentage\"], \"\")) + \"; Percentage of Time: \" + (format(datum[\"cantidad_end\"]-datum[\"cantidad_start\"], \"\"))"
+              },
+              "x": {"scale": "x", "field": "age"},
+              "y": {"scale": "y", "field": "cantidad_end"},
+              "y2": {"scale": "y", "field": "cantidad_start"},
+              "defined": {
+                "signal": "isValid(datum[\"age\"]) && isFinite(+datum[\"age\"]) && isValid(datum[\"cantidad\"]) && isFinite(+datum[\"cantidad\"])"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "linear",
+      "domain": {"data": "data_0", "field": "age"},
+      "range": [0, {"signal": "width"}],
+      "nice": true,
+      "zero": false
+    },
+    {
+      "name": "y",
+      "type": "linear",
+      "domain": [0, 1],
+      "range": [{"signal": "height"}, 0],
+      "nice": true,
+      "zero": true
+    },
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": {"data": "data_0", "field": "currentMode", "sort": true},
+      "range": {"scheme": "category20"}
+    }
+  ],
+  "axes": [
+    {
+      "scale": "x",
+      "orient": "bottom",
+      "gridScale": "y",
+      "grid": true,
+      "tickCount": {"signal": "ceil(width/40)"},
+      "domain": false,
+      "labels": false,
+      "aria": false,
+      "maxExtent": 0,
+      "minExtent": 0,
+      "ticks": false,
+      "zindex": 0
+    },
+    {
+      "scale": "y",
+      "orient": "left",
+      "gridScale": "x",
+      "grid": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "domain": false,
+      "labels": false,
+      "aria": false,
+      "maxExtent": 0,
+      "minExtent": 0,
+      "ticks": false,
+      "zindex": 0
+    },
+    {
+      "scale": "x",
+      "orient": "bottom",
+      "grid": false,
+      "title": "Age",
+      "labelFlush": true,
+      "labelOverlap": true,
+      "tickCount": {"signal": "ceil(width/40)"},
+      "zindex": 0
+    },
+    {
+      "scale": "y",
+      "orient": "left",
+      "grid": false,
+      "title": "Percentage of Time",
+      "labelOverlap": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "zindex": 0
+    }
+  ],
+  "legends": [{"title": "Location", "fill": "color", "symbolType": "circle"}]
+};
+vegaEmbed('div#vis', VLspec1);  
+</script>  
+  </body>
+</html>
