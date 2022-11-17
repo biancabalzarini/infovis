@@ -10,3 +10,4 @@
 8. [Tipo de edificio por ubicación](https://biancabalzarini.github.io/infovis/VAST_Challenge/Scatter_TypeOfBuilding.html)
 
 [rental y building](https://biancabalzarini.github.io/infovis/VAST_Challenge/Scatter_Rental_Building.html)
+[jovialities](https://biancabalzarini.github.io/infovis/VAST_Challenge/Scatter_Joviality.html)
