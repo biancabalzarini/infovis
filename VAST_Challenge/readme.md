@@ -8,3 +8,6 @@
 6. [Interacciones sociales en función de la jovialidad](https://biancabalzarini.github.io/infovis/VAST_Challenge/Scatter_SocialJoviality.html)
 7. [Horas dedicadas a recreación en función de la jovialidad](https://biancabalzarini.github.io/infovis/VAST_Challenge/Scatter_RecreationJoviality.html)
 8. [Tipo de edificio por ubicación](https://biancabalzarini.github.io/infovis/VAST_Challenge/Scatter_TypeOfBuilding.html)
+
+
+[prueba](https://biancabalzarini.github.io/infovis/VAST_Challenge/prueba.html)
