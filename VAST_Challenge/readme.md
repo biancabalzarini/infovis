@@ -9,5 +9,5 @@
 7. [Horas dedicadas a recreación en función de la jovialidad](https://biancabalzarini.github.io/infovis/VAST_Challenge/Scatter_RecreationJoviality.html)
 8. [Tipo de edificio por ubicación](https://biancabalzarini.github.io/infovis/VAST_Challenge/Scatter_TypeOfBuilding.html)
 
-[rental y building](https://biancabalzarini.github.io/infovis/VAST_Challenge/Scatter_Rental_Building.html)
-[jovialities](https://biancabalzarini.github.io/infovis/VAST_Challenge/Scatter_Joviality.html)
+a. [rental y building](https://biancabalzarini.github.io/infovis/VAST_Challenge/Scatter_Rental_Building.html)
+b. [jovialities](https://biancabalzarini.github.io/infovis/VAST_Challenge/Scatter_Joviality.html)
