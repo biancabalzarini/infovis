@@ -7,4 +7,4 @@
 5. [Tiempo transcurrido en distintas locaciones según la edad](https://biancabalzarini.github.io/infovis/VAST_Challenge/AreaChart_TimeSpent.html)
 6. [Interacciones sociales en función de la jovialidad](https://biancabalzarini.github.io/infovis/VAST_Challenge/Scatter_SocialJoviality.html)
 7. [Horas dedicadas a recreación en función de la jovialidad](https://biancabalzarini.github.io/infovis/VAST_Challenge/Scatter_RecreationJoviality.html)
-8. [typeOfBuilding](https://biancabalzarini.github.io/infovis/VAST_Challenge/typeOfBuilding.html)
+8. [Tipo de edificio por ubicación](https://biancabalzarini.github.io/infovis/VAST_Challenge/Scatter_TypeOfBuilding.html)
