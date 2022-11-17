@@ -7,3 +7,4 @@
 5. [Time Spent](https://biancabalzarini.github.io/infovis/VAST_Challenge/timeSpent.html)
 6. [Joviality](https://biancabalzarini.github.io/infovis/VAST_Challenge/joviality1.html)
 7. [Joviality2](https://biancabalzarini.github.io/infovis/VAST_Challenge/joviality2.html)
+8. [typeOfBuilding](https://biancabalzarini.github.io/infovis/VAST_Challenge/typeOfBuilding.html)
