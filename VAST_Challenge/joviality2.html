@@ -1,0 +1,5374 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Embedding Vega-Lite</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.6.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
+  </head>
+  <body>
+    <div id="vis"></div>
+    
+<script>
+var VLspec1 =  {
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "background": "white",
+  "padding": 5,
+  "width": 400,
+  "height": 300,
+  "style": "cell",
+  "data": [
+    {
+      "name": "data-8251839134fa32468d3d52795d23a3d3",
+      "values": [
+        {
+          "participantId": 6,
+          "currentMode": "AtRecreation",
+          "joviality": 0.833980668,
+          "hours": 1000
+        },
+        {
+          "participantId": 109,
+          "currentMode": "AtRecreation",
+          "joviality": 0.290464519,
+          "hours": 894
+        },
+        {
+          "participantId": 276,
+          "currentMode": "AtRecreation",
+          "joviality": 0.107405002,
+          "hours": 499
+        },
+        {
+          "participantId": 309,
+          "currentMode": "AtRecreation",
+          "joviality": 0.125682773,
+          "hours": 696
+        },
+        {
+          "participantId": 537,
+          "currentMode": "AtRecreation",
+          "joviality": 0.969868254,
+          "hours": 822
+        },
+        {
+          "participantId": 665,
+          "currentMode": "AtRecreation",
+          "joviality": 0.172855291,
+          "hours": 828
+        },
+        {
+          "participantId": 811,
+          "currentMode": "AtRecreation",
+          "joviality": 0.030335914,
+          "hours": 487
+        },
+        {
+          "participantId": 548,
+          "currentMode": "AtRecreation",
+          "joviality": 0.061410383,
+          "hours": 639
+        },
+        {
+          "participantId": 15,
+          "currentMode": "AtRecreation",
+          "joviality": 0.232266068,
+          "hours": 639
+        },
+        {
+          "participantId": 264,
+          "currentMode": "AtRecreation",
+          "joviality": 0.106440071,
+          "hours": 587
+        },
+        {
+          "participantId": 77,
+          "currentMode": "AtRecreation",
+          "joviality": 0.621716267,
+          "hours": 870
+        },
+        {
+          "participantId": 143,
+          "currentMode": "AtRecreation",
+          "joviality": 0.107753878,
+          "hours": 769
+        },
+        {
+          "participantId": 75,
+          "currentMode": "AtRecreation",
+          "joviality": 0.791342831,
+          "hours": 751
+        },
+        {
+          "participantId": 266,
+          "currentMode": "AtRecreation",
+          "joviality": 0.972629863,
+          "hours": 865
+        },
+        {
+          "participantId": 305,
+          "currentMode": "AtRecreation",
+          "joviality": 0.84325552,
+          "hours": 862
+        },
+        {
+          "participantId": 65,
+          "currentMode": "AtRecreation",
+          "joviality": 0.498178653,
+          "hours": 611
+        },
+        {
+          "participantId": 321,
+          "currentMode": "AtRecreation",
+          "joviality": 0.842877969,
+          "hours": 778
+        },
+        {
+          "participantId": 430,
+          "currentMode": "AtRecreation",
+          "joviality": 0.949453894,
+          "hours": 951
+        },
+        {
+          "participantId": 473,
+          "currentMode": "AtRecreation",
+          "joviality": 0.614071428,
+          "hours": 688
+        },
+        {
+          "participantId": 330,
+          "currentMode": "AtRecreation",
+          "joviality": 0.7738118,
+          "hours": 673
+        },
+        {
+          "participantId": 358,
+          "currentMode": "AtRecreation",
+          "joviality": 0.969014671,
+          "hours": 767
+        },
+        {
+          "participantId": 374,
+          "currentMode": "AtRecreation",
+          "joviality": 0.85417223,
+          "hours": 760
+        },
+        {
+          "participantId": 540,
+          "currentMode": "AtRecreation",
+          "joviality": 0.820897579,
+          "hours": 687
+        },
+        {
+          "participantId": 870,
+          "currentMode": "AtRecreation",
+          "joviality": 0.820903516,
+          "hours": 743
+        },
+        {
+          "participantId": 184,
+          "currentMode": "AtRecreation",
+          "joviality": 0.95269116,
+          "hours": 873
+        },
+        {
+          "participantId": 591,
+          "currentMode": "AtRecreation",
+          "joviality": 0.263048698,
+          "hours": 209
+        },
+        {
+          "participantId": 250,
+          "currentMode": "AtRecreation",
+          "joviality": 0.627740735,
+          "hours": 506
+        },
+        {
+          "participantId": 306,
+          "currentMode": "AtRecreation",
+          "joviality": 0.260386143,
+          "hours": 534
+        },
+        {
+          "participantId": 373,
+          "currentMode": "AtRecreation",
+          "joviality": 0.979407864,
+          "hours": 691
+        },
+        {
+          "participantId": 517,
+          "currentMode": "AtRecreation",
+          "joviality": 0.460451549,
+          "hours": 483
+        },
+        {
+          "participantId": 654,
+          "currentMode": "AtRecreation",
+          "joviality": 0.872069831,
+          "hours": 803
+        },
+        {
+          "participantId": 226,
+          "currentMode": "AtRecreation",
+          "joviality": 0.965943386,
+          "hours": 468
+        },
+        {
+          "participantId": 677,
+          "currentMode": "AtRecreation",
+          "joviality": 0.137446199,
+          "hours": 428
+        },
+        {
+          "participantId": 819,
+          "currentMode": "AtRecreation",
+          "joviality": 0.283066289,
+          "hours": 490
+        },
+        {
+          "participantId": 685,
+          "currentMode": "AtRecreation",
+          "joviality": 0.599260494,
+          "hours": 665
+        },
+        {
+          "participantId": 36,
+          "currentMode": "AtRecreation",
+          "joviality": 0.348019484,
+          "hours": 483
+        },
+        {
+          "participantId": 310,
+          "currentMode": "AtRecreation",
+          "joviality": 0.061286668,
+          "hours": 688
+        },
+        {
+          "participantId": 351,
+          "currentMode": "AtRecreation",
+          "joviality": 0.269322751,
+          "hours": 536
+        },
+        {
+          "participantId": 394,
+          "currentMode": "AtRecreation",
+          "joviality": 0.52722067,
+          "hours": 569
+        },
+        {
+          "participantId": 868,
+          "currentMode": "AtRecreation",
+          "joviality": 0.38081745,
+          "hours": 661
+        },
+        {
+          "participantId": 498,
+          "currentMode": "AtRecreation",
+          "joviality": 0.653874654,
+          "hours": 527
+        },
+        {
+          "participantId": 570,
+          "currentMode": "AtRecreation",
+          "joviality": 0.539205582,
+          "hours": 925
+        },
+        {
+          "participantId": 700,
+          "currentMode": "AtRecreation",
+          "joviality": 0.907301342,
+          "hours": 811
+        },
+        {
+          "participantId": 705,
+          "currentMode": "AtRecreation",
+          "joviality": 0.692283941,
+          "hours": 535
+        },
+        {
+          "participantId": 928,
+          "currentMode": "AtRecreation",
+          "joviality": 0.445184451,
+          "hours": 442
+        },
+        {
+          "participantId": 357,
+          "currentMode": "AtRecreation",
+          "joviality": 0.536520661,
+          "hours": 516
+        },
+        {
+          "participantId": 409,
+          "currentMode": "AtRecreation",
+          "joviality": 0.645271398,
+          "hours": 592
+        },
+        {
+          "participantId": 844,
+          "currentMode": "AtRecreation",
+          "joviality": 0.659909909,
+          "hours": 592
+        },
+        {
+          "participantId": 149,
+          "currentMode": "AtRecreation",
+          "joviality": 0.80654106,
+          "hours": 644
+        },
+        {
+          "participantId": 174,
+          "currentMode": "AtRecreation",
+          "joviality": 0.718049535,
+          "hours": 503
+        },
+        {
+          "participantId": 181,
+          "currentMode": "AtRecreation",
+          "joviality": 0.787497465,
+          "hours": 816
+        },
+        {
+          "participantId": 313,
+          "currentMode": "AtRecreation",
+          "joviality": 0.093271632,
+          "hours": 57
+        },
+        {
+          "participantId": 400,
+          "currentMode": "AtRecreation",
+          "joviality": 0.512379139,
+          "hours": 589
+        },
+        {
+          "participantId": 562,
+          "currentMode": "AtRecreation",
+          "joviality": 0.329193948,
+          "hours": 359
+        },
+        {
+          "participantId": 706,
+          "currentMode": "AtRecreation",
+          "joviality": 0.404529522,
+          "hours": 549
+        },
+        {
+          "participantId": 994,
+          "currentMode": "AtRecreation",
+          "joviality": 0.932521377,
+          "hours": 742
+        },
+        {
+          "participantId": 292,
+          "currentMode": "AtRecreation",
+          "joviality": 0.686374918,
+          "hours": 543
+        },
+        {
+          "participantId": 386,
+          "currentMode": "AtRecreation",
+          "joviality": 0.479804894,
+          "hours": 562
+        },
+        {
+          "participantId": 592,
+          "currentMode": "AtRecreation",
+          "joviality": 0.22126511,
+          "hours": 353
+        },
+        {
+          "participantId": 877,
+          "currentMode": "AtRecreation",
+          "joviality": 0.573668238,
+          "hours": 527
+        },
+        {
+          "participantId": 41,
+          "currentMode": "AtRecreation",
+          "joviality": 0.863663966,
+          "hours": 628
+        },
+        {
+          "participantId": 51,
+          "currentMode": "AtRecreation",
+          "joviality": 0.374354513,
+          "hours": 497
+        },
+        {
+          "participantId": 179,
+          "currentMode": "AtRecreation",
+          "joviality": 0.900831449,
+          "hours": 957
+        },
+        {
+          "participantId": 251,
+          "currentMode": "AtRecreation",
+          "joviality": 0.386580333,
+          "hours": 330
+        },
+        {
+          "participantId": 284,
+          "currentMode": "AtRecreation",
+          "joviality": 0.754293139,
+          "hours": 764
+        },
+        {
+          "participantId": 770,
+          "currentMode": "AtRecreation",
+          "joviality": 0.623466515,
+          "hours": 848
+        },
+        {
+          "participantId": 327,
+          "currentMode": "AtRecreation",
+          "joviality": 0.228872071,
+          "hours": 137
+        },
+        {
+          "participantId": 329,
+          "currentMode": "AtRecreation",
+          "joviality": 0.085267909,
+          "hours": 77
+        },
+        {
+          "participantId": 340,
+          "currentMode": "AtRecreation",
+          "joviality": 0.034283769,
+          "hours": 405
+        },
+        {
+          "participantId": 371,
+          "currentMode": "AtRecreation",
+          "joviality": 0.371688755,
+          "hours": 652
+        },
+        {
+          "participantId": 536,
+          "currentMode": "AtRecreation",
+          "joviality": 0.137689076,
+          "hours": 443
+        },
+        {
+          "participantId": 601,
+          "currentMode": "AtRecreation",
+          "joviality": 0.585843678,
+          "hours": 694
+        },
+        {
+          "participantId": 650,
+          "currentMode": "AtRecreation",
+          "joviality": 0.846974117,
+          "hours": 865
+        },
+        {
+          "participantId": 787,
+          "currentMode": "AtRecreation",
+          "joviality": 0.14514474,
+          "hours": 689
+        },
+        {
+          "participantId": 874,
+          "currentMode": "AtRecreation",
+          "joviality": 0.891019925,
+          "hours": 750
+        },
+        {
+          "participantId": 881,
+          "currentMode": "AtRecreation",
+          "joviality": 0.889292896,
+          "hours": 822
+        },
+        {
+          "participantId": 1005,
+          "currentMode": "AtRecreation",
+          "joviality": 0.356881322,
+          "hours": 410
+        },
+        {
+          "participantId": 155,
+          "currentMode": "AtRecreation",
+          "joviality": 0.176618296,
+          "hours": 632
+        },
+        {
+          "participantId": 206,
+          "currentMode": "AtRecreation",
+          "joviality": 0.365692745,
+          "hours": 612
+        },
+        {
+          "participantId": 448,
+          "currentMode": "AtRecreation",
+          "joviality": 0.924288993,
+          "hours": 658
+        },
+        {
+          "participantId": 37,
+          "currentMode": "AtRecreation",
+          "joviality": 0.174975799,
+          "hours": 665
+        },
+        {
+          "participantId": 99,
+          "currentMode": "AtRecreation",
+          "joviality": 0.39686665,
+          "hours": 434
+        },
+        {
+          "participantId": 268,
+          "currentMode": "AtRecreation",
+          "joviality": 0.041170737,
+          "hours": 499
+        },
+        {
+          "participantId": 336,
+          "currentMode": "AtRecreation",
+          "joviality": 0.600454813,
+          "hours": 526
+        },
+        {
+          "participantId": 550,
+          "currentMode": "AtRecreation",
+          "joviality": 0.420901962,
+          "hours": 655
+        },
+        {
+          "participantId": 168,
+          "currentMode": "AtRecreation",
+          "joviality": 0.365595636,
+          "hours": 353
+        },
+        {
+          "participantId": 361,
+          "currentMode": "AtRecreation",
+          "joviality": 0.299050559,
+          "hours": 494
+        },
+        {
+          "participantId": 437,
+          "currentMode": "AtRecreation",
+          "joviality": 0.450502705,
+          "hours": 600
+        },
+        {
+          "participantId": 894,
+          "currentMode": "AtRecreation",
+          "joviality": 0.550025961,
+          "hours": 538
+        },
+        {
+          "participantId": 1008,
+          "currentMode": "AtRecreation",
+          "joviality": 0.163721028,
+          "hours": 233
+        },
+        {
+          "participantId": 205,
+          "currentMode": "AtRecreation",
+          "joviality": 0.194899452,
+          "hours": 484
+        },
+        {
+          "participantId": 333,
+          "currentMode": "AtRecreation",
+          "joviality": 0.299174844,
+          "hours": 191
+        },
+        {
+          "participantId": 533,
+          "currentMode": "AtRecreation",
+          "joviality": 0.504013735,
+          "hours": 646
+        },
+        {
+          "participantId": 566,
+          "currentMode": "AtRecreation",
+          "joviality": 0.401423701,
+          "hours": 666
+        },
+        {
+          "participantId": 972,
+          "currentMode": "AtRecreation",
+          "joviality": 0.360847428,
+          "hours": 476
+        },
+        {
+          "participantId": 518,
+          "currentMode": "AtRecreation",
+          "joviality": 0.379599106,
+          "hours": 360
+        },
+        {
+          "participantId": 117,
+          "currentMode": "AtRecreation",
+          "joviality": 0.760663448,
+          "hours": 766
+        },
+        {
+          "participantId": 446,
+          "currentMode": "AtRecreation",
+          "joviality": 0.154285175,
+          "hours": 447
+        },
+        {
+          "participantId": 475,
+          "currentMode": "AtRecreation",
+          "joviality": 0.237641609,
+          "hours": 620
+        },
+        {
+          "participantId": 531,
+          "currentMode": "AtRecreation",
+          "joviality": 0.134122197,
+          "hours": 466
+        },
+        {
+          "participantId": 557,
+          "currentMode": "AtRecreation",
+          "joviality": 0.540412762,
+          "hours": 550
+        },
+        {
+          "participantId": 563,
+          "currentMode": "AtRecreation",
+          "joviality": 0.970166283,
+          "hours": 634
+        },
+        {
+          "participantId": 778,
+          "currentMode": "AtRecreation",
+          "joviality": 0.449689991,
+          "hours": 735
+        },
+        {
+          "participantId": 954,
+          "currentMode": "AtRecreation",
+          "joviality": 0.556397418,
+          "hours": 546
+        },
+        {
+          "participantId": 283,
+          "currentMode": "AtRecreation",
+          "joviality": 0.880967299,
+          "hours": 618
+        },
+        {
+          "participantId": 527,
+          "currentMode": "AtRecreation",
+          "joviality": 0.543392106,
+          "hours": 817
+        },
+        {
+          "participantId": 626,
+          "currentMode": "AtRecreation",
+          "joviality": 0.793880506,
+          "hours": 590
+        },
+        {
+          "participantId": 732,
+          "currentMode": "AtRecreation",
+          "joviality": 0.240042805,
+          "hours": 569
+        },
+        {
+          "participantId": 788,
+          "currentMode": "AtRecreation",
+          "joviality": 0.415138085,
+          "hours": 333
+        },
+        {
+          "participantId": 68,
+          "currentMode": "AtRecreation",
+          "joviality": 0.519538618,
+          "hours": 428
+        },
+        {
+          "participantId": 87,
+          "currentMode": "AtRecreation",
+          "joviality": 0.725176476,
+          "hours": 664
+        },
+        {
+          "participantId": 156,
+          "currentMode": "AtRecreation",
+          "joviality": 0.466716971,
+          "hours": 528
+        },
+        {
+          "participantId": 244,
+          "currentMode": "AtRecreation",
+          "joviality": 0.969991586,
+          "hours": 812
+        },
+        {
+          "participantId": 341,
+          "currentMode": "AtRecreation",
+          "joviality": 0.227355255,
+          "hours": 510
+        },
+        {
+          "participantId": 432,
+          "currentMode": "AtRecreation",
+          "joviality": 0.981851015,
+          "hours": 715
+        },
+        {
+          "participantId": 593,
+          "currentMode": "AtRecreation",
+          "joviality": 0.919710751,
+          "hours": 573
+        },
+        {
+          "participantId": 133,
+          "currentMode": "AtRecreation",
+          "joviality": 0.551268581,
+          "hours": 444
+        },
+        {
+          "participantId": 530,
+          "currentMode": "AtRecreation",
+          "joviality": 0.585489943,
+          "hours": 636
+        },
+        {
+          "participantId": 891,
+          "currentMode": "AtRecreation",
+          "joviality": 0.554827306,
+          "hours": 584
+        },
+        {
+          "participantId": 249,
+          "currentMode": "AtRecreation",
+          "joviality": 0.842954238,
+          "hours": 465
+        },
+        {
+          "participantId": 765,
+          "currentMode": "AtRecreation",
+          "joviality": 0.740682908,
+          "hours": 729
+        },
+        {
+          "participantId": 952,
+          "currentMode": "AtRecreation",
+          "joviality": 0.148548085,
+          "hours": 566
+        },
+        {
+          "participantId": 10,
+          "currentMode": "AtRecreation",
+          "joviality": 0.557176006,
+          "hours": 352
+        },
+        {
+          "participantId": 111,
+          "currentMode": "AtRecreation",
+          "joviality": 0.720330648,
+          "hours": 780
+        },
+        {
+          "participantId": 255,
+          "currentMode": "AtRecreation",
+          "joviality": 0.852187763,
+          "hours": 637
+        },
+        {
+          "participantId": 368,
+          "currentMode": "AtRecreation",
+          "joviality": 0.039923482,
+          "hours": 413
+        },
+        {
+          "participantId": 422,
+          "currentMode": "AtRecreation",
+          "joviality": 0.647441392,
+          "hours": 402
+        },
+        {
+          "participantId": 487,
+          "currentMode": "AtRecreation",
+          "joviality": 0.471347147,
+          "hours": 480
+        },
+        {
+          "participantId": 640,
+          "currentMode": "AtRecreation",
+          "joviality": 0.686982312,
+          "hours": 526
+        },
+        {
+          "participantId": 766,
+          "currentMode": "AtRecreation",
+          "joviality": 0.573952621,
+          "hours": 535
+        },
+        {
+          "participantId": 814,
+          "currentMode": "AtRecreation",
+          "joviality": 0.44174758,
+          "hours": 500
+        },
+        {
+          "participantId": 67,
+          "currentMode": "AtRecreation",
+          "joviality": 0.438788793,
+          "hours": 362
+        },
+        {
+          "participantId": 315,
+          "currentMode": "AtRecreation",
+          "joviality": 0.287666416,
+          "hours": 490
+        },
+        {
+          "participantId": 372,
+          "currentMode": "AtRecreation",
+          "joviality": 0.986983183,
+          "hours": 711
+        },
+        {
+          "participantId": 404,
+          "currentMode": "AtRecreation",
+          "joviality": 0.230962551,
+          "hours": 394
+        },
+        {
+          "participantId": 681,
+          "currentMode": "AtRecreation",
+          "joviality": 0.440943662,
+          "hours": 682
+        },
+        {
+          "participantId": 690,
+          "currentMode": "AtRecreation",
+          "joviality": 0.467859308,
+          "hours": 689
+        },
+        {
+          "participantId": 281,
+          "currentMode": "AtRecreation",
+          "joviality": 0.478284265,
+          "hours": 377
+        },
+        {
+          "participantId": 645,
+          "currentMode": "AtRecreation",
+          "joviality": 0.134078822,
+          "hours": 545
+        },
+        {
+          "participantId": 962,
+          "currentMode": "AtRecreation",
+          "joviality": 0.890386981,
+          "hours": 893
+        },
+        {
+          "participantId": 999,
+          "currentMode": "AtRecreation",
+          "joviality": 0.254432893,
+          "hours": 582
+        },
+        {
+          "participantId": 25,
+          "currentMode": "AtRecreation",
+          "joviality": 0.520535752,
+          "hours": 341
+        },
+        {
+          "participantId": 47,
+          "currentMode": "AtRecreation",
+          "joviality": 0.424159724,
+          "hours": 413
+        },
+        {
+          "participantId": 932,
+          "currentMode": "AtRecreation",
+          "joviality": 0.522667054,
+          "hours": 595
+        },
+        {
+          "participantId": 402,
+          "currentMode": "AtRecreation",
+          "joviality": 0.674497947,
+          "hours": 704
+        },
+        {
+          "participantId": 544,
+          "currentMode": "AtRecreation",
+          "joviality": 0.574526753,
+          "hours": 467
+        },
+        {
+          "participantId": 121,
+          "currentMode": "AtRecreation",
+          "joviality": 0.41537229,
+          "hours": 432
+        },
+        {
+          "participantId": 419,
+          "currentMode": "AtRecreation",
+          "joviality": 0.622118277,
+          "hours": 746
+        },
+        {
+          "participantId": 376,
+          "currentMode": "AtRecreation",
+          "joviality": 0.141162784,
+          "hours": 558
+        },
+        {
+          "participantId": 571,
+          "currentMode": "AtRecreation",
+          "joviality": 0.36821258,
+          "hours": 563
+        },
+        {
+          "participantId": 727,
+          "currentMode": "AtRecreation",
+          "joviality": 0.945430646,
+          "hours": 719
+        },
+        {
+          "participantId": 130,
+          "currentMode": "AtRecreation",
+          "joviality": 0.524660325,
+          "hours": 515
+        },
+        {
+          "participantId": 633,
+          "currentMode": "AtRecreation",
+          "joviality": 0.227976736,
+          "hours": 606
+        },
+        {
+          "participantId": 973,
+          "currentMode": "AtRecreation",
+          "joviality": 0.274541862,
+          "hours": 530
+        },
+        {
+          "participantId": 983,
+          "currentMode": "AtRecreation",
+          "joviality": 0.21831518,
+          "hours": 161
+        },
+        {
+          "participantId": 454,
+          "currentMode": "AtRecreation",
+          "joviality": 0.249578287,
+          "hours": 528
+        },
+        {
+          "participantId": 521,
+          "currentMode": "AtRecreation",
+          "joviality": 0.477456741,
+          "hours": 486
+        },
+        {
+          "participantId": 845,
+          "currentMode": "AtRecreation",
+          "joviality": 0.234712133,
+          "hours": 148
+        },
+        {
+          "participantId": 144,
+          "currentMode": "AtRecreation",
+          "joviality": 0.444080663,
+          "hours": 608
+        },
+        {
+          "participantId": 546,
+          "currentMode": "AtRecreation",
+          "joviality": 0.061282494,
+          "hours": 636
+        },
+        {
+          "participantId": 43,
+          "currentMode": "AtRecreation",
+          "joviality": 0.045228735,
+          "hours": 657
+        },
+        {
+          "participantId": 169,
+          "currentMode": "AtRecreation",
+          "joviality": 0.364391587,
+          "hours": 434
+        },
+        {
+          "participantId": 683,
+          "currentMode": "AtRecreation",
+          "joviality": 0.241410497,
+          "hours": 463
+        },
+        {
+          "participantId": 0,
+          "currentMode": "AtRecreation",
+          "joviality": 0.001626703,
+          "hours": 472
+        },
+        {
+          "participantId": 280,
+          "currentMode": "AtRecreation",
+          "joviality": 0.102762652,
+          "hours": 254
+        },
+        {
+          "participantId": 680,
+          "currentMode": "AtRecreation",
+          "joviality": 0.141341978,
+          "hours": 663
+        },
+        {
+          "participantId": 656,
+          "currentMode": "AtRecreation",
+          "joviality": 0.315950154,
+          "hours": 359
+        },
+        {
+          "participantId": 125,
+          "currentMode": "AtRecreation",
+          "joviality": 0.150075471,
+          "hours": 758
+        },
+        {
+          "participantId": 23,
+          "currentMode": "AtRecreation",
+          "joviality": 0.260211811,
+          "hours": 839
+        },
+        {
+          "participantId": 739,
+          "currentMode": "AtRecreation",
+          "joviality": 0.68222841,
+          "hours": 727
+        },
+        {
+          "participantId": 360,
+          "currentMode": "AtRecreation",
+          "joviality": 0.41088011,
+          "hours": 727
+        },
+        {
+          "participantId": 840,
+          "currentMode": "AtRecreation",
+          "joviality": 0.469113963,
+          "hours": 648
+        },
+        {
+          "participantId": 441,
+          "currentMode": "AtRecreation",
+          "joviality": 0.800759302,
+          "hours": 759
+        },
+        {
+          "participantId": 951,
+          "currentMode": "AtRecreation",
+          "joviality": 0.932155545,
+          "hours": 735
+        },
+        {
+          "participantId": 466,
+          "currentMode": "AtRecreation",
+          "joviality": 0.191165293,
+          "hours": 377
+        },
+        {
+          "participantId": 673,
+          "currentMode": "AtRecreation",
+          "joviality": 0.051798314,
+          "hours": 465
+        },
+        {
+          "participantId": 56,
+          "currentMode": "AtRecreation",
+          "joviality": 0.734056857,
+          "hours": 618
+        },
+        {
+          "participantId": 424,
+          "currentMode": "AtRecreation",
+          "joviality": 0.723576465,
+          "hours": 726
+        },
+        {
+          "participantId": 545,
+          "currentMode": "AtRecreation",
+          "joviality": 0.632529807,
+          "hours": 682
+        },
+        {
+          "participantId": 81,
+          "currentMode": "AtRecreation",
+          "joviality": 0.871320255,
+          "hours": 619
+        },
+        {
+          "participantId": 435,
+          "currentMode": "AtRecreation",
+          "joviality": 0.725281643,
+          "hours": 1038
+        },
+        {
+          "participantId": 464,
+          "currentMode": "AtRecreation",
+          "joviality": 0.923037343,
+          "hours": 597
+        },
+        {
+          "participantId": 841,
+          "currentMode": "AtRecreation",
+          "joviality": 0.655361489,
+          "hours": 714
+        },
+        {
+          "participantId": 456,
+          "currentMode": "AtRecreation",
+          "joviality": 0.685091778,
+          "hours": 525
+        },
+        {
+          "participantId": 463,
+          "currentMode": "AtRecreation",
+          "joviality": 0.353252364,
+          "hours": 392
+        },
+        {
+          "participantId": 88,
+          "currentMode": "AtRecreation",
+          "joviality": 0.746921002,
+          "hours": 552
+        },
+        {
+          "participantId": 106,
+          "currentMode": "AtRecreation",
+          "joviality": 0.700811306,
+          "hours": 663
+        },
+        {
+          "participantId": 434,
+          "currentMode": "AtRecreation",
+          "joviality": 0.618031654,
+          "hours": 700
+        },
+        {
+          "participantId": 686,
+          "currentMode": "AtRecreation",
+          "joviality": 0.786524128,
+          "hours": 870
+        },
+        {
+          "participantId": 52,
+          "currentMode": "AtRecreation",
+          "joviality": 0.730126771,
+          "hours": 735
+        },
+        {
+          "participantId": 476,
+          "currentMode": "AtRecreation",
+          "joviality": 0.094335508,
+          "hours": 590
+        },
+        {
+          "participantId": 538,
+          "currentMode": "AtRecreation",
+          "joviality": 0.617029061,
+          "hours": 716
+        },
+        {
+          "participantId": 53,
+          "currentMode": "AtRecreation",
+          "joviality": 0.140697641,
+          "hours": 515
+        },
+        {
+          "participantId": 520,
+          "currentMode": "AtRecreation",
+          "joviality": 0.154725513,
+          "hours": 510
+        },
+        {
+          "participantId": 964,
+          "currentMode": "AtRecreation",
+          "joviality": 0.455351665,
+          "hours": 637
+        },
+        {
+          "participantId": 1,
+          "currentMode": "AtRecreation",
+          "joviality": 0.3280865,
+          "hours": 704
+        },
+        {
+          "participantId": 484,
+          "currentMode": "AtRecreation",
+          "joviality": 0.936547208,
+          "hours": 846
+        },
+        {
+          "participantId": 652,
+          "currentMode": "AtRecreation",
+          "joviality": 0.665307968,
+          "hours": 587
+        },
+        {
+          "participantId": 202,
+          "currentMode": "AtRecreation",
+          "joviality": 0.985936814,
+          "hours": 691
+        },
+        {
+          "participantId": 296,
+          "currentMode": "AtRecreation",
+          "joviality": 0.548350934,
+          "hours": 464
+        },
+        {
+          "participantId": 303,
+          "currentMode": "AtRecreation",
+          "joviality": 0.543218407,
+          "hours": 515
+        },
+        {
+          "participantId": 378,
+          "currentMode": "AtRecreation",
+          "joviality": 0.991810222,
+          "hours": 773
+        },
+        {
+          "participantId": 714,
+          "currentMode": "AtRecreation",
+          "joviality": 0.905015948,
+          "hours": 835
+        },
+        {
+          "participantId": 866,
+          "currentMode": "AtRecreation",
+          "joviality": 0.997670843,
+          "hours": 869
+        },
+        {
+          "participantId": 388,
+          "currentMode": "AtRecreation",
+          "joviality": 0.687759804,
+          "hours": 755
+        },
+        {
+          "participantId": 480,
+          "currentMode": "AtRecreation",
+          "joviality": 0.211241597,
+          "hours": 449
+        },
+        {
+          "participantId": 505,
+          "currentMode": "AtRecreation",
+          "joviality": 0.466477753,
+          "hours": 693
+        },
+        {
+          "participantId": 212,
+          "currentMode": "AtRecreation",
+          "joviality": 0.748988452,
+          "hours": 1070
+        },
+        {
+          "participantId": 502,
+          "currentMode": "AtRecreation",
+          "joviality": 0.597042481,
+          "hours": 552
+        },
+        {
+          "participantId": 551,
+          "currentMode": "AtRecreation",
+          "joviality": 0.492572167,
+          "hours": 734
+        },
+        {
+          "participantId": 555,
+          "currentMode": "AtRecreation",
+          "joviality": 0.604777434,
+          "hours": 656
+        },
+        {
+          "participantId": 443,
+          "currentMode": "AtRecreation",
+          "joviality": 0.758121962,
+          "hours": 705
+        },
+        {
+          "participantId": 623,
+          "currentMode": "AtRecreation",
+          "joviality": 0.576129491,
+          "hours": 435
+        },
+        {
+          "participantId": 2,
+          "currentMode": "AtRecreation",
+          "joviality": 0.39346959,
+          "hours": 424
+        },
+        {
+          "participantId": 104,
+          "currentMode": "AtRecreation",
+          "joviality": 0.991414933,
+          "hours": 785
+        },
+        {
+          "participantId": 123,
+          "currentMode": "AtRecreation",
+          "joviality": 0.118152103,
+          "hours": 479
+        },
+        {
+          "participantId": 689,
+          "currentMode": "AtRecreation",
+          "joviality": 0.42355875,
+          "hours": 489
+        },
+        {
+          "participantId": 801,
+          "currentMode": "AtRecreation",
+          "joviality": 0.490190335,
+          "hours": 617
+        },
+        {
+          "participantId": 299,
+          "currentMode": "AtRecreation",
+          "joviality": 0.5149016,
+          "hours": 581
+        },
+        {
+          "participantId": 584,
+          "currentMode": "AtRecreation",
+          "joviality": 0.130737765,
+          "hours": 252
+        },
+        {
+          "participantId": 838,
+          "currentMode": "AtRecreation",
+          "joviality": 0.221489156,
+          "hours": 578
+        },
+        {
+          "participantId": 469,
+          "currentMode": "AtRecreation",
+          "joviality": 0.554244414,
+          "hours": 524
+        },
+        {
+          "participantId": 671,
+          "currentMode": "AtRecreation",
+          "joviality": 0.270624129,
+          "hours": 596
+        },
+        {
+          "participantId": 744,
+          "currentMode": "AtRecreation",
+          "joviality": 0.447644949,
+          "hours": 717
+        },
+        {
+          "participantId": 157,
+          "currentMode": "AtRecreation",
+          "joviality": 0.254005742,
+          "hours": 181
+        },
+        {
+          "participantId": 145,
+          "currentMode": "AtRecreation",
+          "joviality": 0.882253016,
+          "hours": 805
+        },
+        {
+          "participantId": 506,
+          "currentMode": "AtRecreation",
+          "joviality": 0.602514117,
+          "hours": 642
+        },
+        {
+          "participantId": 616,
+          "currentMode": "AtRecreation",
+          "joviality": 0.544782269,
+          "hours": 655
+        },
+        {
+          "participantId": 878,
+          "currentMode": "AtRecreation",
+          "joviality": 0.337456142,
+          "hours": 452
+        },
+        {
+          "participantId": 960,
+          "currentMode": "AtRecreation",
+          "joviality": 0.570251922,
+          "hours": 703
+        },
+        {
+          "participantId": 242,
+          "currentMode": "AtRecreation",
+          "joviality": 0.113248116,
+          "hours": 567
+        },
+        {
+          "participantId": 414,
+          "currentMode": "AtRecreation",
+          "joviality": 0.171319189,
+          "hours": 578
+        },
+        {
+          "participantId": 890,
+          "currentMode": "AtRecreation",
+          "joviality": 0.875200368,
+          "hours": 741
+        },
+        {
+          "participantId": 747,
+          "currentMode": "AtRecreation",
+          "joviality": 0.066469676,
+          "hours": 617
+        },
+        {
+          "participantId": 86,
+          "currentMode": "AtRecreation",
+          "joviality": 0.399201318,
+          "hours": 398
+        },
+        {
+          "participantId": 607,
+          "currentMode": "AtRecreation",
+          "joviality": 0.370246957,
+          "hours": 645
+        },
+        {
+          "participantId": 347,
+          "currentMode": "AtRecreation",
+          "joviality": 0.270904553,
+          "hours": 411
+        },
+        {
+          "participantId": 385,
+          "currentMode": "AtRecreation",
+          "joviality": 0.569018722,
+          "hours": 463
+        },
+        {
+          "participantId": 17,
+          "currentMode": "AtRecreation",
+          "joviality": 0.114667399,
+          "hours": 537
+        },
+        {
+          "participantId": 676,
+          "currentMode": "AtRecreation",
+          "joviality": 0.068612756,
+          "hours": 120
+        },
+        {
+          "participantId": 542,
+          "currentMode": "AtRecreation",
+          "joviality": 0.149424876,
+          "hours": 629
+        },
+        {
+          "participantId": 478,
+          "currentMode": "AtRecreation",
+          "joviality": 0.495874155,
+          "hours": 541
+        },
+        {
+          "participantId": 598,
+          "currentMode": "AtRecreation",
+          "joviality": 0.171959185,
+          "hours": 475
+        },
+        {
+          "participantId": 30,
+          "currentMode": "AtRecreation",
+          "joviality": 0.681423545,
+          "hours": 845
+        },
+        {
+          "participantId": 85,
+          "currentMode": "AtRecreation",
+          "joviality": 0.354510651,
+          "hours": 653
+        },
+        {
+          "participantId": 403,
+          "currentMode": "AtRecreation",
+          "joviality": 0.884407261,
+          "hours": 647
+        },
+        {
+          "participantId": 796,
+          "currentMode": "AtRecreation",
+          "joviality": 0.430036143,
+          "hours": 569
+        },
+        {
+          "participantId": 986,
+          "currentMode": "AtRecreation",
+          "joviality": 0.301652515,
+          "hours": 562
+        },
+        {
+          "participantId": 694,
+          "currentMode": "AtRecreation",
+          "joviality": 0.391601344,
+          "hours": 505
+        },
+        {
+          "participantId": 84,
+          "currentMode": "AtRecreation",
+          "joviality": 0.455102277,
+          "hours": 428
+        },
+        {
+          "participantId": 359,
+          "currentMode": "AtRecreation",
+          "joviality": 0.757990018,
+          "hours": 779
+        },
+        {
+          "participantId": 556,
+          "currentMode": "AtRecreation",
+          "joviality": 0.626384882,
+          "hours": 803
+        },
+        {
+          "participantId": 619,
+          "currentMode": "AtRecreation",
+          "joviality": 0.025245948,
+          "hours": 466
+        },
+        {
+          "participantId": 581,
+          "currentMode": "AtRecreation",
+          "joviality": 0.417992624,
+          "hours": 723
+        },
+        {
+          "participantId": 646,
+          "currentMode": "AtRecreation",
+          "joviality": 0.962520694,
+          "hours": 856
+        },
+        {
+          "participantId": 120,
+          "currentMode": "AtRecreation",
+          "joviality": 0.876546337,
+          "hours": 897
+        },
+        {
+          "participantId": 949,
+          "currentMode": "AtRecreation",
+          "joviality": 0.380395715,
+          "hours": 612
+        },
+        {
+          "participantId": 338,
+          "currentMode": "AtRecreation",
+          "joviality": 0.713809975,
+          "hours": 815
+        },
+        {
+          "participantId": 679,
+          "currentMode": "AtRecreation",
+          "joviality": 0.980481087,
+          "hours": 841
+        },
+        {
+          "participantId": 317,
+          "currentMode": "AtRecreation",
+          "joviality": 0.494087429,
+          "hours": 543
+        },
+        {
+          "participantId": 66,
+          "currentMode": "AtRecreation",
+          "joviality": 0.773765426,
+          "hours": 984
+        },
+        {
+          "participantId": 503,
+          "currentMode": "AtRecreation",
+          "joviality": 0.892482505,
+          "hours": 764
+        },
+        {
+          "participantId": 393,
+          "currentMode": "AtRecreation",
+          "joviality": 0.909124868,
+          "hours": 711
+        },
+        {
+          "participantId": 398,
+          "currentMode": "AtRecreation",
+          "joviality": 0.963462391,
+          "hours": 755
+        },
+        {
+          "participantId": 274,
+          "currentMode": "AtRecreation",
+          "joviality": 0.79265137,
+          "hours": 552
+        },
+        {
+          "participantId": 272,
+          "currentMode": "AtRecreation",
+          "joviality": 0.669281126,
+          "hours": 638
+        },
+        {
+          "participantId": 738,
+          "currentMode": "AtRecreation",
+          "joviality": 0.879171582,
+          "hours": 782
+        },
+        {
+          "participantId": 596,
+          "currentMode": "AtRecreation",
+          "joviality": 0.967555161,
+          "hours": 811
+        },
+        {
+          "participantId": 608,
+          "currentMode": "AtRecreation",
+          "joviality": 0.358497175,
+          "hours": 715
+        },
+        {
+          "participantId": 365,
+          "currentMode": "AtRecreation",
+          "joviality": 0.438986616,
+          "hours": 547
+        },
+        {
+          "participantId": 561,
+          "currentMode": "AtRecreation",
+          "joviality": 0.24858955,
+          "hours": 652
+        },
+        {
+          "participantId": 660,
+          "currentMode": "AtRecreation",
+          "joviality": 0.354910317,
+          "hours": 602
+        },
+        {
+          "participantId": 726,
+          "currentMode": "AtRecreation",
+          "joviality": 0.502901494,
+          "hours": 584
+        },
+        {
+          "participantId": 779,
+          "currentMode": "AtRecreation",
+          "joviality": 0.193751151,
+          "hours": 545
+        },
+        {
+          "participantId": 11,
+          "currentMode": "AtRecreation",
+          "joviality": 0.25422732,
+          "hours": 564
+        },
+        {
+          "participantId": 455,
+          "currentMode": "AtRecreation",
+          "joviality": 0.158418515,
+          "hours": 486
+        },
+        {
+          "participantId": 547,
+          "currentMode": "AtRecreation",
+          "joviality": 0.065619544,
+          "hours": 391
+        },
+        {
+          "participantId": 755,
+          "currentMode": "AtRecreation",
+          "joviality": 0.414137953,
+          "hours": 621
+        },
+        {
+          "participantId": 830,
+          "currentMode": "AtRecreation",
+          "joviality": 0.152431791,
+          "hours": 414
+        },
+        {
+          "participantId": 851,
+          "currentMode": "AtRecreation",
+          "joviality": 0.677712189,
+          "hours": 678
+        },
+        {
+          "participantId": 199,
+          "currentMode": "AtRecreation",
+          "joviality": 0.379086335,
+          "hours": 422
+        },
+        {
+          "participantId": 554,
+          "currentMode": "AtRecreation",
+          "joviality": 0.551760119,
+          "hours": 687
+        },
+        {
+          "participantId": 879,
+          "currentMode": "AtRecreation",
+          "joviality": 0.353813394,
+          "hours": 563
+        },
+        {
+          "participantId": 993,
+          "currentMode": "AtRecreation",
+          "joviality": 0.905125735,
+          "hours": 916
+        },
+        {
+          "participantId": 269,
+          "currentMode": "AtRecreation",
+          "joviality": 0.36077235,
+          "hours": 615
+        },
+        {
+          "participantId": 399,
+          "currentMode": "AtRecreation",
+          "joviality": 0.082643442,
+          "hours": 591
+        },
+        {
+          "participantId": 450,
+          "currentMode": "AtRecreation",
+          "joviality": 0.504323829,
+          "hours": 587
+        },
+        {
+          "participantId": 479,
+          "currentMode": "AtRecreation",
+          "joviality": 0.753570226,
+          "hours": 752
+        },
+        {
+          "participantId": 976,
+          "currentMode": "AtRecreation",
+          "joviality": 0.077140899,
+          "hours": 222
+        },
+        {
+          "participantId": 167,
+          "currentMode": "AtRecreation",
+          "joviality": 0.846680285,
+          "hours": 810
+        },
+        {
+          "participantId": 692,
+          "currentMode": "AtRecreation",
+          "joviality": 0.560883015,
+          "hours": 658
+        },
+        {
+          "participantId": 1009,
+          "currentMode": "AtRecreation",
+          "joviality": 0.828330134,
+          "hours": 575
+        },
+        {
+          "participantId": 239,
+          "currentMode": "AtRecreation",
+          "joviality": 0.795405195,
+          "hours": 874
+        },
+        {
+          "participantId": 254,
+          "currentMode": "AtRecreation",
+          "joviality": 0.17968177,
+          "hours": 476
+        },
+        {
+          "participantId": 612,
+          "currentMode": "AtRecreation",
+          "joviality": 0.034839253,
+          "hours": 438
+        },
+        {
+          "participantId": 893,
+          "currentMode": "AtRecreation",
+          "joviality": 0.540411016,
+          "hours": 563
+        },
+        {
+          "participantId": 720,
+          "currentMode": "AtRecreation",
+          "joviality": 0.930475595,
+          "hours": 990
+        },
+        {
+          "participantId": 968,
+          "currentMode": "AtRecreation",
+          "joviality": 0.982251017,
+          "hours": 708
+        },
+        {
+          "participantId": 989,
+          "currentMode": "AtRecreation",
+          "joviality": 0.659934449,
+          "hours": 792
+        },
+        {
+          "participantId": 64,
+          "currentMode": "AtRecreation",
+          "joviality": 0.330606159,
+          "hours": 502
+        },
+        {
+          "participantId": 78,
+          "currentMode": "AtRecreation",
+          "joviality": 0.188638917,
+          "hours": 459
+        },
+        {
+          "participantId": 904,
+          "currentMode": "AtRecreation",
+          "joviality": 0.161994033,
+          "hours": 429
+        },
+        {
+          "participantId": 630,
+          "currentMode": "AtRecreation",
+          "joviality": 0.653881117,
+          "hours": 869
+        },
+        {
+          "participantId": 632,
+          "currentMode": "AtRecreation",
+          "joviality": 0.243164359,
+          "hours": 644
+        },
+        {
+          "participantId": 24,
+          "currentMode": "AtRecreation",
+          "joviality": 0.607328128,
+          "hours": 544
+        },
+        {
+          "participantId": 170,
+          "currentMode": "AtRecreation",
+          "joviality": 0.133248852,
+          "hours": 448
+        },
+        {
+          "participantId": 271,
+          "currentMode": "AtRecreation",
+          "joviality": 0.331893543,
+          "hours": 428
+        },
+        {
+          "participantId": 425,
+          "currentMode": "AtRecreation",
+          "joviality": 0.334417031,
+          "hours": 403
+        },
+        {
+          "participantId": 931,
+          "currentMode": "AtRecreation",
+          "joviality": 0.88226691,
+          "hours": 672
+        },
+        {
+          "participantId": 42,
+          "currentMode": "AtRecreation",
+          "joviality": 0.055283617,
+          "hours": 451
+        },
+        {
+          "participantId": 27,
+          "currentMode": "AtRecreation",
+          "joviality": 0.135148815,
+          "hours": 531
+        },
+        {
+          "participantId": 913,
+          "currentMode": "AtRecreation",
+          "joviality": 0.000265,
+          "hours": 287
+        },
+        {
+          "participantId": 782,
+          "currentMode": "AtRecreation",
+          "joviality": 0.834580963,
+          "hours": 673
+        },
+        {
+          "participantId": 1002,
+          "currentMode": "AtRecreation",
+          "joviality": 0.323610205,
+          "hours": 371
+        },
+        {
+          "participantId": 485,
+          "currentMode": "AtRecreation",
+          "joviality": 0.24042683,
+          "hours": 463
+        },
+        {
+          "participantId": 691,
+          "currentMode": "AtRecreation",
+          "joviality": 0.609420425,
+          "hours": 580
+        },
+        {
+          "participantId": 815,
+          "currentMode": "AtRecreation",
+          "joviality": 0.521630433,
+          "hours": 453
+        },
+        {
+          "participantId": 905,
+          "currentMode": "AtRecreation",
+          "joviality": 0.533005979,
+          "hours": 507
+        },
+        {
+          "participantId": 74,
+          "currentMode": "AtRecreation",
+          "joviality": 0.904601349,
+          "hours": 729
+        },
+        {
+          "participantId": 733,
+          "currentMode": "AtRecreation",
+          "joviality": 0.298490597,
+          "hours": 572
+        },
+        {
+          "participantId": 21,
+          "currentMode": "AtRecreation",
+          "joviality": 0.931240975,
+          "hours": 1158
+        },
+        {
+          "participantId": 507,
+          "currentMode": "AtRecreation",
+          "joviality": 0.293051648,
+          "hours": 824
+        },
+        {
+          "participantId": 22,
+          "currentMode": "AtRecreation",
+          "joviality": 0.663815663,
+          "hours": 740
+        },
+        {
+          "participantId": 349,
+          "currentMode": "AtRecreation",
+          "joviality": 0.51011746,
+          "hours": 444
+        },
+        {
+          "participantId": 131,
+          "currentMode": "AtRecreation",
+          "joviality": 0.802929522,
+          "hours": 990
+        },
+        {
+          "participantId": 362,
+          "currentMode": "AtRecreation",
+          "joviality": 0.753234813,
+          "hours": 734
+        },
+        {
+          "participantId": 918,
+          "currentMode": "AtRecreation",
+          "joviality": 0.230593991,
+          "hours": 608
+        },
+        {
+          "participantId": 97,
+          "currentMode": "AtRecreation",
+          "joviality": 0.679506778,
+          "hours": 638
+        },
+        {
+          "participantId": 759,
+          "currentMode": "AtRecreation",
+          "joviality": 0.880468848,
+          "hours": 674
+        },
+        {
+          "participantId": 915,
+          "currentMode": "AtRecreation",
+          "joviality": 0.992351674,
+          "hours": 811
+        },
+        {
+          "participantId": 220,
+          "currentMode": "AtRecreation",
+          "joviality": 0.79251329,
+          "hours": 715
+        },
+        {
+          "participantId": 594,
+          "currentMode": "AtRecreation",
+          "joviality": 0.278112333,
+          "hours": 516
+        },
+        {
+          "participantId": 984,
+          "currentMode": "AtRecreation",
+          "joviality": 0.969600048,
+          "hours": 847
+        },
+        {
+          "participantId": 998,
+          "currentMode": "AtRecreation",
+          "joviality": 0.335018383,
+          "hours": 364
+        },
+        {
+          "participantId": 270,
+          "currentMode": "AtRecreation",
+          "joviality": 0.173976665,
+          "hours": 526
+        },
+        {
+          "participantId": 427,
+          "currentMode": "AtRecreation",
+          "joviality": 0.916735753,
+          "hours": 758
+        },
+        {
+          "participantId": 182,
+          "currentMode": "AtRecreation",
+          "joviality": 0.839659224,
+          "hours": 786
+        },
+        {
+          "participantId": 247,
+          "currentMode": "AtRecreation",
+          "joviality": 0.867500339,
+          "hours": 688
+        },
+        {
+          "participantId": 737,
+          "currentMode": "AtRecreation",
+          "joviality": 0.933937799,
+          "hours": 581
+        },
+        {
+          "participantId": 957,
+          "currentMode": "AtRecreation",
+          "joviality": 0.549042649,
+          "hours": 445
+        },
+        {
+          "participantId": 162,
+          "currentMode": "AtRecreation",
+          "joviality": 0.936659644,
+          "hours": 890
+        },
+        {
+          "participantId": 921,
+          "currentMode": "AtRecreation",
+          "joviality": 0.931029947,
+          "hours": 818
+        },
+        {
+          "participantId": 246,
+          "currentMode": "AtRecreation",
+          "joviality": 0.968768651,
+          "hours": 734
+        },
+        {
+          "participantId": 324,
+          "currentMode": "AtRecreation",
+          "joviality": 0.122182828,
+          "hours": 382
+        },
+        {
+          "participantId": 532,
+          "currentMode": "AtRecreation",
+          "joviality": 0.303479796,
+          "hours": 618
+        },
+        {
+          "participantId": 995,
+          "currentMode": "AtRecreation",
+          "joviality": 0.444802157,
+          "hours": 483
+        },
+        {
+          "participantId": 70,
+          "currentMode": "AtRecreation",
+          "joviality": 0.72544679,
+          "hours": 662
+        },
+        {
+          "participantId": 176,
+          "currentMode": "AtRecreation",
+          "joviality": 0.931237599,
+          "hours": 678
+        },
+        {
+          "participantId": 210,
+          "currentMode": "AtRecreation",
+          "joviality": 0.857673439,
+          "hours": 557
+        },
+        {
+          "participantId": 941,
+          "currentMode": "AtRecreation",
+          "joviality": 0.840828509,
+          "hours": 861
+        },
+        {
+          "participantId": 115,
+          "currentMode": "AtRecreation",
+          "joviality": 0.57753282,
+          "hours": 598
+        },
+        {
+          "participantId": 777,
+          "currentMode": "AtRecreation",
+          "joviality": 0.112504967,
+          "hours": 502
+        },
+        {
+          "participantId": 223,
+          "currentMode": "AtRecreation",
+          "joviality": 0.700821194,
+          "hours": 744
+        },
+        {
+          "participantId": 597,
+          "currentMode": "AtRecreation",
+          "joviality": 0.408345757,
+          "hours": 419
+        },
+        {
+          "participantId": 725,
+          "currentMode": "AtRecreation",
+          "joviality": 0.624709649,
+          "hours": 502
+        },
+        {
+          "participantId": 569,
+          "currentMode": "AtRecreation",
+          "joviality": 0.650812395,
+          "hours": 725
+        },
+        {
+          "participantId": 439,
+          "currentMode": "AtRecreation",
+          "joviality": 0.930702522,
+          "hours": 810
+        },
+        {
+          "participantId": 912,
+          "currentMode": "AtRecreation",
+          "joviality": 0.933377794,
+          "hours": 850
+        },
+        {
+          "participantId": 684,
+          "currentMode": "AtRecreation",
+          "joviality": 0.411069142,
+          "hours": 558
+        },
+        {
+          "participantId": 942,
+          "currentMode": "AtRecreation",
+          "joviality": 0.715480626,
+          "hours": 704
+        },
+        {
+          "participantId": 578,
+          "currentMode": "AtRecreation",
+          "joviality": 0.98284777,
+          "hours": 770
+        },
+        {
+          "participantId": 590,
+          "currentMode": "AtRecreation",
+          "joviality": 0.448569158,
+          "hours": 553
+        },
+        {
+          "participantId": 7,
+          "currentMode": "AtRecreation",
+          "joviality": 0.958189409,
+          "hours": 577
+        },
+        {
+          "participantId": 290,
+          "currentMode": "AtRecreation",
+          "joviality": 0.271552097,
+          "hours": 529
+        },
+        {
+          "participantId": 672,
+          "currentMode": "AtRecreation",
+          "joviality": 0.470322266,
+          "hours": 588
+        },
+        {
+          "participantId": 969,
+          "currentMode": "AtRecreation",
+          "joviality": 0.172802708,
+          "hours": 339
+        },
+        {
+          "participantId": 96,
+          "currentMode": "AtRecreation",
+          "joviality": 0.504845427,
+          "hours": 482
+        },
+        {
+          "participantId": 795,
+          "currentMode": "AtRecreation",
+          "joviality": 0.517422334,
+          "hours": 502
+        },
+        {
+          "participantId": 809,
+          "currentMode": "AtRecreation",
+          "joviality": 0.457280127,
+          "hours": 399
+        },
+        {
+          "participantId": 583,
+          "currentMode": "AtRecreation",
+          "joviality": 0.568154176,
+          "hours": 500
+        },
+        {
+          "participantId": 132,
+          "currentMode": "AtRecreation",
+          "joviality": 0.540291283,
+          "hours": 659
+        },
+        {
+          "participantId": 746,
+          "currentMode": "AtRecreation",
+          "joviality": 0.588102942,
+          "hours": 430
+        },
+        {
+          "participantId": 798,
+          "currentMode": "AtRecreation",
+          "joviality": 0.96008167,
+          "hours": 813
+        },
+        {
+          "participantId": 947,
+          "currentMode": "AtRecreation",
+          "joviality": 0.116646459,
+          "hours": 533
+        },
+        {
+          "participantId": 375,
+          "currentMode": "AtRecreation",
+          "joviality": 0.184734538,
+          "hours": 544
+        },
+        {
+          "participantId": 483,
+          "currentMode": "AtRecreation",
+          "joviality": 0.209746249,
+          "hours": 435
+        },
+        {
+          "participantId": 898,
+          "currentMode": "AtRecreation",
+          "joviality": 0.486920328,
+          "hours": 443
+        },
+        {
+          "participantId": 9,
+          "currentMode": "AtRecreation",
+          "joviality": 0.467131409,
+          "hours": 504
+        },
+        {
+          "participantId": 515,
+          "currentMode": "AtRecreation",
+          "joviality": 0.41490899,
+          "hours": 487
+        },
+        {
+          "participantId": 703,
+          "currentMode": "AtRecreation",
+          "joviality": 0.609793327,
+          "hours": 665
+        },
+        {
+          "participantId": 5,
+          "currentMode": "AtRecreation",
+          "joviality": 0.772957791,
+          "hours": 569
+        },
+        {
+          "participantId": 609,
+          "currentMode": "AtRecreation",
+          "joviality": 0.213011118,
+          "hours": 496
+        },
+        {
+          "participantId": 295,
+          "currentMode": "AtRecreation",
+          "joviality": 0.439355556,
+          "hours": 563
+        },
+        {
+          "participantId": 59,
+          "currentMode": "AtRecreation",
+          "joviality": 0.186308253,
+          "hours": 541
+        },
+        {
+          "participantId": 354,
+          "currentMode": "AtRecreation",
+          "joviality": 0.21035075,
+          "hours": 354
+        },
+        {
+          "participantId": 26,
+          "currentMode": "AtRecreation",
+          "joviality": 0.549177225,
+          "hours": 711
+        },
+        {
+          "participantId": 644,
+          "currentMode": "AtRecreation",
+          "joviality": 0.130781968,
+          "hours": 442
+        },
+        {
+          "participantId": 688,
+          "currentMode": "AtRecreation",
+          "joviality": 0.434048369,
+          "hours": 542
+        },
+        {
+          "participantId": 728,
+          "currentMode": "AtRecreation",
+          "joviality": 0.037220396,
+          "hours": 586
+        },
+        {
+          "participantId": 495,
+          "currentMode": "AtRecreation",
+          "joviality": 0.478280008,
+          "hours": 648
+        },
+        {
+          "participantId": 971,
+          "currentMode": "AtRecreation",
+          "joviality": 0.159548434,
+          "hours": 675
+        },
+        {
+          "participantId": 775,
+          "currentMode": "AtRecreation",
+          "joviality": 0.453217413,
+          "hours": 778
+        },
+        {
+          "participantId": 835,
+          "currentMode": "AtRecreation",
+          "joviality": 0.957400017,
+          "hours": 863
+        },
+        {
+          "participantId": 687,
+          "currentMode": "AtRecreation",
+          "joviality": 0.954361914,
+          "hours": 845
+        },
+        {
+          "participantId": 579,
+          "currentMode": "AtRecreation",
+          "joviality": 0.768714853,
+          "hours": 770
+        },
+        {
+          "participantId": 967,
+          "currentMode": "AtRecreation",
+          "joviality": 0.950638773,
+          "hours": 546
+        },
+        {
+          "participantId": 8,
+          "currentMode": "AtRecreation",
+          "joviality": 0.697554819,
+          "hours": 690
+        },
+        {
+          "participantId": 113,
+          "currentMode": "AtRecreation",
+          "joviality": 0.999233967,
+          "hours": 738
+        },
+        {
+          "participantId": 370,
+          "currentMode": "AtRecreation",
+          "joviality": 0.70247421,
+          "hours": 776
+        },
+        {
+          "participantId": 560,
+          "currentMode": "AtRecreation",
+          "joviality": 0.240288209,
+          "hours": 512
+        },
+        {
+          "participantId": 287,
+          "currentMode": "AtRecreation",
+          "joviality": 0.599616007,
+          "hours": 693
+        },
+        {
+          "participantId": 776,
+          "currentMode": "AtRecreation",
+          "joviality": 0.321067111,
+          "hours": 618
+        },
+        {
+          "participantId": 429,
+          "currentMode": "AtRecreation",
+          "joviality": 0.059265966,
+          "hours": 348
+        },
+        {
+          "participantId": 722,
+          "currentMode": "AtRecreation",
+          "joviality": 0.634111119,
+          "hours": 727
+        },
+        {
+          "participantId": 576,
+          "currentMode": "AtRecreation",
+          "joviality": 0.968722072,
+          "hours": 776
+        },
+        {
+          "participantId": 637,
+          "currentMode": "AtRecreation",
+          "joviality": 0.573248725,
+          "hours": 648
+        },
+        {
+          "participantId": 715,
+          "currentMode": "AtRecreation",
+          "joviality": 0.373642689,
+          "hours": 800
+        },
+        {
+          "participantId": 724,
+          "currentMode": "AtRecreation",
+          "joviality": 0.241785645,
+          "hours": 499
+        },
+        {
+          "participantId": 307,
+          "currentMode": "AtRecreation",
+          "joviality": 0.962210067,
+          "hours": 750
+        },
+        {
+          "participantId": 163,
+          "currentMode": "AtRecreation",
+          "joviality": 0.225309113,
+          "hours": 665
+        },
+        {
+          "participantId": 587,
+          "currentMode": "AtRecreation",
+          "joviality": 0.444743825,
+          "hours": 689
+        },
+        {
+          "participantId": 499,
+          "currentMode": "AtRecreation",
+          "joviality": 0.494442294,
+          "hours": 678
+        },
+        {
+          "participantId": 35,
+          "currentMode": "AtRecreation",
+          "joviality": 0.707950782,
+          "hours": 733
+        },
+        {
+          "participantId": 141,
+          "currentMode": "AtRecreation",
+          "joviality": 0.792161061,
+          "hours": 694
+        },
+        {
+          "participantId": 197,
+          "currentMode": "AtRecreation",
+          "joviality": 0.901982488,
+          "hours": 676
+        },
+        {
+          "participantId": 293,
+          "currentMode": "AtRecreation",
+          "joviality": 0.126082302,
+          "hours": 507
+        },
+        {
+          "participantId": 221,
+          "currentMode": "AtRecreation",
+          "joviality": 0.727868507,
+          "hours": 450
+        },
+        {
+          "participantId": 588,
+          "currentMode": "AtRecreation",
+          "joviality": 0.412038273,
+          "hours": 815
+        },
+        {
+          "participantId": 90,
+          "currentMode": "AtRecreation",
+          "joviality": 0.139818869,
+          "hours": 346
+        },
+        {
+          "participantId": 114,
+          "currentMode": "AtRecreation",
+          "joviality": 0.413490065,
+          "hours": 260
+        },
+        {
+          "participantId": 135,
+          "currentMode": "AtRecreation",
+          "joviality": 0.86081073,
+          "hours": 901
+        },
+        {
+          "participantId": 348,
+          "currentMode": "AtRecreation",
+          "joviality": 0.573738776,
+          "hours": 507
+        },
+        {
+          "participantId": 996,
+          "currentMode": "AtRecreation",
+          "joviality": 0.572648773,
+          "hours": 514
+        },
+        {
+          "participantId": 997,
+          "currentMode": "AtRecreation",
+          "joviality": 0.128853966,
+          "hours": 463
+        },
+        {
+          "participantId": 217,
+          "currentMode": "AtRecreation",
+          "joviality": 0.948411855,
+          "hours": 858
+        },
+        {
+          "participantId": 408,
+          "currentMode": "AtRecreation",
+          "joviality": 0.794096009,
+          "hours": 785
+        },
+        {
+          "participantId": 519,
+          "currentMode": "AtRecreation",
+          "joviality": 0.974802854,
+          "hours": 916
+        },
+        {
+          "participantId": 822,
+          "currentMode": "AtRecreation",
+          "joviality": 0.202769644,
+          "hours": 737
+        },
+        {
+          "participantId": 82,
+          "currentMode": "AtRecreation",
+          "joviality": 0.955760648,
+          "hours": 690
+        },
+        {
+          "participantId": 136,
+          "currentMode": "AtRecreation",
+          "joviality": 0.555650922,
+          "hours": 427
+        },
+        {
+          "participantId": 614,
+          "currentMode": "AtRecreation",
+          "joviality": 0.059062573,
+          "hours": 575
+        },
+        {
+          "participantId": 291,
+          "currentMode": "AtRecreation",
+          "joviality": 0.370084679,
+          "hours": 548
+        },
+        {
+          "participantId": 129,
+          "currentMode": "AtRecreation",
+          "joviality": 0.371183768,
+          "hours": 833
+        },
+        {
+          "participantId": 743,
+          "currentMode": "AtRecreation",
+          "joviality": 0.077442954,
+          "hours": 373
+        },
+        {
+          "participantId": 164,
+          "currentMode": "AtRecreation",
+          "joviality": 0.812453062,
+          "hours": 711
+        },
+        {
+          "participantId": 261,
+          "currentMode": "AtRecreation",
+          "joviality": 0.465652496,
+          "hours": 662
+        },
+        {
+          "participantId": 231,
+          "currentMode": "AtRecreation",
+          "joviality": 0.902213545,
+          "hours": 564
+        },
+        {
+          "participantId": 415,
+          "currentMode": "AtRecreation",
+          "joviality": 0.128459971,
+          "hours": 283
+        },
+        {
+          "participantId": 426,
+          "currentMode": "AtRecreation",
+          "joviality": 0.469702696,
+          "hours": 391
+        },
+        {
+          "participantId": 678,
+          "currentMode": "AtRecreation",
+          "joviality": 0.90601112,
+          "hours": 760
+        },
+        {
+          "participantId": 57,
+          "currentMode": "AtRecreation",
+          "joviality": 0.422849796,
+          "hours": 498
+        },
+        {
+          "participantId": 335,
+          "currentMode": "AtRecreation",
+          "joviality": 0.328727521,
+          "hours": 584
+        },
+        {
+          "participantId": 513,
+          "currentMode": "AtRecreation",
+          "joviality": 0.306487271,
+          "hours": 456
+        },
+        {
+          "participantId": 76,
+          "currentMode": "AtRecreation",
+          "joviality": 0.362917704,
+          "hours": 430
+        },
+        {
+          "participantId": 105,
+          "currentMode": "AtRecreation",
+          "joviality": 0.851915894,
+          "hours": 590
+        },
+        {
+          "participantId": 55,
+          "currentMode": "AtRecreation",
+          "joviality": 0.770806686,
+          "hours": 594
+        },
+        {
+          "participantId": 319,
+          "currentMode": "AtRecreation",
+          "joviality": 0.253614379,
+          "hours": 431
+        },
+        {
+          "participantId": 916,
+          "currentMode": "AtRecreation",
+          "joviality": 0.784906863,
+          "hours": 563
+        },
+        {
+          "participantId": 772,
+          "currentMode": "AtRecreation",
+          "joviality": 0.806871224,
+          "hours": 547
+        },
+        {
+          "participantId": 459,
+          "currentMode": "AtRecreation",
+          "joviality": 0.344762529,
+          "hours": 576
+        },
+        {
+          "participantId": 719,
+          "currentMode": "AtRecreation",
+          "joviality": 0.960391982,
+          "hours": 709
+        },
+        {
+          "participantId": 95,
+          "currentMode": "AtRecreation",
+          "joviality": 0.451218504,
+          "hours": 636
+        },
+        {
+          "participantId": 854,
+          "currentMode": "AtRecreation",
+          "joviality": 0.042899175,
+          "hours": 595
+        },
+        {
+          "participantId": 112,
+          "currentMode": "AtRecreation",
+          "joviality": 0.646977694,
+          "hours": 464
+        },
+        {
+          "participantId": 177,
+          "currentMode": "AtRecreation",
+          "joviality": 0.495453274,
+          "hours": 533
+        },
+        {
+          "participantId": 745,
+          "currentMode": "AtRecreation",
+          "joviality": 0.10382656,
+          "hours": 514
+        },
+        {
+          "participantId": 14,
+          "currentMode": "AtRecreation",
+          "joviality": 0.930003289,
+          "hours": 677
+        },
+        {
+          "participantId": 218,
+          "currentMode": "AtRecreation",
+          "joviality": 0.971074532,
+          "hours": 810
+        },
+        {
+          "participantId": 565,
+          "currentMode": "AtRecreation",
+          "joviality": 0.906449778,
+          "hours": 875
+        },
+        {
+          "participantId": 695,
+          "currentMode": "AtRecreation",
+          "joviality": 0.54286479,
+          "hours": 456
+        },
+        {
+          "participantId": 258,
+          "currentMode": "AtRecreation",
+          "joviality": 0.951577316,
+          "hours": 722
+        },
+        {
+          "participantId": 413,
+          "currentMode": "AtRecreation",
+          "joviality": 0.106292289,
+          "hours": 535
+        },
+        {
+          "participantId": 447,
+          "currentMode": "AtRecreation",
+          "joviality": 0.689153128,
+          "hours": 663
+        },
+        {
+          "participantId": 175,
+          "currentMode": "AtRecreation",
+          "joviality": 0.481863571,
+          "hours": 596
+        },
+        {
+          "participantId": 493,
+          "currentMode": "AtRecreation",
+          "joviality": 0.641308283,
+          "hours": 626
+        },
+        {
+          "participantId": 943,
+          "currentMode": "AtRecreation",
+          "joviality": 0.449546034,
+          "hours": 622
+        },
+        {
+          "participantId": 63,
+          "currentMode": "AtRecreation",
+          "joviality": 0.583943591,
+          "hours": 600
+        },
+        {
+          "participantId": 91,
+          "currentMode": "AtRecreation",
+          "joviality": 0.733204092,
+          "hours": 686
+        },
+        {
+          "participantId": 412,
+          "currentMode": "AtRecreation",
+          "joviality": 0.662852559,
+          "hours": 807
+        },
+        {
+          "participantId": 438,
+          "currentMode": "AtRecreation",
+          "joviality": 0.63736647,
+          "hours": 432
+        },
+        {
+          "participantId": 453,
+          "currentMode": "AtRecreation",
+          "joviality": 0.811967182,
+          "hours": 726
+        },
+        {
+          "participantId": 460,
+          "currentMode": "AtRecreation",
+          "joviality": 0.969102133,
+          "hours": 606
+        },
+        {
+          "participantId": 61,
+          "currentMode": "AtRecreation",
+          "joviality": 0.598278749,
+          "hours": 418
+        },
+        {
+          "participantId": 19,
+          "currentMode": "AtRecreation",
+          "joviality": 0.486470164,
+          "hours": 685
+        },
+        {
+          "participantId": 1000,
+          "currentMode": "AtRecreation",
+          "joviality": 0.983012498,
+          "hours": 725
+        },
+        {
+          "participantId": 203,
+          "currentMode": "AtRecreation",
+          "joviality": 0.939180121,
+          "hours": 646
+        },
+        {
+          "participantId": 701,
+          "currentMode": "AtRecreation",
+          "joviality": 0.440877016,
+          "hours": 564
+        },
+        {
+          "participantId": 534,
+          "currentMode": "AtRecreation",
+          "joviality": 0.298257944,
+          "hours": 626
+        },
+        {
+          "participantId": 709,
+          "currentMode": "AtRecreation",
+          "joviality": 0.100837923,
+          "hours": 452
+        },
+        {
+          "participantId": 366,
+          "currentMode": "AtRecreation",
+          "joviality": 0.138808298,
+          "hours": 328
+        },
+        {
+          "participantId": 865,
+          "currentMode": "AtRecreation",
+          "joviality": 0.115098336,
+          "hours": 406
+        },
+        {
+          "participantId": 118,
+          "currentMode": "AtRecreation",
+          "joviality": 0.140611532,
+          "hours": 553
+        },
+        {
+          "participantId": 992,
+          "currentMode": "AtRecreation",
+          "joviality": 0.280018247,
+          "hours": 523
+        },
+        {
+          "participantId": 122,
+          "currentMode": "AtRecreation",
+          "joviality": 0.159723746,
+          "hours": 443
+        },
+        {
+          "participantId": 1010,
+          "currentMode": "AtRecreation",
+          "joviality": 0.17538799,
+          "hours": 624
+        },
+        {
+          "participantId": 45,
+          "currentMode": "AtRecreation",
+          "joviality": 0.179657824,
+          "hours": 442
+        },
+        {
+          "participantId": 500,
+          "currentMode": "AtRecreation",
+          "joviality": 0.239743189,
+          "hours": 631
+        },
+        {
+          "participantId": 636,
+          "currentMode": "AtRecreation",
+          "joviality": 0.104168464,
+          "hours": 496
+        },
+        {
+          "participantId": 882,
+          "currentMode": "AtRecreation",
+          "joviality": 0.20389365,
+          "hours": 457
+        },
+        {
+          "participantId": 937,
+          "currentMode": "AtRecreation",
+          "joviality": 0.240105908,
+          "hours": 514
+        },
+        {
+          "participantId": 337,
+          "currentMode": "AtRecreation",
+          "joviality": 0.108965479,
+          "hours": 489
+        },
+        {
+          "participantId": 769,
+          "currentMode": "AtRecreation",
+          "joviality": 0.289569911,
+          "hours": 482
+        },
+        {
+          "participantId": 50,
+          "currentMode": "AtRecreation",
+          "joviality": 0.576174771,
+          "hours": 878
+        },
+        {
+          "participantId": 669,
+          "currentMode": "AtRecreation",
+          "joviality": 0.183180758,
+          "hours": 340
+        },
+        {
+          "participantId": 29,
+          "currentMode": "AtRecreation",
+          "joviality": 0.607853294,
+          "hours": 584
+        },
+        {
+          "participantId": 417,
+          "currentMode": "AtRecreation",
+          "joviality": 0.695894652,
+          "hours": 716
+        },
+        {
+          "participantId": 497,
+          "currentMode": "AtRecreation",
+          "joviality": 0.906250776,
+          "hours": 779
+        },
+        {
+          "participantId": 848,
+          "currentMode": "AtRecreation",
+          "joviality": 0.633519504,
+          "hours": 537
+        },
+        {
+          "participantId": 3,
+          "currentMode": "AtRecreation",
+          "joviality": 0.138063446,
+          "hours": 623
+        },
+        {
+          "participantId": 821,
+          "currentMode": "AtRecreation",
+          "joviality": 0.053564289,
+          "hours": 360
+        },
+        {
+          "participantId": 103,
+          "currentMode": "AtRecreation",
+          "joviality": 0.194724115,
+          "hours": 359
+        },
+        {
+          "participantId": 522,
+          "currentMode": "AtRecreation",
+          "joviality": 0.277699434,
+          "hours": 414
+        },
+        {
+          "participantId": 666,
+          "currentMode": "AtRecreation",
+          "joviality": 0.328627654,
+          "hours": 493
+        },
+        {
+          "participantId": 708,
+          "currentMode": "AtRecreation",
+          "joviality": 0.570765537,
+          "hours": 504
+        },
+        {
+          "participantId": 810,
+          "currentMode": "AtRecreation",
+          "joviality": 0.144875993,
+          "hours": 280
+        },
+        {
+          "participantId": 4,
+          "currentMode": "AtRecreation",
+          "joviality": 0.857396691,
+          "hours": 779
+        },
+        {
+          "participantId": 54,
+          "currentMode": "AtRecreation",
+          "joviality": 0.778504463,
+          "hours": 897
+        },
+        {
+          "participantId": 504,
+          "currentMode": "AtRecreation",
+          "joviality": 0.108711953,
+          "hours": 493
+        },
+        {
+          "participantId": 638,
+          "currentMode": "AtRecreation",
+          "joviality": 0.221999544,
+          "hours": 453
+        },
+        {
+          "participantId": 667,
+          "currentMode": "AtRecreation",
+          "joviality": 0.037996177,
+          "hours": 452
+        },
+        {
+          "participantId": 92,
+          "currentMode": "AtRecreation",
+          "joviality": 0.467868166,
+          "hours": 543
+        },
+        {
+          "participantId": 150,
+          "currentMode": "AtRecreation",
+          "joviality": 0.20807405,
+          "hours": 376
+        },
+        {
+          "participantId": 342,
+          "currentMode": "AtRecreation",
+          "joviality": 0.584828154,
+          "hours": 446
+        },
+        {
+          "participantId": 910,
+          "currentMode": "AtRecreation",
+          "joviality": 0.652990074,
+          "hours": 758
+        },
+        {
+          "participantId": 240,
+          "currentMode": "AtRecreation",
+          "joviality": 0.641752748,
+          "hours": 597
+        },
+        {
+          "participantId": 906,
+          "currentMode": "AtRecreation",
+          "joviality": 0.930669564,
+          "hours": 711
+        },
+        {
+          "participantId": 389,
+          "currentMode": "AtRecreation",
+          "joviality": 0.596117189,
+          "hours": 576
+        },
+        {
+          "participantId": 416,
+          "currentMode": "AtRecreation",
+          "joviality": 0.370202736,
+          "hours": 429
+        },
+        {
+          "participantId": 869,
+          "currentMode": "AtRecreation",
+          "joviality": 0.495487226,
+          "hours": 431
+        },
+        {
+          "participantId": 857,
+          "currentMode": "AtRecreation",
+          "joviality": 0.853049624,
+          "hours": 820
+        },
+        {
+          "participantId": 953,
+          "currentMode": "AtRecreation",
+          "joviality": 0.846871205,
+          "hours": 726
+        },
+        {
+          "participantId": 314,
+          "currentMode": "AtRecreation",
+          "joviality": 0.633335142,
+          "hours": 604
+        },
+        {
+          "participantId": 573,
+          "currentMode": "AtRecreation",
+          "joviality": 0.978406157,
+          "hours": 567
+        },
+        {
+          "participantId": 812,
+          "currentMode": "AtRecreation",
+          "joviality": 0.619525261,
+          "hours": 588
+        },
+        {
+          "participantId": 813,
+          "currentMode": "AtRecreation",
+          "joviality": 0.539387528,
+          "hours": 713
+        },
+        {
+          "participantId": 917,
+          "currentMode": "AtRecreation",
+          "joviality": 0.431612119,
+          "hours": 591
+        },
+        {
+          "participantId": 991,
+          "currentMode": "AtRecreation",
+          "joviality": 0.970492609,
+          "hours": 798
+        },
+        {
+          "participantId": 31,
+          "currentMode": "AtRecreation",
+          "joviality": 0.23266675,
+          "hours": 385
+        },
+        {
+          "participantId": 32,
+          "currentMode": "AtRecreation",
+          "joviality": 0.189498641,
+          "hours": 324
+        },
+        {
+          "participantId": 803,
+          "currentMode": "AtRecreation",
+          "joviality": 0.217382928,
+          "hours": 365
+        },
+        {
+          "participantId": 843,
+          "currentMode": "AtRecreation",
+          "joviality": 0.683850663,
+          "hours": 635
+        },
+        {
+          "participantId": 71,
+          "currentMode": "AtRecreation",
+          "joviality": 0.947066909,
+          "hours": 646
+        },
+        {
+          "participantId": 613,
+          "currentMode": "AtRecreation",
+          "joviality": 0.541632245,
+          "hours": 794
+        },
+        {
+          "participantId": 171,
+          "currentMode": "AtRecreation",
+          "joviality": 0.114389766,
+          "hours": 374
+        },
+        {
+          "participantId": 823,
+          "currentMode": "AtRecreation",
+          "joviality": 0.269842118,
+          "hours": 361
+        },
+        {
+          "participantId": 622,
+          "currentMode": "AtRecreation",
+          "joviality": 0.719188185,
+          "hours": 631
+        },
+        {
+          "participantId": 642,
+          "currentMode": "AtRecreation",
+          "joviality": 0.261732596,
+          "hours": 324
+        },
+        {
+          "participantId": 48,
+          "currentMode": "AtRecreation",
+          "joviality": 0.485827661,
+          "hours": 578
+        },
+        {
+          "participantId": 1007,
+          "currentMode": "AtRecreation",
+          "joviality": 0.934347783,
+          "hours": 964
+        },
+        {
+          "participantId": 318,
+          "currentMode": "AtRecreation",
+          "joviality": 0.473772081,
+          "hours": 524
+        },
+        {
+          "participantId": 948,
+          "currentMode": "AtRecreation",
+          "joviality": 0.880591759,
+          "hours": 740
+        },
+        {
+          "participantId": 981,
+          "currentMode": "AtRecreation",
+          "joviality": 0.458594873,
+          "hours": 344
+        },
+        {
+          "participantId": 253,
+          "currentMode": "AtRecreation",
+          "joviality": 0.560328176,
+          "hours": 536
+        },
+        {
+          "participantId": 153,
+          "currentMode": "AtRecreation",
+          "joviality": 0.758079342,
+          "hours": 637
+        },
+        {
+          "participantId": 863,
+          "currentMode": "AtRecreation",
+          "joviality": 0.807449064,
+          "hours": 569
+        },
+        {
+          "participantId": 234,
+          "currentMode": "AtRecreation",
+          "joviality": 0.332411556,
+          "hours": 456
+        },
+        {
+          "participantId": 938,
+          "currentMode": "AtRecreation",
+          "joviality": 0.679262409,
+          "hours": 812
+        },
+        {
+          "participantId": 39,
+          "currentMode": "AtRecreation",
+          "joviality": 0.862950926,
+          "hours": 894
+        },
+        {
+          "participantId": 13,
+          "currentMode": "AtRecreation",
+          "joviality": 0.724503834,
+          "hours": 726
+        },
+        {
+          "participantId": 12,
+          "currentMode": "AtRecreation",
+          "joviality": 0.241615182,
+          "hours": 581
+        },
+        {
+          "participantId": 492,
+          "currentMode": "AtRecreation",
+          "joviality": 0.364100624,
+          "hours": 478
+        },
+        {
+          "participantId": 740,
+          "currentMode": "AtRecreation",
+          "joviality": 0.409040073,
+          "hours": 751
+        },
+        {
+          "participantId": 440,
+          "currentMode": "AtRecreation",
+          "joviality": 0.049076886,
+          "hours": 496
+        },
+        {
+          "participantId": 34,
+          "currentMode": "AtRecreation",
+          "joviality": 0.767112453,
+          "hours": 949
+        },
+        {
+          "participantId": 936,
+          "currentMode": "AtRecreation",
+          "joviality": 0.235105787,
+          "hours": 493
+        },
+        {
+          "participantId": 395,
+          "currentMode": "AtRecreation",
+          "joviality": 0.675097131,
+          "hours": 651
+        },
+        {
+          "participantId": 277,
+          "currentMode": "AtRecreation",
+          "joviality": 0.836787725,
+          "hours": 528
+        },
+        {
+          "participantId": 381,
+          "currentMode": "AtRecreation",
+          "joviality": 0.621188126,
+          "hours": 581
+        },
+        {
+          "participantId": 564,
+          "currentMode": "AtRecreation",
+          "joviality": 0.842958885,
+          "hours": 774
+        },
+        {
+          "participantId": 257,
+          "currentMode": "AtRecreation",
+          "joviality": 0.405851044,
+          "hours": 604
+        },
+        {
+          "participantId": 289,
+          "currentMode": "AtRecreation",
+          "joviality": 0.955240694,
+          "hours": 697
+        },
+        {
+          "participantId": 320,
+          "currentMode": "AtRecreation",
+          "joviality": 0.477539156,
+          "hours": 655
+        },
+        {
+          "participantId": 390,
+          "currentMode": "AtRecreation",
+          "joviality": 0.76530714,
+          "hours": 746
+        },
+        {
+          "participantId": 436,
+          "currentMode": "AtRecreation",
+          "joviality": 0.949412047,
+          "hours": 667
+        },
+        {
+          "participantId": 974,
+          "currentMode": "AtRecreation",
+          "joviality": 0.345104613,
+          "hours": 674
+        },
+        {
+          "participantId": 323,
+          "currentMode": "AtRecreation",
+          "joviality": 0.757226712,
+          "hours": 724
+        },
+        {
+          "participantId": 734,
+          "currentMode": "AtRecreation",
+          "joviality": 0.522010625,
+          "hours": 612
+        },
+        {
+          "participantId": 682,
+          "currentMode": "AtRecreation",
+          "joviality": 0.392351739,
+          "hours": 687
+        },
+        {
+          "participantId": 704,
+          "currentMode": "AtRecreation",
+          "joviality": 0.746716458,
+          "hours": 881
+        },
+        {
+          "participantId": 849,
+          "currentMode": "AtRecreation",
+          "joviality": 0.828259584,
+          "hours": 816
+        },
+        {
+          "participantId": 60,
+          "currentMode": "AtRecreation",
+          "joviality": 0.411129251,
+          "hours": 626
+        },
+        {
+          "participantId": 468,
+          "currentMode": "AtRecreation",
+          "joviality": 0.45189519,
+          "hours": 428
+        },
+        {
+          "participantId": 944,
+          "currentMode": "AtRecreation",
+          "joviality": 0.660069967,
+          "hours": 694
+        },
+        {
+          "participantId": 729,
+          "currentMode": "AtRecreation",
+          "joviality": 0.465075787,
+          "hours": 536
+        },
+        {
+          "participantId": 985,
+          "currentMode": "AtRecreation",
+          "joviality": 0.198499294,
+          "hours": 452
+        },
+        {
+          "participantId": 625,
+          "currentMode": "AtRecreation",
+          "joviality": 0.604580267,
+          "hours": 590
+        },
+        {
+          "participantId": 529,
+          "currentMode": "AtRecreation",
+          "joviality": 0.568405413,
+          "hours": 420
+        },
+        {
+          "participantId": 559,
+          "currentMode": "AtRecreation",
+          "joviality": 0.684335696,
+          "hours": 648
+        },
+        {
+          "participantId": 94,
+          "currentMode": "AtRecreation",
+          "joviality": 0.413830119,
+          "hours": 442
+        },
+        {
+          "participantId": 369,
+          "currentMode": "AtRecreation",
+          "joviality": 0.139040705,
+          "hours": 497
+        },
+        {
+          "participantId": 797,
+          "currentMode": "AtRecreation",
+          "joviality": 0.665923892,
+          "hours": 878
+        },
+        {
+          "participantId": 836,
+          "currentMode": "AtRecreation",
+          "joviality": 0.201801545,
+          "hours": 602
+        },
+        {
+          "participantId": 275,
+          "currentMode": "AtRecreation",
+          "joviality": 0.173802734,
+          "hours": 292
+        },
+        {
+          "participantId": 364,
+          "currentMode": "AtRecreation",
+          "joviality": 0.253379525,
+          "hours": 229
+        },
+        {
+          "participantId": 124,
+          "currentMode": "AtRecreation",
+          "joviality": 0.14336634,
+          "hours": 456
+        },
+        {
+          "participantId": 152,
+          "currentMode": "AtRecreation",
+          "joviality": 0.6089739,
+          "hours": 465
+        },
+        {
+          "participantId": 833,
+          "currentMode": "AtRecreation",
+          "joviality": 0.139770688,
+          "hours": 222
+        },
+        {
+          "participantId": 196,
+          "currentMode": "AtRecreation",
+          "joviality": 0.360151845,
+          "hours": 456
+        },
+        {
+          "participantId": 661,
+          "currentMode": "AtRecreation",
+          "joviality": 0.056860736,
+          "hours": 308
+        },
+        {
+          "participantId": 477,
+          "currentMode": "AtRecreation",
+          "joviality": 0.383485068,
+          "hours": 447
+        },
+        {
+          "participantId": 659,
+          "currentMode": "AtRecreation",
+          "joviality": 0.741834688,
+          "hours": 835
+        },
+        {
+          "participantId": 128,
+          "currentMode": "AtRecreation",
+          "joviality": 0.718790546,
+          "hours": 663
+        },
+        {
+          "participantId": 138,
+          "currentMode": "AtRecreation",
+          "joviality": 0.732757238,
+          "hours": 662
+        },
+        {
+          "participantId": 411,
+          "currentMode": "AtRecreation",
+          "joviality": 0.507728111,
+          "hours": 517
+        },
+        {
+          "participantId": 1006,
+          "currentMode": "AtRecreation",
+          "joviality": 0.639268458,
+          "hours": 508
+        },
+        {
+          "participantId": 696,
+          "currentMode": "AtRecreation",
+          "joviality": 0.452363587,
+          "hours": 647
+        },
+        {
+          "participantId": 736,
+          "currentMode": "AtRecreation",
+          "joviality": 0.130649539,
+          "hours": 465
+        },
+        {
+          "participantId": 783,
+          "currentMode": "AtRecreation",
+          "joviality": 0.377309384,
+          "hours": 378
+        },
+        {
+          "participantId": 1003,
+          "currentMode": "AtRecreation",
+          "joviality": 0.336785107,
+          "hours": 398
+        },
+        {
+          "participantId": 764,
+          "currentMode": "AtRecreation",
+          "joviality": 0.12564865,
+          "hours": 537
+        },
+        {
+          "participantId": 107,
+          "currentMode": "AtRecreation",
+          "joviality": 0.357131296,
+          "hours": 346
+        },
+        {
+          "participantId": 343,
+          "currentMode": "AtRecreation",
+          "joviality": 0.029688855,
+          "hours": 428
+        },
+        {
+          "participantId": 208,
+          "currentMode": "AtRecreation",
+          "joviality": 0.371925591,
+          "hours": 581
+        },
+        {
+          "participantId": 635,
+          "currentMode": "AtRecreation",
+          "joviality": 0.447001762,
+          "hours": 582
+        },
+        {
+          "participantId": 800,
+          "currentMode": "AtRecreation",
+          "joviality": 0.027591944,
+          "hours": 337
+        },
+        {
+          "participantId": 914,
+          "currentMode": "AtRecreation",
+          "joviality": 0.405713393,
+          "hours": 584
+        },
+        {
+          "participantId": 326,
+          "currentMode": "AtRecreation",
+          "joviality": 0.654885921,
+          "hours": 458
+        },
+        {
+          "participantId": 934,
+          "currentMode": "AtRecreation",
+          "joviality": 0.536881382,
+          "hours": 578
+        },
+        {
+          "participantId": 600,
+          "currentMode": "AtRecreation",
+          "joviality": 0.791591163,
+          "hours": 808
+        },
+        {
+          "participantId": 100,
+          "currentMode": "AtRecreation",
+          "joviality": 0.142686163,
+          "hours": 535
+        },
+        {
+          "participantId": 173,
+          "currentMode": "AtRecreation",
+          "joviality": 0.78521373,
+          "hours": 621
+        },
+        {
+          "participantId": 222,
+          "currentMode": "AtRecreation",
+          "joviality": 0.617025806,
+          "hours": 497
+        },
+        {
+          "participantId": 929,
+          "currentMode": "AtRecreation",
+          "joviality": 0.777990984,
+          "hours": 566
+        },
+        {
+          "participantId": 956,
+          "currentMode": "AtRecreation",
+          "joviality": 0.217082066,
+          "hours": 204
+        },
+        {
+          "participantId": 624,
+          "currentMode": "AtRecreation",
+          "joviality": 0.916163673,
+          "hours": 641
+        },
+        {
+          "participantId": 888,
+          "currentMode": "AtRecreation",
+          "joviality": 0.643407835,
+          "hours": 779
+        },
+        {
+          "participantId": 895,
+          "currentMode": "AtRecreation",
+          "joviality": 0.628664697,
+          "hours": 568
+        },
+        {
+          "participantId": 935,
+          "currentMode": "AtRecreation",
+          "joviality": 0.441937538,
+          "hours": 653
+        },
+        {
+          "participantId": 363,
+          "currentMode": "AtRecreation",
+          "joviality": 0.404476978,
+          "hours": 359
+        },
+        {
+          "participantId": 452,
+          "currentMode": "AtRecreation",
+          "joviality": 0.742684694,
+          "hours": 672
+        },
+        {
+          "participantId": 649,
+          "currentMode": "AtRecreation",
+          "joviality": 0.042960665,
+          "hours": 401
+        },
+        {
+          "participantId": 826,
+          "currentMode": "AtRecreation",
+          "joviality": 0.610736625,
+          "hours": 447
+        },
+        {
+          "participantId": 675,
+          "currentMode": "AtRecreation",
+          "joviality": 0.545251458,
+          "hours": 604
+        },
+        {
+          "participantId": 165,
+          "currentMode": "AtRecreation",
+          "joviality": 0.964990249,
+          "hours": 713
+        },
+        {
+          "participantId": 978,
+          "currentMode": "AtRecreation",
+          "joviality": 0.398379338,
+          "hours": 329
+        },
+        {
+          "participantId": 119,
+          "currentMode": "AtRecreation",
+          "joviality": 0.612907872,
+          "hours": 590
+        },
+        {
+          "participantId": 166,
+          "currentMode": "AtRecreation",
+          "joviality": 0.627739055,
+          "hours": 515
+        },
+        {
+          "participantId": 227,
+          "currentMode": "AtRecreation",
+          "joviality": 0.490213553,
+          "hours": 404
+        },
+        {
+          "participantId": 396,
+          "currentMode": "AtRecreation",
+          "joviality": 0.364809779,
+          "hours": 691
+        },
+        {
+          "participantId": 243,
+          "currentMode": "AtRecreation",
+          "joviality": 0.662515201,
+          "hours": 551
+        },
+        {
+          "participantId": 710,
+          "currentMode": "AtRecreation",
+          "joviality": 0.324954076,
+          "hours": 362
+        },
+        {
+          "participantId": 979,
+          "currentMode": "AtRecreation",
+          "joviality": 0.357706459,
+          "hours": 393
+        },
+        {
+          "participantId": 308,
+          "currentMode": "AtRecreation",
+          "joviality": 0.172405182,
+          "hours": 507
+        },
+        {
+          "participantId": 160,
+          "currentMode": "AtRecreation",
+          "joviality": 0.168095803,
+          "hours": 367
+        },
+        {
+          "participantId": 582,
+          "currentMode": "AtRecreation",
+          "joviality": 0.468741471,
+          "hours": 543
+        },
+        {
+          "participantId": 16,
+          "currentMode": "AtRecreation",
+          "joviality": 0.392189088,
+          "hours": 509
+        },
+        {
+          "participantId": 344,
+          "currentMode": "AtRecreation",
+          "joviality": 0.025541228,
+          "hours": 371
+        },
+        {
+          "participantId": 331,
+          "currentMode": "AtRecreation",
+          "joviality": 0.417763616,
+          "hours": 328
+        },
+        {
+          "participantId": 334,
+          "currentMode": "AtRecreation",
+          "joviality": 0.103185768,
+          "hours": 511
+        },
+        {
+          "participantId": 140,
+          "currentMode": "AtRecreation",
+          "joviality": 0.216307476,
+          "hours": 453
+        },
+        {
+          "participantId": 49,
+          "currentMode": "AtRecreation",
+          "joviality": 0.229589642,
+          "hours": 381
+        },
+        {
+          "participantId": 353,
+          "currentMode": "AtRecreation",
+          "joviality": 0.34088384,
+          "hours": 382
+        },
+        {
+          "participantId": 955,
+          "currentMode": "AtRecreation",
+          "joviality": 0.305318637,
+          "hours": 303
+        },
+        {
+          "participantId": 977,
+          "currentMode": "AtRecreation",
+          "joviality": 0.502257508,
+          "hours": 295
+        },
+        {
+          "participantId": 38,
+          "currentMode": "AtRecreation",
+          "joviality": 0.215116214,
+          "hours": 537
+        },
+        {
+          "participantId": 585,
+          "currentMode": "AtRecreation",
+          "joviality": 0.265413241,
+          "hours": 186
+        },
+        {
+          "participantId": 880,
+          "currentMode": "AtRecreation",
+          "joviality": 0.021946709,
+          "hours": 446
+        },
+        {
+          "participantId": 970,
+          "currentMode": "AtRecreation",
+          "joviality": 0.129766383,
+          "hours": 627
+        },
+        {
+          "participantId": 328,
+          "currentMode": "AtRecreation",
+          "joviality": 0.346047608,
+          "hours": 164
+        },
+        {
+          "participantId": 552,
+          "currentMode": "AtRecreation",
+          "joviality": 0.057542458,
+          "hours": 78
+        },
+        {
+          "participantId": 297,
+          "currentMode": "AtRecreation",
+          "joviality": 0.057905387,
+          "hours": 66
+        },
+        {
+          "participantId": 899,
+          "currentMode": "AtRecreation",
+          "joviality": 0.544405537,
+          "hours": 670
+        },
+        {
+          "participantId": 58,
+          "currentMode": "AtRecreation",
+          "joviality": 0.192945633,
+          "hours": 419
+        },
+        {
+          "participantId": 350,
+          "currentMode": "AtRecreation",
+          "joviality": 0.517999111,
+          "hours": 453
+        },
+        {
+          "participantId": 278,
+          "currentMode": "AtRecreation",
+          "joviality": 0.259541618,
+          "hours": 241
+        },
+        {
+          "participantId": 62,
+          "currentMode": "AtRecreation",
+          "joviality": 0.491406814,
+          "hours": 415
+        },
+        {
+          "participantId": 80,
+          "currentMode": "AtRecreation",
+          "joviality": 0.40138993,
+          "hours": 288
+        },
+        {
+          "participantId": 829,
+          "currentMode": "AtRecreation",
+          "joviality": 0.280151127,
+          "hours": 213
+        },
+        {
+          "participantId": 486,
+          "currentMode": "AtRecreation",
+          "joviality": 0.02038719,
+          "hours": 337
+        },
+        {
+          "participantId": 631,
+          "currentMode": "AtRecreation",
+          "joviality": 0.217949026,
+          "hours": 594
+        },
+        {
+          "participantId": 535,
+          "currentMode": "AtRecreation",
+          "joviality": 0.428775106,
+          "hours": 599
+        },
+        {
+          "participantId": 102,
+          "currentMode": "AtRecreation",
+          "joviality": 0.265501227,
+          "hours": 595
+        },
+        {
+          "participantId": 482,
+          "currentMode": "AtRecreation",
+          "joviality": 0.012329643,
+          "hours": 537
+        },
+        {
+          "participantId": 151,
+          "currentMode": "AtRecreation",
+          "joviality": 0.159854965,
+          "hours": 503
+        },
+        {
+          "participantId": 325,
+          "currentMode": "AtRecreation",
+          "joviality": 0.480441948,
+          "hours": 437
+        },
+        {
+          "participantId": 742,
+          "currentMode": "AtRecreation",
+          "joviality": 0.091096884,
+          "hours": 479
+        },
+        {
+          "participantId": 945,
+          "currentMode": "AtRecreation",
+          "joviality": 0.819895146,
+          "hours": 475
+        },
+        {
+          "participantId": 627,
+          "currentMode": "AtRecreation",
+          "joviality": 0.26189132,
+          "hours": 306
+        },
+        {
+          "participantId": 73,
+          "currentMode": "AtRecreation",
+          "joviality": 0.381370977,
+          "hours": 504
+        },
+        {
+          "participantId": 664,
+          "currentMode": "AtRecreation",
+          "joviality": 0.270124892,
+          "hours": 417
+        },
+        {
+          "participantId": 1004,
+          "currentMode": "AtRecreation",
+          "joviality": 0.070626542,
+          "hours": 329
+        },
+        {
+          "participantId": 524,
+          "currentMode": "AtRecreation",
+          "joviality": 0.262933648,
+          "hours": 458
+        },
+        {
+          "participantId": 302,
+          "currentMode": "AtRecreation",
+          "joviality": 0.254585434,
+          "hours": 292
+        },
+        {
+          "participantId": 18,
+          "currentMode": "AtRecreation",
+          "joviality": 0.32696558,
+          "hours": 481
+        },
+        {
+          "participantId": 273,
+          "currentMode": "AtRecreation",
+          "joviality": 0.874083512,
+          "hours": 755
+        },
+        {
+          "participantId": 410,
+          "currentMode": "AtRecreation",
+          "joviality": 0.175733331,
+          "hours": 532
+        },
+        {
+          "participantId": 332,
+          "currentMode": "AtRecreation",
+          "joviality": 0.323175901,
+          "hours": 416
+        },
+        {
+          "participantId": 116,
+          "currentMode": "AtRecreation",
+          "joviality": 0.30282788,
+          "hours": 424
+        },
+        {
+          "participantId": 191,
+          "currentMode": "AtRecreation",
+          "joviality": 0.447070968,
+          "hours": 357
+        },
+        {
+          "participantId": 312,
+          "currentMode": "AtRecreation",
+          "joviality": 0.260798961,
+          "hours": 131
+        },
+        {
+          "participantId": 767,
+          "currentMode": "AtRecreation",
+          "joviality": 0.268937352,
+          "hours": 502
+        },
+        {
+          "participantId": 807,
+          "currentMode": "AtRecreation",
+          "joviality": 0.033479552,
+          "hours": 274
+        },
+        {
+          "participantId": 490,
+          "currentMode": "AtRecreation",
+          "joviality": 0.008404856,
+          "hours": 350
+        },
+        {
+          "participantId": 651,
+          "currentMode": "AtRecreation",
+          "joviality": 0.047571871,
+          "hours": 475
+        },
+        {
+          "participantId": 449,
+          "currentMode": "AtRecreation",
+          "joviality": 0.392066569,
+          "hours": 462
+        },
+        {
+          "participantId": 282,
+          "currentMode": "AtRecreation",
+          "joviality": 0.109360456,
+          "hours": 249
+        },
+        {
+          "participantId": 286,
+          "currentMode": "AtRecreation",
+          "joviality": 0.476984055,
+          "hours": 461
+        },
+        {
+          "participantId": 98,
+          "currentMode": "AtRecreation",
+          "joviality": 0.366630644,
+          "hours": 295
+        },
+        {
+          "participantId": 391,
+          "currentMode": "AtRecreation",
+          "joviality": 0.140477262,
+          "hours": 147
+        },
+        {
+          "participantId": 431,
+          "currentMode": "AtRecreation",
+          "joviality": 0.420302416,
+          "hours": 492
+        },
+        {
+          "participantId": 543,
+          "currentMode": "AtRecreation",
+          "joviality": 0.557004306,
+          "hours": 659
+        },
+        {
+          "participantId": 861,
+          "currentMode": "AtRecreation",
+          "joviality": 0.332054621,
+          "hours": 208
+        },
+        {
+          "participantId": 190,
+          "currentMode": "AtRecreation",
+          "joviality": 0.61053033,
+          "hours": 584
+        },
+        {
+          "participantId": 442,
+          "currentMode": "AtRecreation",
+          "joviality": 0.523649971,
+          "hours": 493
+        },
+        {
+          "participantId": 444,
+          "currentMode": "AtRecreation",
+          "joviality": 0.048951659,
+          "hours": 165
+        },
+        {
+          "participantId": 260,
+          "currentMode": "AtRecreation",
+          "joviality": 0.33366576,
+          "hours": 467
+        },
+        {
+          "participantId": 148,
+          "currentMode": "AtRecreation",
+          "joviality": 0.266938991,
+          "hours": 337
+        },
+        {
+          "participantId": 79,
+          "currentMode": "AtRecreation",
+          "joviality": 0.03403389,
+          "hours": 159
+        },
+        {
+          "participantId": 940,
+          "currentMode": "AtRecreation",
+          "joviality": 0.807027625,
+          "hours": 291
+        },
+        {
+          "participantId": 457,
+          "currentMode": "AtRecreation",
+          "joviality": 0.151671229,
+          "hours": 126
+        },
+        {
+          "participantId": 758,
+          "currentMode": "AtRecreation",
+          "joviality": 0.000204,
+          "hours": 356
+        },
+        {
+          "participantId": 871,
+          "currentMode": "AtRecreation",
+          "joviality": 0.067887485,
+          "hours": 257
+        },
+        {
+          "participantId": 987,
+          "currentMode": "AtRecreation",
+          "joviality": 0.182773504,
+          "hours": 111
+        },
+        {
+          "participantId": 975,
+          "currentMode": "AtRecreation",
+          "joviality": 0.086367063,
+          "hours": 408
+        },
+        {
+          "participantId": 379,
+          "currentMode": "AtRecreation",
+          "joviality": 0.061959185,
+          "hours": 39
+        },
+        {
+          "participantId": 1001,
+          "currentMode": "AtRecreation",
+          "joviality": 0.043433461,
+          "hours": 21
+        },
+        {
+          "participantId": 889,
+          "currentMode": "AtRecreation",
+          "joviality": 0.126644557,
+          "hours": 69
+        },
+        {
+          "participantId": 820,
+          "currentMode": "AtRecreation",
+          "joviality": 0.065357535,
+          "hours": 42
+        },
+        {
+          "participantId": 950,
+          "currentMode": "AtRecreation",
+          "joviality": 0.131920315,
+          "hours": 131
+        },
+        {
+          "participantId": 930,
+          "currentMode": "AtRecreation",
+          "joviality": 0.203002706,
+          "hours": 12
+        },
+        {
+          "participantId": 525,
+          "currentMode": "AtRecreation",
+          "joviality": 0.01017311,
+          "hours": 39
+        },
+        {
+          "participantId": 750,
+          "currentMode": "AtRecreation",
+          "joviality": 0.262320121,
+          "hours": 9
+        },
+        {
+          "participantId": 496,
+          "currentMode": "AtRecreation",
+          "joviality": 0.145298865,
+          "hours": 10
+        },
+        {
+          "participantId": 180,
+          "currentMode": "AtRecreation",
+          "joviality": 0.100777319,
+          "hours": 6
+        },
+        {
+          "participantId": 922,
+          "currentMode": "AtRecreation",
+          "joviality": 0.046984156,
+          "hours": 346
+        },
+        {
+          "participantId": 178,
+          "currentMode": "AtRecreation",
+          "joviality": 0.725246226,
+          "hours": 12
+        },
+        {
+          "participantId": 926,
+          "currentMode": "AtRecreation",
+          "joviality": 0.185717667,
+          "hours": 4
+        },
+        {
+          "participantId": 237,
+          "currentMode": "AtRecreation",
+          "joviality": 0.110877355,
+          "hours": 2
+        },
+        {
+          "participantId": 186,
+          "currentMode": "AtRecreation",
+          "joviality": 0.89222241,
+          "hours": 30
+        },
+        {
+          "participantId": 754,
+          "currentMode": "AtRecreation",
+          "joviality": 0.17565975,
+          "hours": 1
+        },
+        {
+          "participantId": 235,
+          "currentMode": "AtRecreation",
+          "joviality": 0.936585851,
+          "hours": 17
+        },
+        {
+          "participantId": 528,
+          "currentMode": "AtRecreation",
+          "joviality": 0.008329855,
+          "hours": 3
+        },
+        {
+          "participantId": 749,
+          "currentMode": "AtRecreation",
+          "joviality": 0.017790641,
+          "hours": 3
+        },
+        {
+          "participantId": 188,
+          "currentMode": "AtRecreation",
+          "joviality": 0.730336584,
+          "hours": 38
+        },
+        {
+          "participantId": 586,
+          "currentMode": "AtRecreation",
+          "joviality": 0.008705951,
+          "hours": 1
+        },
+        {
+          "participantId": 711,
+          "currentMode": "AtRecreation",
+          "joviality": 0.942801579,
+          "hours": 8
+        },
+        {
+          "participantId": 229,
+          "currentMode": "AtRecreation",
+          "joviality": 0.68602034,
+          "hours": 23
+        },
+        {
+          "participantId": 741,
+          "currentMode": "AtRecreation",
+          "joviality": 0.187180439,
+          "hours": 23
+        },
+        {
+          "participantId": 752,
+          "currentMode": "AtRecreation",
+          "joviality": 0.736149674,
+          "hours": 17
+        },
+        {
+          "participantId": 721,
+          "currentMode": "AtRecreation",
+          "joviality": 0.232407811,
+          "hours": 3
+        },
+        {
+          "participantId": 194,
+          "currentMode": "AtRecreation",
+          "joviality": 0.162966636,
+          "hours": 3
+        },
+        {
+          "participantId": 213,
+          "currentMode": "AtRecreation",
+          "joviality": 0.961066785,
+          "hours": 25
+        },
+        {
+          "participantId": 491,
+          "currentMode": "AtRecreation",
+          "joviality": 0.843920569,
+          "hours": 44
+        },
+        {
+          "participantId": 236,
+          "currentMode": "AtRecreation",
+          "joviality": 0.10774033,
+          "hours": 3
+        },
+        {
+          "participantId": 470,
+          "currentMode": "AtRecreation",
+          "joviality": 0.679944615,
+          "hours": 47
+        },
+        {
+          "participantId": 474,
+          "currentMode": "AtRecreation",
+          "joviality": 0.088574034,
+          "hours": 1
+        },
+        {
+          "participantId": 718,
+          "currentMode": "AtRecreation",
+          "joviality": 0.839634412,
+          "hours": 28
+        },
+        {
+          "participantId": 927,
+          "currentMode": "AtRecreation",
+          "joviality": 0.093249599,
+          "hours": 4
+        },
+        {
+          "participantId": 224,
+          "currentMode": "AtRecreation",
+          "joviality": 0.28441375,
+          "hours": 12
+        },
+        {
+          "participantId": 245,
+          "currentMode": "AtRecreation",
+          "joviality": 0.859058201,
+          "hours": 101
+        },
+        {
+          "participantId": 713,
+          "currentMode": "AtRecreation",
+          "joviality": 0.11885355,
+          "hours": 3
+        },
+        {
+          "participantId": 963,
+          "currentMode": "AtRecreation",
+          "joviality": 0.132914203,
+          "hours": 3
+        },
+        {
+          "participantId": 717,
+          "currentMode": "AtRecreation",
+          "joviality": 0.318139199,
+          "hours": 6
+        },
+        {
+          "participantId": 219,
+          "currentMode": "AtRecreation",
+          "joviality": 0.955659284,
+          "hours": 23
+        },
+        {
+          "participantId": 377,
+          "currentMode": "AtRecreation",
+          "joviality": 0.035335186,
+          "hours": 16
+        },
+        {
+          "participantId": 698,
+          "currentMode": "AtRecreation",
+          "joviality": 0.674877675,
+          "hours": 5
+        },
+        {
+          "participantId": 265,
+          "currentMode": "AtRecreation",
+          "joviality": 0.048044295,
+          "hours": 53
+        },
+        {
+          "participantId": 946,
+          "currentMode": "AtRecreation",
+          "joviality": 0.010975349,
+          "hours": 1
+        },
+        {
+          "participantId": 465,
+          "currentMode": "AtRecreation",
+          "joviality": 0.329111154,
+          "hours": 43
+        },
+        {
+          "participantId": 723,
+          "currentMode": "AtRecreation",
+          "joviality": 0.315916767,
+          "hours": 17
+        },
+        {
+          "participantId": 786,
+          "currentMode": "AtRecreation",
+          "joviality": 0.001365799,
+          "hours": 2
+        },
+        {
+          "participantId": 961,
+          "currentMode": "AtRecreation",
+          "joviality": 0.91308015,
+          "hours": 49
+        },
+        {
+          "participantId": 192,
+          "currentMode": "AtRecreation",
+          "joviality": 0.262612842,
+          "hours": 2
+        },
+        {
+          "participantId": 433,
+          "currentMode": "AtRecreation",
+          "joviality": 0.000985,
+          "hours": 3
+        },
+        {
+          "participantId": 748,
+          "currentMode": "AtRecreation",
+          "joviality": 0.874661744,
+          "hours": 72
+        },
+        {
+          "participantId": 207,
+          "currentMode": "AtRecreation",
+          "joviality": 0.814611008,
+          "hours": 19
+        },
+        {
+          "participantId": 712,
+          "currentMode": "AtRecreation",
+          "joviality": 0.325503058,
+          "hours": 3
+        },
+        {
+          "participantId": 183,
+          "currentMode": "AtRecreation",
+          "joviality": 0.109940826,
+          "hours": 22
+        },
+        {
+          "participantId": 428,
+          "currentMode": "AtRecreation",
+          "joviality": 0.09631243,
+          "hours": 1
+        },
+        {
+          "participantId": 198,
+          "currentMode": "AtRecreation",
+          "joviality": 0.321634269,
+          "hours": 4
+        },
+        {
+          "participantId": 209,
+          "currentMode": "AtRecreation",
+          "joviality": 0.25635218,
+          "hours": 2
+        },
+        {
+          "participantId": 215,
+          "currentMode": "AtRecreation",
+          "joviality": 0.089838002,
+          "hours": 1
+        },
+        {
+          "participantId": 420,
+          "currentMode": "AtRecreation",
+          "joviality": 0.085672033,
+          "hours": 6
+        },
+        {
+          "participantId": 216,
+          "currentMode": "AtRecreation",
+          "joviality": 0.153900625,
+          "hours": 2
+        },
+        {
+          "participantId": 200,
+          "currentMode": "AtRecreation",
+          "joviality": 0.122095522,
+          "hours": 2
+        },
+        {
+          "participantId": 707,
+          "currentMode": "AtRecreation",
+          "joviality": 0.275811473,
+          "hours": 1
+        },
+        {
+          "participantId": 185,
+          "currentMode": "AtRecreation",
+          "joviality": 0.270514436,
+          "hours": 7
+        },
+        {
+          "participantId": 241,
+          "currentMode": "AtRecreation",
+          "joviality": 0.088547964,
+          "hours": 4
+        },
+        {
+          "participantId": 83,
+          "currentMode": "AtRecreation",
+          "joviality": 0.027148207,
+          "hours": 39
+        },
+        {
+          "participantId": 965,
+          "currentMode": "AtRecreation",
+          "joviality": 0.258533986,
+          "hours": 3
+        },
+        {
+          "participantId": 195,
+          "currentMode": "AtRecreation",
+          "joviality": 0.058702708,
+          "hours": 1
+        },
+        {
+          "participantId": 211,
+          "currentMode": "AtRecreation",
+          "joviality": 0.214486332,
+          "hours": 1
+        },
+        {
+          "participantId": 461,
+          "currentMode": "AtRecreation",
+          "joviality": 0.302215803,
+          "hours": 68
+        },
+        {
+          "participantId": 134,
+          "currentMode": "AtRecreation",
+          "joviality": 0.247000174,
+          "hours": 129
+        },
+        {
+          "participantId": 421,
+          "currentMode": "AtRecreation",
+          "joviality": 0.517662469,
+          "hours": 517
+        },
+        {
+          "participantId": 355,
+          "currentMode": "AtRecreation",
+          "joviality": 0.735837586,
+          "hours": 726
+        },
+        {
+          "participantId": 311,
+          "currentMode": "AtRecreation",
+          "joviality": 0.699020662,
+          "hours": 682
+        },
+        {
+          "participantId": 367,
+          "currentMode": "AtRecreation",
+          "joviality": 0.13664462,
+          "hours": 595
+        },
+        {
+          "participantId": 549,
+          "currentMode": "AtRecreation",
+          "joviality": 0.211903193,
+          "hours": 405
+        },
+        {
+          "participantId": 345,
+          "currentMode": "AtRecreation",
+          "joviality": 0.464569175,
+          "hours": 484
+        },
+        {
+          "participantId": 852,
+          "currentMode": "AtRecreation",
+          "joviality": 0.30005276,
+          "hours": 659
+        },
+        {
+          "participantId": 172,
+          "currentMode": "AtRecreation",
+          "joviality": 0.575001936,
+          "hours": 514
+        },
+        {
+          "participantId": 781,
+          "currentMode": "AtRecreation",
+          "joviality": 0.1411042,
+          "hours": 718
+        },
+        {
+          "participantId": 939,
+          "currentMode": "AtRecreation",
+          "joviality": 0.880292697,
+          "hours": 1087
+        },
+        {
+          "participantId": 959,
+          "currentMode": "AtRecreation",
+          "joviality": 0.349445327,
+          "hours": 574
+        },
+        {
+          "participantId": 20,
+          "currentMode": "AtRecreation",
+          "joviality": 0.619057739,
+          "hours": 591
+        },
+        {
+          "participantId": 933,
+          "currentMode": "AtRecreation",
+          "joviality": 0.097293702,
+          "hours": 523
+        },
+        {
+          "participantId": 693,
+          "currentMode": "AtRecreation",
+          "joviality": 0.402956862,
+          "hours": 595
+        },
+        {
+          "participantId": 445,
+          "currentMode": "AtRecreation",
+          "joviality": 0.496667064,
+          "hours": 525
+        },
+        {
+          "participantId": 873,
+          "currentMode": "AtRecreation",
+          "joviality": 0.282834314,
+          "hours": 484
+        },
+        {
+          "participantId": 753,
+          "currentMode": "AtRecreation",
+          "joviality": 0.339503386,
+          "hours": 278
+        },
+        {
+          "participantId": 294,
+          "currentMode": "AtRecreation",
+          "joviality": 0.847052228,
+          "hours": 632
+        },
+        {
+          "participantId": 146,
+          "currentMode": "AtRecreation",
+          "joviality": 0.643761923,
+          "hours": 575
+        },
+        {
+          "participantId": 28,
+          "currentMode": "AtRecreation",
+          "joviality": 0.230073813,
+          "hours": 769
+        },
+        {
+          "participantId": 508,
+          "currentMode": "AtRecreation",
+          "joviality": 0.87972655,
+          "hours": 846
+        },
+        {
+          "participantId": 908,
+          "currentMode": "AtRecreation",
+          "joviality": 0.598767089,
+          "hours": 510
+        },
+        {
+          "participantId": 982,
+          "currentMode": "AtRecreation",
+          "joviality": 0.098639485,
+          "hours": 497
+        },
+        {
+          "participantId": 674,
+          "currentMode": "AtRecreation",
+          "joviality": 0.543992757,
+          "hours": 597
+        },
+        {
+          "participantId": 139,
+          "currentMode": "AtRecreation",
+          "joviality": 0.846097713,
+          "hours": 741
+        },
+        {
+          "participantId": 263,
+          "currentMode": "AtRecreation",
+          "joviality": 0.223825175,
+          "hours": 387
+        },
+        {
+          "participantId": 33,
+          "currentMode": "AtRecreation",
+          "joviality": 0.094585958,
+          "hours": 279
+        },
+        {
+          "participantId": 903,
+          "currentMode": "AtRecreation",
+          "joviality": 0.210131243,
+          "hours": 351
+        },
+        {
+          "participantId": 472,
+          "currentMode": "AtRecreation",
+          "joviality": 0.941687305,
+          "hours": 900
+        },
+        {
+          "participantId": 988,
+          "currentMode": "AtRecreation",
+          "joviality": 0.315707809,
+          "hours": 348
+        },
+        {
+          "participantId": 462,
+          "currentMode": "AtRecreation",
+          "joviality": 0.773790326,
+          "hours": 878
+        },
+        {
+          "participantId": 763,
+          "currentMode": "AtRecreation",
+          "joviality": 0.338259596,
+          "hours": 518
+        },
+        {
+          "participantId": 958,
+          "currentMode": "AtRecreation",
+          "joviality": 0.301470597,
+          "hours": 317
+        },
+        {
+          "participantId": 735,
+          "currentMode": "AtRecreation",
+          "joviality": 0.063256748,
+          "hours": 218
+        },
+        {
+          "participantId": 300,
+          "currentMode": "AtRecreation",
+          "joviality": 0.21434781,
+          "hours": 609
+        },
+        {
+          "participantId": 804,
+          "currentMode": "AtRecreation",
+          "joviality": 0.468583888,
+          "hours": 465
+        },
+        {
+          "participantId": 72,
+          "currentMode": "AtRecreation",
+          "joviality": 0.218744284,
+          "hours": 540
+        },
+        {
+          "participantId": 837,
+          "currentMode": "AtRecreation",
+          "joviality": 0.048428984,
+          "hours": 533
+        },
+        {
+          "participantId": 784,
+          "currentMode": "AtRecreation",
+          "joviality": 0.517238511,
+          "hours": 454
+        },
+        {
+          "participantId": 850,
+          "currentMode": "AtRecreation",
+          "joviality": 0.631431974,
+          "hours": 767
+        },
+        {
+          "participantId": 511,
+          "currentMode": "AtRecreation",
+          "joviality": 0.173537994,
+          "hours": 514
+        },
+        {
+          "participantId": 618,
+          "currentMode": "AtRecreation",
+          "joviality": 0.089915241,
+          "hours": 560
+        },
+        {
+          "participantId": 387,
+          "currentMode": "AtRecreation",
+          "joviality": 0.401545108,
+          "hours": 584
+        },
+        {
+          "participantId": 401,
+          "currentMode": "AtRecreation",
+          "joviality": 0.264710804,
+          "hours": 461
+        },
+        {
+          "participantId": 69,
+          "currentMode": "AtRecreation",
+          "joviality": 0.743901318,
+          "hours": 574
+        },
+        {
+          "participantId": 648,
+          "currentMode": "AtRecreation",
+          "joviality": 0.634994302,
+          "hours": 504
+        },
+        {
+          "participantId": 662,
+          "currentMode": "AtRecreation",
+          "joviality": 0.038611164,
+          "hours": 280
+        },
+        {
+          "participantId": 159,
+          "currentMode": "AtRecreation",
+          "joviality": 0.24297235,
+          "hours": 258
+        },
+        {
+          "participantId": 108,
+          "currentMode": "AtRecreation",
+          "joviality": 0.098903572,
+          "hours": 270
+        },
+        {
+          "participantId": 93,
+          "currentMode": "AtRecreation",
+          "joviality": 0.580101654,
+          "hours": 473
+        },
+        {
+          "participantId": 110,
+          "currentMode": "AtRecreation",
+          "joviality": 0.313305546,
+          "hours": 619
+        },
+        {
+          "participantId": 259,
+          "currentMode": "AtRecreation",
+          "joviality": 0.19286307,
+          "hours": 113
+        },
+        {
+          "participantId": 489,
+          "currentMode": "AtRecreation",
+          "joviality": 0.107608661,
+          "hours": 162
+        },
+        {
+          "participantId": 702,
+          "currentMode": "AtRecreation",
+          "joviality": 0.288396985,
+          "hours": 4
+        },
+        {
+          "participantId": 193,
+          "currentMode": "AtRecreation",
+          "joviality": 0.976160413,
+          "hours": 93
+        },
+        {
+          "participantId": 966,
+          "currentMode": "AtRecreation",
+          "joviality": 0.119913514,
+          "hours": 6
+        },
+        {
+          "participantId": 990,
+          "currentMode": "AtRecreation",
+          "joviality": 0.833977506,
+          "hours": 697
+        },
+        {
+          "participantId": 304,
+          "currentMode": "AtRecreation",
+          "joviality": 0.183595892,
+          "hours": 300
+        },
+        {
+          "participantId": 40,
+          "currentMode": "AtRecreation",
+          "joviality": 0.880410054,
+          "hours": 885
+        },
+        {
+          "participantId": 232,
+          "currentMode": "AtRecreation",
+          "joviality": 0.96685839,
+          "hours": 761
+        },
+        {
+          "participantId": 516,
+          "currentMode": "AtRecreation",
+          "joviality": 0.369711957,
+          "hours": 655
+        },
+        {
+          "participantId": 467,
+          "currentMode": "AtRecreation",
+          "joviality": 0.586290946,
+          "hours": 679
+        },
+        {
+          "participantId": 610,
+          "currentMode": "AtRecreation",
+          "joviality": 0.526105544,
+          "hours": 485
+        },
+        {
+          "participantId": 697,
+          "currentMode": "AtRecreation",
+          "joviality": 0.976239224,
+          "hours": 891
+        },
+        {
+          "participantId": 730,
+          "currentMode": "AtRecreation",
+          "joviality": 0.748473896,
+          "hours": 827
+        },
+        {
+          "participantId": 126,
+          "currentMode": "AtRecreation",
+          "joviality": 0.72895287,
+          "hours": 578
+        },
+        {
+          "participantId": 147,
+          "currentMode": "AtRecreation",
+          "joviality": 0.528698226,
+          "hours": 726
+        },
+        {
+          "participantId": 751,
+          "currentMode": "AtRecreation",
+          "joviality": 0.77217008,
+          "hours": 739
+        },
+        {
+          "participantId": 980,
+          "currentMode": "AtRecreation",
+          "joviality": 0.548974082,
+          "hours": 565
+        },
+        {
+          "participantId": 606,
+          "currentMode": "AtRecreation",
+          "joviality": 0.370138058,
+          "hours": 586
+        },
+        {
+          "participantId": 228,
+          "currentMode": "AtRecreation",
+          "joviality": 0.168680628,
+          "hours": 5
+        },
+        {
+          "participantId": 137,
+          "currentMode": "AtRecreation",
+          "joviality": 0.87301128,
+          "hours": 726
+        },
+        {
+          "participantId": 488,
+          "currentMode": "AtRecreation",
+          "joviality": 0.770104322,
+          "hours": 532
+        },
+        {
+          "participantId": 501,
+          "currentMode": "AtRecreation",
+          "joviality": 0.895202266,
+          "hours": 789
+        },
+        {
+          "participantId": 699,
+          "currentMode": "AtRecreation",
+          "joviality": 0.055989127,
+          "hours": 7
+        },
+        {
+          "participantId": 716,
+          "currentMode": "AtRecreation",
+          "joviality": 0.132319548,
+          "hours": 27
+        },
+        {
+          "participantId": 339,
+          "currentMode": "AtRecreation",
+          "joviality": 0.21098913,
+          "hours": 162
+        },
+        {
+          "participantId": 418,
+          "currentMode": "AtRecreation",
+          "joviality": 0.976850716,
+          "hours": 884
+        },
+        {
+          "participantId": 405,
+          "currentMode": "AtRecreation",
+          "joviality": 0.617829242,
+          "hours": 610
+        },
+        {
+          "participantId": 252,
+          "currentMode": "AtRecreation",
+          "joviality": 0.564718074,
+          "hours": 554
+        },
+        {
+          "participantId": 397,
+          "currentMode": "AtRecreation",
+          "joviality": 0.396967817,
+          "hours": 395
+        },
+        {
+          "participantId": 731,
+          "currentMode": "AtRecreation",
+          "joviality": 0.619208795,
+          "hours": 691
+        },
+        {
+          "participantId": 322,
+          "currentMode": "AtRecreation",
+          "joviality": 0.650831243,
+          "hours": 653
+        },
+        {
+          "participantId": 481,
+          "currentMode": "AtRecreation",
+          "joviality": 0.563457797,
+          "hours": 561
+        },
+        {
+          "participantId": 805,
+          "currentMode": "AtRecreation",
+          "joviality": 0.328587955,
+          "hours": 592
+        },
+        {
+          "participantId": 316,
+          "currentMode": "AtRecreation",
+          "joviality": 0.175386489,
+          "hours": 513
+        },
+        {
+          "participantId": 458,
+          "currentMode": "AtRecreation",
+          "joviality": 0.312528351,
+          "hours": 522
+        },
+        {
+          "participantId": 46,
+          "currentMode": "AtRecreation",
+          "joviality": 0.225049088,
+          "hours": 594
+        },
+        {
+          "participantId": 158,
+          "currentMode": "AtRecreation",
+          "joviality": 0.468930899,
+          "hours": 495
+        },
+        {
+          "participantId": 89,
+          "currentMode": "AtRecreation",
+          "joviality": 0.169054036,
+          "hours": 447
+        },
+        {
+          "participantId": 451,
+          "currentMode": "AtRecreation",
+          "joviality": 0.164418633,
+          "hours": 32
+        },
+        {
+          "participantId": 238,
+          "currentMode": "AtRecreation",
+          "joviality": 0.256101892,
+          "hours": 2
+        },
+        {
+          "participantId": 620,
+          "currentMode": "AtRecreation",
+          "joviality": 0.673541165,
+          "hours": 477
+        }
+      ]
+    },
+    {
+      "name": "data_1",
+      "source": "data-8251839134fa32468d3d52795d23a3d3",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"joviality\"]) && isFinite(+datum[\"joviality\"]) && isValid(datum[\"hours\"]) && isFinite(+datum[\"hours\"])"
+        }
+      ]
+    },
+    {
+      "name": "data_2",
+      "source": "data-8251839134fa32468d3d52795d23a3d3",
+      "transform": [
+        {
+          "type": "loess",
+          "x": "joviality",
+          "y": "hours",
+          "as": ["joviality", "hours"]
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "name": "layer_0_marks",
+      "type": "symbol",
+      "style": ["circle"],
+      "from": {"data": "data_1"},
+      "encode": {
+        "update": {
+          "opacity": {"value": 0.5},
+          "fill": {"value": "#4c78a8"},
+          "ariaRoleDescription": {"value": "circle"},
+          "description": {
+            "signal": "\"Joviality: \" + (format(datum[\"joviality\"], \"\")) + \"; Amount of Recreation Hours: \" + (format(datum[\"hours\"], \"\"))"
+          },
+          "x": {"scale": "x", "field": "joviality"},
+          "y": {"scale": "y", "field": "hours"},
+          "shape": {"value": "circle"}
+        }
+      }
+    },
+    {
+      "name": "layer_1_marks",
+      "type": "line",
+      "style": ["line"],
+      "sort": {"field": "datum[\"joviality\"]"},
+      "from": {"data": "data_2"},
+      "encode": {
+        "update": {
+          "stroke": {"value": "#4c78a8"},
+          "description": {
+            "signal": "\"Joviality: \" + (format(datum[\"joviality\"], \"\")) + \"; Amount of Recreation Hours: \" + (format(datum[\"hours\"], \"\"))"
+          },
+          "x": {"scale": "x", "field": "joviality"},
+          "y": {"scale": "y", "field": "hours"},
+          "strokeWidth": {"value": 4},
+          "defined": {
+            "signal": "isValid(datum[\"joviality\"]) && isFinite(+datum[\"joviality\"]) && isValid(datum[\"hours\"]) && isFinite(+datum[\"hours\"])"
+          }
+        }
+      }
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "linear",
+      "domain": {
+        "fields": [
+          {"data": "data_1", "field": "joviality"},
+          {"data": "data_2", "field": "joviality"}
+        ]
+      },
+      "range": [0, {"signal": "width"}],
+      "nice": true,
+      "zero": true
+    },
+    {
+      "name": "y",
+      "type": "linear",
+      "domain": {
+        "fields": [
+          {"data": "data_1", "field": "hours"},
+          {"data": "data_2", "field": "hours"}
+        ]
+      },
+      "range": [{"signal": "height"}, 0],
+      "nice": true,
+      "zero": true
+    }
+  ],
+  "axes": [
+    {
+      "scale": "x",
+      "orient": "bottom",
+      "gridScale": "y",
+      "grid": true,
+      "tickCount": {"signal": "ceil(width/40)"},
+      "domain": false,
+      "labels": false,
+      "aria": false,
+      "maxExtent": 0,
+      "minExtent": 0,
+      "ticks": false,
+      "zindex": 0
+    },
+    {
+      "scale": "y",
+      "orient": "left",
+      "gridScale": "x",
+      "grid": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "domain": false,
+      "labels": false,
+      "aria": false,
+      "maxExtent": 0,
+      "minExtent": 0,
+      "ticks": false,
+      "zindex": 0
+    },
+    {
+      "scale": "x",
+      "orient": "bottom",
+      "grid": false,
+      "title": "Joviality",
+      "labelFlush": true,
+      "labelOverlap": true,
+      "tickCount": {"signal": "ceil(width/40)"},
+      "zindex": 0
+    },
+    {
+      "scale": "y",
+      "orient": "left",
+      "grid": false,
+      "title": "Amount of Recreation Hours",
+      "labelOverlap": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "zindex": 0
+    }
+  ]
+};
+vegaEmbed('div#vis', VLspec1);  
+</script>  
+  </body>
+</html>
