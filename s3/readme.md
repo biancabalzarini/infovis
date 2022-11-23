@@ -12,3 +12,4 @@ Visualizaciones hechas:
 Visualizaciones hechas:
 
 1. [Tableau](https://biancabalzarini.github.io/infovis/s3/tableau_covid.html)
+2. [Observable](https://observablehq.com/d/11f4070cd63550dd)
