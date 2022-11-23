@@ -5,6 +5,7 @@
 Visualizaciones hechas:
 
 1. [Tableau](https://biancabalzarini.github.io/infovis/s3/tableau.html)
+2. [Observable](https://observablehq.com/d/ff7f901e75ec0e25)
 
 ### COVID 19
 
